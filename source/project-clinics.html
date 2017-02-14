@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="b-course-list m-clinics">
-  <div class="b-top-section"> {% comment %}This gets the course type class modifier for color coding{% endcomment %}
+<div class="course-list course-list--clinics">
+  <div class="top-section">
     <div class="row">
       <div class="large-12 column">
         <h1>Courses &amp; Project Clinics</h1>
@@ -12,47 +12,38 @@ layout: default
     </div>
   </div>
 
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
       <div class="large-12 column">
-        <h3>Upcoming courses</h3>
+        <h1>Upcoming courses</h1>
       </div>
     </div>
   </div>
-  <ul class="b-course-list">
+  <ul class="course-list">
     {% for course in site.data.clinics %}
       {% if !course.is_crosslisted %}
-        <li class="e-course-item">
+        <li class="course-item">
           <div class="row">
             <div class="large-12 column">
-              <h2 class="e-course-title">{{ course.name }}</h2>
+              <h2 class="course-item__title">{{ course.name }}</h2>
             </div>
             <div class="large-6 column">
-              <p class="e-course-application">APPLICATION DUE: {{ course.date.application }}</p>
-              <div class="e-course-faculty-team row column">
+              <p class="course-item__application">APPLICATION DUE: {{ course.date.application }}</p>
+              <p class="course-item__application">STARTS THE WEEK OF: {{ course.date.week_start }}</p>
+              <div class="course-item__faculty-team row column">
                 {% for name in course.faculty_members %}
                   {% assign person = site.data.people | where:"title", name | first %}
                   {% if person %}
-                    <a href="{{ person.name.slug }}.html" target="_blank">
-                      <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ person.name.slug }}.jpg');">
-                        <p>{{ person.name.first }} {{ person.name.last }}</p>
-                      </div>
+                    <a href="./people/{{ person.name.slug }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
+                      <p>{{ person.name.first }} {{ person.name.last }}</p>
                     </a>
-                  {% else %}
-                    <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ person.name.slug  }}.jpg');">
-                      <p>{{ name }}</p>
-                    </div>
                   {% endif %}
                 {% endfor %}
               </div>
             </div>
             <div class="large-6 column">
               <p class="e-course-description">{{ course.description_short }}</p>
-              {% if course.actions %}
-                {% for action in course.actions %}
-                  <a class="b-button" href="{{action.link}}">{{ action.label }}</a>
-                {% endfor %}
-              {% endif %}
+              <a href="/coaching/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
             </div>
           </div>
         </li>
@@ -60,47 +51,44 @@ layout: default
     {% endfor %}
   </ul>
 
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
       <div class="large-12 column">
-        <h3>Courses offered by partner organizations</h3>
+        <h1>Past courses</h1>
       </div>
     </div>
   </div>
-  <ul class="b-course-list m-past-courses">
+  <ul class="course-list course-list--past-courses">
     {% for course in site.data.clinics %}
       {% if course.is_crosslisted %}
-        <li class="e-course-item">
+        {% comment %}TODO: Filter past events only{% endcomment %}
+        <li class="course-item">
           <div class="row">
             <div class="large-6 column">
-              <h2 class="e-course-title">{{ course.name }}</h2>
-              <p class="e-course-application">APPLICATION DUE: {{ course.date.application }}</p>
-              <div class="e-course-faculty-team">
+              <h2 class="course-item__title">{{ course.name }}</h2>
+              <p class="course-item__application">STARTED THE WEEK OF: {{ course.date.week_start }}</p>
+              <div class="course-item__faculty-team">
                 {% for name in course.faculty_members %}
                   {% assign person = site.data.people | where:"title", name | first %}
                   {% if person %}
-                    <a href="{{ person.name.slug }}.html" target="_blank">
-                      <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ person.name.slug }}.jpg');">
+                    <a href="{{person.name.slug}}.html" target="_blank">
+                      <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
                         <p>{{ person.name.first }} {{ person.name.last }}</p>
                       </div>
                     </a>
                   {% else %}
-                    <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ person.name.slug  }}.jpg');">
-                      <p>{{ name }}</p>
+                    <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug  }}.jpg');">
+                      <p>{{name}}</p>
                     </div>
                   {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-            <div class="large-6 column">
-              <p class="e-course-description">{{ course.description_short }}</p>
-                {% if course.actions %}
-                  {% for action in course.actions %}
-                    <a class="b-button" href="{{action.link}}">{{ action.label }}</a>
-                  {% endfor %}
-                {% endif %}
+              {% endfor %}
             </div>
           </div>
+          <div class="large-6 column">
+            <p class="course-item__description">{{ course.description_short | safe }}</p>
+            <a href="/coaching/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
+          </div>
+        </div>
         </li>
       {% endif %}
     {% endfor %}
