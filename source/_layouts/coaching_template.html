@@ -2,42 +2,42 @@
 layout: default
 ---
 
-<div class="b-course-detail m-coaching">
-  <div class="b-course-header "> {% comment %} This gets the course type class modifier for color coding{% endcomment %}
-    <div class="row">
-      <div class="large-8 column large-centered">
+<div class="course-detail course-detail--coaching">
+  <div class="course-header "> {% comment %} This gets the course type class modifier for color coding{% endcomment %}
+    <div class="row align-center">
+      <div class="large-9 column">
         <h2>Coaching Program <br>for {{ page.name }}</h2>
-        <h3 class="e-tagline">{{ page.description_short }}</h3>
-        <div class="e-apply"><a href="#" class="b-button">Apply</a></div>
+        <div class="course-detail__tagline">{{ page.description_short }}</div>
+        <div class="course-detail__apply"><a href="#" class="button">Apply</a></div>
       </div>
     </div>
 
-    <div class="e-course-dates">
+    <div class="course-detail__dates">
       {% comment %} This is kind of creepy, but makes sense in the Foundation way of building narrower content {% endcomment %}
-      <div class="row">
-        <div class="large-9 large-centered">
+      <div class="row align-center">
+        <div class="large-9">
           <div class="row">
             <div class="large-4 column">
-              <h3 class="e-course-date">Application Deadline</h3>
-              <h2 class="e-course-date">{{ page.date.application }}</h2>
+              <h3 class="course-detail__date">Application Deadline</h3>
+              <h2 class="course-detail__date">{{ page.date.application }}</h2>
             </div>
             <div class="large-4 column">
-              <h3 class="e-course-date">starts the week of</h3>
-              <h2 class="e-course-date">{{ page.date.week_start }}</h2>
+              <h3 class="course-detail__date">starts the week of</h3>
+              <h2 class="course-detail__date">{{ page.date.week_start }}</h2>
             </div>
             <div class="large-4 column">
-              <h3 class="e-course-date">Course Ends on</h3>
-              <h2 class="e-course-date">{{ page.date.end }}</h2>
+              <h3 class="course-detail__date">Course Ends on</h3>
+              <h2 class="course-detail__date">{{ page.date.end }}</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-9 column large-centered">
-        <div class="e-course-passion">
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-9 column">
+        <div class="course-detail__passion">
           <h2>{{ page.passion.title }}</h2>
           <ul>
             {% for item in passion.bullets %}
@@ -48,54 +48,53 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
-      <div class="large-12 column"><h2>Course Description</h2></div>
+      <div class="large-12 column"><h1>Course Description</h1></div>
     </div>
   </div>
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-9 column large-centered">
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-9 column">
         {{ page.description_long }}
       </div>
     </div>
   </div>
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
-      <div class="large-12 column"><h2>Course Format</h2></div>
+      <div class="large-12 column"><h1>Course Format</h1></div>
     </div>
   </div>
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-9 column large-centered">
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-9 column">
         <p><strong>Course Format:</strong>{{ page.format }}</p>
-        <div class="b-format">
+        <div class="format">
         {% if when %}
           <p>Online sessions will be held <strong>{{ page.when }}</strong></p>
           {% if when_plus %}<p><em>{{ page.when_plus }}</em></p>{% endif %}
         {% endif %}
-        <p><strong>Course Duration:</strong> {{ page.duration }}</p>
+          <p><strong>Course Duration:</strong> {{ page.duration }}</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
       <div class="large-12 column">
-        <h3>Faculty Members</h3>
+        <h1>Faculty Members</h1>
       </div>
     </div>
   </div>
-  <div class="b-faculty-members">
-    <div class="row expanded collapse">
+  <div class="faculty-members">
+    <div class="row expanded collapse align-center">
       {% for name in page.faculty_members %}
       {% assign person = site.data.people | where:"title", name | first %}
         {% if person %}
-          <a href="people/{{person.name.slug}}.html" target="_blank">
-          <div class="large-3 column b-faculty-card {% if person.is_govlab %}m-govlab {% endif%} end">
-            <div class="e-card-picture" style="background-image: url(/img/faculty/{{ person.name.slug }}.jpg);"></div>
-            <h1 class="e-card-name ">{{ person.name.first }} {{ person.name.last }}</h1>
-            <p class="e-card-description">{{ person.job }}</p>
-          </div>
+          <a href="people/{{person.name.slug}}.html" target="_blank" class="large-3 column faculty-card {% if person.is_govlab %}faculty-card--govlab {% endif%}">
+            <div class="faculty-card__picture" style="background-image: url(/images/faculty/{{ person.name.slug }}.jpg);"></div>
+            <h1 class="faculty-card__name ">{{ person.name.first }} {{ person.name.last }}</h1>
+            <p class="faculty-card__description">{{ person.job }}</p>
           </a>
         {% else %}
         <p>{{ name }}</p>
