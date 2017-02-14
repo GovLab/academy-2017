@@ -1,0 +1,30 @@
+
+// color coding for the top section
+.b-top-section {
+  .b-course-detail.m-clinics  &,
+  .b-course-list.m-clinics  &   { background-color: $clinics-color; }
+  .b-course-detail.m-coaching &,
+  .b-course-list.m-coaching &   { background-color: $coaching-color; }
+  .b-course-detail.m-masters  &,
+  .b-course-list.m-masters  &   { background-color: $workshop-color; }
+  .b-course-detail.m-workshop &,
+  .b-course-list.m-workshop &   { background-color: $masters-color; }
+}
+
+// Faculty Page Styles
+
+.b-faculty-header {
+  @extend .b-top-section;
+  text-align: center;
+
+  .e-faculty-picture {
+    margin: 0 auto 30px;
+    @include circle;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+

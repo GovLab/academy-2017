@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<div class="b-course-detail m-coaching">
+  <div class="b-course-header "> {% comment %} This gets the course type class modifier for color coding{% endcomment %}
+    <div class="row">
+      <div class="large-8 column large-centered">
+        <h2>Coaching Program <br>for {{ page.name }}</h2>
+        <h3 class="e-tagline">{{ page.description_short }}</h3>
+        <div class="e-apply"><a href="#" class="b-button">Apply</a></div>
+      </div>
+    </div>
+
+    <div class="e-course-dates">
+      {% comment %} This is kind of creepy, but makes sense in the Foundation way of building narrower content {% endcomment %}
+      <div class="row">
+        <div class="large-9 large-centered">
+          <div class="row">
+            <div class="large-4 column">
+              <h3 class="e-course-date">Application Deadline</h3>
+              <h2 class="e-course-date">{{ page.date.application }}</h2>
+            </div>
+            <div class="large-4 column">
+              <h3 class="e-course-date">starts the week of</h3>
+              <h2 class="e-course-date">{{ page.date.week_start }}</h2>
+            </div>
+            <div class="large-4 column">
+              <h3 class="e-course-date">Course Ends on</h3>
+              <h2 class="e-course-date">{{ page.date.end }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-page-section">
+    <div class="row">
+      <div class="large-9 column large-centered">
+        <div class="e-course-passion">
+          <h2>{{ page.passion.title }}</h2>
+          <ul>
+            {% for item in passion.bullets %}
+              <li>{{ page.item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-divider">
+    <div class="row">
+      <div class="large-12 column"><h2>Course Description</h2></div>
+    </div>
+  </div>
+  <div class="b-page-section">
+    <div class="row">
+      <div class="large-9 column large-centered">
+        {{ page.description_long }}
+      </div>
+    </div>
+  </div>
+  <div class="b-divider">
+    <div class="row">
+      <div class="large-12 column"><h2>Course Format</h2></div>
+    </div>
+  </div>
+  <div class="b-page-section">
+    <div class="row">
+      <div class="large-9 column large-centered">
+        <p><strong>Course Format:</strong>{{ page.format }}</p>
+        <div class="b-format">
+        {% if when %}
+          <p>Online sessions will be held <strong>{{ page.when }}</strong></p>
+          {% if when_plus %}<p><em>{{ page.when_plus }}</em></p>{% endif %}
+        {% endif %}
+        <p><strong>Course Duration:</strong> {{ page.duration }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="b-divider">
+    <div class="row">
+      <div class="large-12 column">
+        <h3>Faculty Members</h3>
+      </div>
+    </div>
+  </div>
+  <div class="b-faculty-members">
+    <div class="row expanded collapse">
+      {% for name in page.faculty_members %}
+      {% assign person = site.data.people | where:"title", name | first %}
+        {% if person %}
+          <a href="people/{{person.name.slug}}.html" target="_blank">
+          <div class="large-3 column b-faculty-card {% if person.is_govlab %}m-govlab {% endif%} end">
+            <div class="e-card-picture" style="background-image: url(/img/faculty/{{ person.name.slug }}.jpg);"></div>
+            <h1 class="e-card-name ">{{ person.name.first }} {{ person.name.last }}</h1>
+            <p class="e-card-description">{{ person.job }}</p>
+          </div>
+          </a>
+        {% else %}
+        <p>{{ name }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

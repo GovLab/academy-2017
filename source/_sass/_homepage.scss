@@ -1,0 +1,71 @@
+.highlights {
+  padding: 0;
+
+  .slide { padding: 140px 0; }
+}
+
+.small-banner {
+  display: flex;
+  flex-flow: column;
+  
+  &__item {
+    flex: 1;
+    display: block;
+  }
+
+  &--canvas { background-color: $orange; }
+  &--noi { background-color: $blue; }
+}
+
+.main-categories {
+  &__item {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &--clinics { background-color: $clinics-color; }
+  &--coaching { background-color: $coaching-color; }
+  &--masters { background-color: $workshop-color; }
+  &--workshop { background-color: $masters-color; }
+  
+  
+
+  &--clinics:hover { background-color: darken($clinics-color, 8); }
+  &--coaching:hover { background-color: darken($coaching-color, 8); }
+  &--masters:hover { background-color: darken($workshop-color, 8); }
+  &--workshop:hover { background-color: darken($masters-color, 8); }
+}
+
+.upcoming-courses {
+  &__item {
+    padding: 50px;
+    height: 350px;
+
+    .button { color: white; }
+
+    &:nth-of-type(odd) { background-color: rgba(black, .05); }
+
+    &--clinics {
+      .button { background-color: $clinics-color; }
+    }
+    &--coaching { 
+      .button { background-color: $coaching-color; }
+    }
+    &--masters  {
+      .button { background-color: $masters-color; }
+    }
+    &--workshop { 
+      .button { background-color: $workshop-color; }
+    }
+  }
+}

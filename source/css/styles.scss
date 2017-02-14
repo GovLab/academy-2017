@@ -1,0 +1,37 @@
+---
+---
+
+* { box-sizing: border-box; }
+
+// Breakpoints
+$small-only: (max-width 40em);
+$medium: 40.063em 64em;
+$touch: (max-width 64em);
+$medium-up: 40.063em;
+$large: 64.063em;
+
+// Colors
+$main-color: red;
+$orange: orange;
+$blue: blue;
+$purple: purple;
+
+$clinics-color: #c2c33b;
+$coaching-color: #008895;
+$workshop-color: #008ab3;
+$masters-color: #ad0054;
+
+
+@import 'breakpoint';
+@import 'utils';
+@import 'styleguide-patch';
+@import 'base';
+
+@import 'custom';
+@import 'homepage';
+@import 'project-gallery';
+@import 'single-landing';
+@import 'course-detail';
+@import 'course-list';
+
+
