@@ -37,8 +37,6 @@
   &--coaching { background-color: $coaching-color; }
   &--masters { background-color: $workshop-color; }
   &--workshop { background-color: $masters-color; }
-  
-  
 
   &--clinics:hover { background-color: darken($clinics-color, 8); }
   &--coaching:hover { background-color: darken($coaching-color, 8); }

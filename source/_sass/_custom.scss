@@ -1,23 +1,23 @@
 
 // color coding for the top section
-.b-top-section {
-  .b-course-detail.m-clinics  &,
-  .b-course-list.m-clinics  &   { background-color: $clinics-color; }
-  .b-course-detail.m-coaching &,
-  .b-course-list.m-coaching &   { background-color: $coaching-color; }
-  .b-course-detail.m-masters  &,
-  .b-course-list.m-masters  &   { background-color: $workshop-color; }
-  .b-course-detail.m-workshop &,
-  .b-course-list.m-workshop &   { background-color: $masters-color; }
+.top-section {
+  .course-detail.m-clinics &,
+  .course-list--clinics &   { background-color: $clinics-color; }
+  .course-detail--coaching &,
+  .course-list--coaching &   { background-color: $coaching-color; }
+  .course-detail.m-masters  &,
+  .course-list--masters  &   { background-color: $workshop-color; }
+  .course-detail.m-workshop &,
+  .course-list--workshop &   { background-color: $masters-color; }
 }
 
 // Faculty Page Styles
 
-.b-faculty-header {
-  @extend .b-top-section;
+.faculty-header {
+  @extend .top-section;
   text-align: center;
 
-  .e-faculty-picture {
+  .faculty-picture {
     margin: 0 auto 30px;
     @include circle;
     width: 300px;
