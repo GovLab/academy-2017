@@ -25,7 +25,7 @@ layout: default
         <li class="course-item">
           <div class="row">
             <div class="large-12 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
+              <h2 class="course-item__title">{{ course.title }}</h2>
             </div>
             <div class="large-6 column">
               <p class="course-item__application">APPLICATION DUE: {{ course.date.application }}</p>
@@ -42,8 +42,8 @@ layout: default
               </div>
             </div>
             <div class="large-6 column">
-              <p class="e-course-description">{{ course.description_short }}</p>
-              <a href="/coaching/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
+              <p class="course-item__description">{{ course.description_short }}</p>
+              <a href="/{{ course.title | slugify }}.html" class="button">more info</a>
             </div>
           </div>
         </li>
@@ -65,7 +65,7 @@ layout: default
         <li class="course-item">
           <div class="row">
             <div class="large-6 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
+              <h2 class="course-item__title">{{ course.title }}</h2>
               <p class="course-item__application">STARTED THE WEEK OF: {{ course.date.week_start }}</p>
               <div class="course-item__faculty-team">
                 {% for name in course.faculty_members %}

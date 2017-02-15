@@ -5,7 +5,7 @@
 
 # ==========================================================================================================================================================================================================================================#
 
-- name: "Transforming SMEs Through Open Data Innovation"
+- title: "Transforming SMEs Through Open Data Innovation"
   partner: 
   date: TBD # Date can be in two formats ie. "January 2015" or "By Request"
   duration: 
@@ -27,7 +27,7 @@
 
 # ==========================================================================================================================================================================================================================================#
 
-- name: "Solving Public Problems with Technology"
+- title: "Solving Public Problems with Technology"
   partner: 
   date: Fall 2015 # Date can be in two formats ie. "January 2015" or "By Request"
   duration: 
@@ -50,7 +50,7 @@
 
 # ==========================================================================================================================================================================================================================================#
 
-- name: "Sustainable Governance Innovation"
+- title: "Sustainable Governance Innovation"
   partner: the School of Professional Services at NYU
   date: TBD # Date can be in two formats ie. "January 2015" or "By Request"
   duration: 
@@ -69,7 +69,7 @@
 
 # ==========================================================================================================================================================================================================================================#
 
-- name: "Decision Analysis and Risk Management"
+- title: "Decision Analysis and Risk Management"
   partner: the University of Eastern Finland
   date: March - May 2015 # Date can be in two formats ie. "January 2015" or "By Request"
   duration: 
@@ -91,7 +91,7 @@
 
 # ==========================================================================================================================================================================================================================================#
 
-- name: "Engaging citizens: a game-changer for development"
+- title: "Engaging citizens: a game-changer for development"
   partner: The World Bank
   date: 15 March - 12 April 2015 # Date can be in two formats ie. "January 2015" or "By Request"
   duration: 

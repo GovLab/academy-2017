@@ -43,3 +43,8 @@ page_gen:
     template: 'coaching_template'
     name: 'title'
     dir: '/'
+
+  # - data: 'clinics'
+  #   template: 'coaching_template'
+  #   name: 'title'
+  #   dir: '/'
