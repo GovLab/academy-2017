@@ -3,31 +3,32 @@ layout: default
 ---
 
 <div class="course-detail course-detail--coaching">
-  <div class="course-header "> {% comment %} This gets the course type class modifier for color coding{% endcomment %}
+  <div class="course-header"> {% comment %} This gets the course type class modifier for color coding{% endcomment %}
     <div class="row align-center">
       <div class="large-9 column">
-        <h2>Coaching Program <br>for {{ page.name }}</h2>
+        <h4>Coaching Program</h4>
+        <h2>{{ page.title }}</h2>
+        <div class="course-detail__tagline">{{ page.passion.title }}</div>
         <div class="course-detail__tagline">{{ page.description_short }}</div>
         <div class="course-detail__apply"><a href="#" class="button">Apply</a></div>
       </div>
     </div>
 
     <div class="course-detail__dates">
-      {% comment %} This is kind of creepy, but makes sense in the Foundation way of building narrower content {% endcomment %}
       <div class="row align-center">
         <div class="large-9">
           <div class="row">
             <div class="large-4 column">
-              <h3 class="course-detail__date">Application Deadline</h3>
-              <h2 class="course-detail__date">{{ page.date.application }}</h2>
+              <h5 class="course-detail__date">Application Deadline</h5>
+              <h4 class="course-detail__date">{{ page.date.application }}</h4>
             </div>
             <div class="large-4 column">
-              <h3 class="course-detail__date">starts the week of</h3>
-              <h2 class="course-detail__date">{{ page.date.week_start }}</h2>
+              <h5 class="course-detail__date">starts the week of</h5>
+              <h4 class="course-detail__date">{{ page.date.week_start }}</h4>
             </div>
             <div class="large-4 column">
-              <h3 class="course-detail__date">Course Ends on</h3>
-              <h2 class="course-detail__date">{{ page.date.end }}</h2>
+              <h5 class="course-detail__date">Course Ends on</h5>
+              <h4 class="course-detail__date">{{ page.date.end }}</h4>
             </div>
           </div>
         </div>
@@ -35,46 +36,29 @@ layout: default
     </div>
   </div>
   <div class="page-section">
-    <div class="row align-center">
+    <div class="row align-center collapse">
       <div class="large-9 column">
         <div class="course-detail__passion">
-          <h2>{{ page.passion.title }}</h2>
           <ul>
             {% for item in passion.bullets %}
               <li>{{ page.item }}</li>
             {% endfor %}
           </ul>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="divider">
-    <div class="row">
-      <div class="large-12 column"><h1>Course Description</h1></div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="row align-center">
-      <div class="large-9 column">
-        {{ page.description_long }}
-      </div>
-    </div>
-  </div>
-  <div class="divider">
-    <div class="row">
-      <div class="large-12 column"><h1>Course Format</h1></div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="row align-center">
-      <div class="large-9 column">
-        <p><strong>Course Format:</strong>{{ page.format }}</p>
-        <div class="format">
-        {% if when %}
-          <p>Online sessions will be held <strong>{{ page.when }}</strong></p>
-          {% if when_plus %}<p><em>{{ page.when_plus }}</em></p>{% endif %}
-        {% endif %}
-          <p><strong>Course Duration:</strong> {{ page.duration }}</p>
+        <div class="course-detail__description">
+          <h2>Course Description</h2>
+          {{ page.description_long }}  
+        </div>
+        <div class="course-detail__format">
+          <h2>Course Format</h2>
+          <p><strong>Course Format:</strong>{{ page.format }}</p>
+          <div class="format">
+          {% if when %}
+            <p>Online sessions will be held <strong>{{ page.when }}</strong></p>
+            {% if when_plus %}<p><em>{{ page.when_plus }}</em></p>{% endif %}
+          {% endif %}
+            <p><strong>Course Duration:</strong> {{ page.duration }}</p>
+          </div>
         </div>
       </div>
     </div>

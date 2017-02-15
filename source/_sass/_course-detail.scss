@@ -1,6 +1,7 @@
 .course-header {
   @extend .top-section;
   padding-bottom: 0;
+  padding-top: 30px;
 }
 
 .course-detail {
@@ -18,22 +19,27 @@
   &__dates {
     padding: 20px 0;
     background-color: rgba(black, .1);
-
-    h2 { 
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    h3 { 
-      margin: 0; 
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 400;
-      opacity: .6;
-    }
   }
 
-  &__passion {
-    h2 { font-size: 1.3rem; }
+  h2 { 
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(black, .4);
+    margin: 0;
+  }
+
+  h5 {
+    margin: 0; 
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: .6;
   }
 }
 

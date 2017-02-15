@@ -41,5 +41,5 @@ sass:
 page_gen:
   - data: 'coaching'
     template: 'coaching_template'
-    name: 'name'
+    name: 'title'
     dir: '/'
