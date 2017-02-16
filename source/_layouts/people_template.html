@@ -2,56 +2,49 @@
 layout: default
 ---
 
-<div class="b-faculty-detail m-coaching">
-  <div class="b-faculty-header">
-    <div class="row">
-      <div class="large-8 column large-centered">
-        <div class="e-faculty-picture" style="background-image:url(/img/faculty/{{ page.name.slug }}.jpg"></div>
-        <h2>{{ page.name.first }} {{ page.name.last }}</h2>
-        <h3 class="e-tagline">{{ page.name.job }}</h3>
-      </div>
-    </div>
-  </div>
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-8 column large-centered">
-        <div class="e-course-passion">
-          <p>{{ page.description }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {% comment %}The sections below will only be rendered if the faculty has classes listed{% endcomment %}
-
-  <div class="b-divider">
-    <div class="row">
-      <div class="large-12 column"><h2>Courses</h2></div>
-    </div>
-  </div>
-  <ul class="b-course-list">
-    {% assign courses = site.data.coaching | where:"faculty_members", page.title %}
-    {% for course in courses %}
-      <li class="e-course-item">
-        <div class="row">
-          <div class="large-12 column">
-            <h2 class="e-course-title">{{ course.name }}</h2>
-          </div>
-          <div class="large-6 column">
-
-            <p class="e-course-application">APPLICATION DUE: {{ course.date.application }}</p>
-            <div class="e-course-faculty-team">
-              <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ page.name.slug }}.jpg');">
-                <p>{{ page.name.first }} {{ page.name.last }}</p>
-              </div>
+<div class="faculty-detail faculty-detail--coaching">
+  <div class="faculty-header">
+    <div class="row align-center">
+      <div class="large-6 column">
+        <div class="faculty-detail__picture" style="background-image:url(/images/faculty/{{ page.firstName | slugify }}-{{ page.lastName | slugify}}.jpg"></div>
+        <h2>{{ page.firstName }} {{ page.lastName }}</h2>
+            <div class="faculty-detail__extras">
+              {% if page.website %}
+                <a href="{{ page.website }}" class="faculty-detail__extras--social-media" id="faculty-url" target="_blank"><i class="fa fa-link"></i></a>
+              {% endif %}
+              {% if page.twitter %}
+                <a href="{{ page.twitter }}" class="faculty-detail__extras--social-media" target="_blank"><i class="fa fa-twitter"></i></a>
+              {% endif %}
+              {% if page.linkedIn %}
+                <a href="{{ page.linkedIn }}" class="faculty-detail__extras--social-media" id="faculty-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+              {% endif %}
+              {% if page.github %}
+                <a href="{{ page.github }}" class="faculty-detail__extras--social-media" id="faculty-github" target="_blank"><i class="fa fa-github"></i></a>
+              {% endif %}
+              {% if page.email%}
+                <a href="mailto:{{ page.email }}" class="faculty-detail__extras--social-media" id="faculty-email"><i class="fa fa-envelope"></i></a>
+              {% endif %}
             </div>
-          </div>
-          <div class="large-6 column">
-            <p class="e-course-description">{{ course.description_short }}</p>
-            <a href="{{course.id}}.html" class="b-button">more info</a>
-          </div>
         </div>
-      </li>
-    {% endfor %}
-  </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <div class="faculty-detail__course-passion">
+          <p>{{ page.longBio | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% assign coachingPrograms = site.data.contentful.spaces.cases.coachingProgram | find_data_reference_by_id: page.sys.id, 'faculty' %}
+
+{% assign coachingProgramsSize = coachingPrograms | size %}
+{% if coachingProgramsSize > 0 %}
+  {% include courses.html courses=coachingPrograms%}
+{% endif %}
+
 </div>

@@ -1,33 +1,31 @@
 ---
 layout: default
 ---
+{% assign faculty = site.data.contentful.spaces.cases.faculty %}
 
-<div class="b-faculty-page">
-  <div class="b-top-section m-purple">
+<div class="faculty-page">
+  <div class="top-section top-section--purple">
     <div class="row">
       <div class="large-12 column">
-        <h1>About</h1>
+        <h1>Faculty</h1>
       </div>
     </div>
   </div>
 
-  <div class="b-divider">
-    <div class="row">
-      <div class="large-12 column">
-        <h3>Meet the People</h3>
+  <div class="page-section">
+    <div class="row expanded align-center featured-authors">
+      {% for person in faculty %}
+      <div class="large-4 column faculty__list-item">
+        <a href="/faculty/{{person.lastName | slugify }}.html">
+          <div class="faculty__picture" style="background-image: url(/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify}}.jpg);"></div>
+        </a>
+        <a href="/faculty/{{person.lastName | slugify }}.html">
+          <p class="faculty__name">{{ person.firstName }} {{ person.lastName }}</p>
+        </a>
+        <p class="faculty__job">{{person.title}}</p>
       </div>
+      {% endfor %}
     </div>
   </div>
 
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-12-column">
-        {% for person in site.data.people %}
-          <a href="#">
-            <h3>{{ person.name.first }} {{ person.name.last }}<h3>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
 </div>
