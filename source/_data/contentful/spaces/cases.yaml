@@ -39,7 +39,7 @@ faculty:
     and Organic) and several Open Source software projects (Apache, Subversion, and
     more).
   email: brian@behlendorf.com
-  website: http://brian.behlendorf.com/https://twitter.com/brianbehlendorf
+  website: http://brian.behlendorf.com
   twitter: https://twitter.com/brianbehlendorf
   linkedIn: https://www.linkedin.com/in/brianbehlendorf
   gitHub: https://github.com/brianbehlendorf
@@ -810,7 +810,6 @@ workshop:
     id: 13UIW4gvqua4AmAQCQcaW8
   workshopName: Defining Problems
   workshopType:
-  - Partner Workshop
   - GovLab Workshop
   shortDescription: A two-day, deep-dive workshop on problem definition – is consistent
     with the latest approaches to design-thinking. Its purpose is to help participants
@@ -882,3 +881,293 @@ workshop:
   - By Request
   shortDescription: Support for efforts to make public all relevant information on
     government procurement activities and decisions
+project:
+- sys:
+    id: 64e8FfzeZqs6csg8QiUq8g
+  projectName: Beacon
+  projectTitle: Mobile Phone-Based Emergency Medical Dispatch for Resource-Limited
+    Settings
+  projectSubtitle: 911 Where There is None
+  progress:
+  - Launched
+  category:
+  - Data Analytics
+  - Crowdsourcing
+  - Citizen Engagement
+  - Big Data
+  - Humanitarian Innovation
+  regoin:
+  - Sub-Saharan Africa
+  city: Montecristi, Dominican Republic & Mwanza, Tanzania
+  website: http://trekmedics.org/
+  twitter: "@trekmedics"
+  facebook: https://www.facebook.com/Trek-Medics-International-114525621925/
+  email: info@trekmedics.org
+  team: "- Jason Friesen, Founder/Executive Director, http://trekmedics.org/who-we-are/bios/"
+  partners: |-
+    - Google.org, USAID
+    - Cardinal Health Foundation
+    - Henry E. Niles Foundation
+    - Widgeon Point Charitable Foundation
+  background: There are an estimated 4.5 billion mobile phone users across the globe,
+    yet approximately 80% of the world’s population has no reliable way to call for
+    help in the event of a life-threatening illness or injury. Nonetheless, lack of
+    access to basic emergency health care services is a major contributor to health
+    disparities between developed and developing nations with low- and middle-income
+    countries having substantially higher mortality rates for what would otherwise
+    be considered preventable deaths.
+  shortDescription: BEACON is a text message-based emergency medical dispatching software
+    created by Trek Medics International, and designed specifically for communities
+    where consistent ambulance response is not available. By relaying text messages
+    from the scene of an emergency to trained responders throughout the community,
+    the software enables the nearest available emergency care providers to quickly
+    locate, treat and transport emergency victims to local hospitals.
+  impact: Our goal is to ensure that 90% of victims requesting emergency assistance
+    through the communities we work will be attended to by trained layperson responders
+    with access to transport within 10 minutes in urban centers and within 30 minutes
+    in peripheral communities. We believe that the minimal human, physical and financial
+    resources associated with a text message-based emergency medical dispatch system
+    will make the implementation of prehospital care systems possible wherever mobile
+    phones are used, providing a sustainable and cost-effective model for other low-resource
+    settings.
+- sys:
+    id: 6jW9F20WrYGIAeSCsGQIWk
+  projectName: FONDEN Transparente
+  projectTitle: Opening Disaster Funds
+  projectSubtitle: Transparency and accountability in the resources allocated to the
+    attention of the damage caused by natural disasters.
+  progress:
+  - Public Beta
+  category:
+  - Open Data
+  - Data Analytics
+  - Citizen Engagement
+  - Humanitarian Innovation
+  regoin:
+  - Latin America and the Caribbean
+  country: Mexico
+  website: http://fonden.datos.gob.mx/
+  twitter: "@datosgobmx"
+  email: fergandaragil@gmail.com
+  team: |-
+    - Rodolfo Wilhelmy, https://twitter.com/rodowi
+    - Eduardo Clark, https://twitter.com/eduardoclark
+    - Maria Fernanda Gándara, https://twitter.com/fer_gandara
+  partners: |-
+    - Secretaría de Hacienda y Crédito Público
+    - Secretaría de Gobernación
+  background: 'Every year in Mexico, cyclones leave billions of dollars in damages.
+    FONDEN, a federal fund that transfers resources and aid to local governments intended
+    for reconstruction projects has been controversial due to lack of accountability,
+    which leads to corruption and unfinished reconstruction projects. These funds
+    account for more than: $3 billion annually.'
+  shortDescription: FONDEN Transparente streamlines the information flow between government
+    and citizens during the aftermath of natural disasters.
+  impact: With FONDEN Transparente citizens can receive clear information and follow
+    up during the recovery phase of natural disasters.
+- sys:
+    id: 4XCPIdzMUo66ISIcuwsyqM
+  projectName: Green Archives
+  projectSubtitle: Helping People Obtain, Understand & Use Environmental Information
+  progress:
+  - Ideation
+  category:
+  - Open Data
+  - Citizen Engagement
+  - Citizen Science
+  - Legal Innovation
+  regoin:
+  - North America
+  city: New York City
+  country: United States
+  twitter: "@greenarchives1"
+  email: sarah.lamdan@law.cuny.edu
+  background: The U.S. lacks an efficient process for disseminating environmental
+    information. People need information to make environmental decisions. The public
+    is left depending on corporations and government entities to make environmental
+    decisions for them. U.S. citizens rely on a combination of FOIA and some environmental
+    law provisions to obtain environmental information which is problematic because
+    information is hard to find and understand, FOIA exemptions block access and create
+    delays, and agencies use outdated technology. The U.S. part of the Rio Convention,
+    which requires parties to give people access to environmental information, but
+    U.S. currently fails to do so effectively.
+  shortDescription: Right now, environmental information is hard to get, and even
+    harder to understand and use. Green Archives will be a well-established source
+    for environmental information. It will also go beyond basic information access,
+    connecting people with individuals and organizations that can help them ¨translate”
+    the complex jargon of environmental information and link them to others interested
+    in environmental advocacy and action related to the information they seek. Through
+    environmental information access and online connection opportunities, Green Archives
+    will connect localized communities with wider networks that may help facilitate
+    legislative, judicial, or regulatory community work to face the environmental
+    issue at hand.
+  impact: This project helps information seekers to obtain and decode environmental
+    information as both a functional tool and a vision of what government information
+    access in the U.S. could be by providing environmental information gathered from
+    proactive FOIA disclosures and FOIA request responses from federal agencies, and
+    creating a space for experts to assist information seekers in understanding the
+    information contained in the FOIA records. Finally, environmental advocates can
+    use the space to find others sharing interests in the same environmental issues.
+- sys:
+    id: B8GgXiNfEsOWEmw2og62M
+  projectName: LINQ
+  projectTitle: Innovation Lab Quito
+  projectSubtitle: Co-Creating High Impact Solutions for Quito
+  progress:
+  - Launched
+  category:
+  - Open Data
+  - Open Contracting
+  - Data Analytics
+  - Crowdsourcing
+  - Collective Intelligence
+  - Citizen Engagement
+  - Citizen Science
+  regoin:
+  - Latin America and the Caribbean
+  city: Quito
+  country: Ecuador
+  twitter: "@linqlab"
+  facebook: http://facebook.com/linqlab
+  email: carolina.pozo.d@gmail.com
+  team: |-
+    - Carolina Pozo, Founder & Executive Director
+    - Carlos Vayas, Co-Founder & General Director
+    - Juan Martin Merlo, Coordinator
+    - Jimena Romero, Coordinator
+    - Daniel Aguilar, Engagement Communicator
+  partners: "- The GovLab\n- People for Global Transformation (PGT) \n- Corporate
+    Service Corps - IBM \n- CISCO - NetAcad"
+  background: Linq, the Innovation Lab at the city of Quito, is a space for reinventing
+    governance. We see Linq as filling up the -thus far empty- area between civil
+    society and local government for co-creating solutions to the most urgent urban
+    challenges. We work in three main areas aligned to the Mayor's agenda concerning
+    mobility, urban and social issues. We co-create virtually, through a networking-like
+    web platform, and soon we will hold dynamic workshops with various interest groups
+    to foster such relationships, spot innovative ideas and transform them into disruptive
+    solutions.
+  shortDescription: LINQ is a space for dialogue and direct collaboration between
+    citizens, local and international organizations, colleges, as well as public and
+    private sectors; with the purpose of co-creating high impact of solutions to our
+    most pressing issues.
+  impact: The expected impact of innovating in the public sector is uncertain. However,
+    it is practically undeniable that life has greatly changed in the last two decades
+    (mainly due to technology), yet government structures have remained virtually
+    the same for the past 200 years. The impact of reinventing governance and adapting
+    it to current times is thus expected to be immense.
+- sys:
+    id: 46G5htHIEMiweac8qGeoQw
+  projectName: NouLAB
+  projectSubtitle: Creating the nou New Brunswick
+  progress:
+  - Launched
+  category:
+  - Open Data
+  - Data Analytics
+  - Collective Intelligence
+  - Citizen Engagement
+  - Big Data
+  - Agile Research
+  regoin:
+  - North America
+  country: Canada
+  website: http://www.noulab.org
+  twitter: "@NuLAB"
+  team: |-
+    - Jake Wildman-Sisk, NouLAB Manager, http://www.noulab.org/jake-wildman-sisk"
+    - Nick Scott, New Brunswick Social Policy Research Network Executive Director, http://www.policyresearchnetwork.ca/staff/
+    - Karina LeBlanc, Pond-Deshpande Centre Executive Director, http://www.noulab.org/karina-leblanc
+    - Bill MacKenzie, New Brunswick Social Policy Research Network Director of Strategic Partnerships, http://www.policyresearchnetwork.ca/staff/
+  partners: |-
+    - The Pond-Deshpande Centre
+    - The NB Social Policy Research Network
+    - MaRS Solutions Lab
+    - The J. W. McConnell Family Foundation
+    - The New Brunswick Non Profit Housing Association Inc.
+  background: How might we ensure everyone has a place to sleep at night? How might
+    we make newcomers to New Brunswick feel at home? How might we re-design New Brunswick’s
+    food system, starting in our own backyards? New Brunswick’s greatest challenges
+    are complex and require systems change. NouLAB was created to provide the place
+    and process to work collaboratively on these challenges, designing solutions together,
+    writing the narrative for the new New Brunswick.
+  shortDescription: NouLAB is New Brunswick’s public and social innovation lab. We
+    help the public and innovators act together to address our most pressing social,
+    environmental, and economic challenges. By connecting change agents from across
+    sectors, convening them around pressing issues, and facilitating their journey
+    to deep change, NouLAB is making the change process smarter. NouLAB is a partnership
+    between the Pond-Deshpande Centre, NB Social Policy Research Network, and NB Non-Profit
+    Housing, with support from the GovLab, MaRD Solutions Lab, and the J.W. McConnell
+    Family Foundation.
+- sys:
+    id: 6InmYmENhuaQYYAiQyksGw
+  projectName: NYC Councilmatic
+  projectSubtitle: New York City Council Demystified
+  progress:
+  - Launched
+  category:
+  - Open Data
+  - Data Analytics
+  - Crowdsourcing
+  - Tech Procurement
+  - Nudges
+  - Open Source
+  - Data Science
+  regoin:
+  - North America
+  city: New York City
+  country: United States
+  website: http://nyc.councilmatic.org/
+  twitter: "@nyccouncilmatic"
+  facebook: www.facebook.com/nyccouncilmatic
+  email: davidd@ppolitics.org
+  team: "- David Moore, Program Manager, Participatory Politics Fdn., www.participatorypolitics.org/
+    \n- DataMade Technical Leads, http://datamade.us/ \n- Asher Novek, HeartGov SMS
+    Outreach, http://www.heartgov.com"
+  background: The Participatory Politics Foundation (PPF) is a 510(c)3 non-profit
+    with a mission to increase civic engagement. Since 2006, PPF has built free, libre
+    and open-source technology for open government and public accountability. In 2007,
+    PPF’s flagship OpenCongress launched, and over the next eight years grew to become
+    the most-visited non-profit site for tracking the U.S. Congress. PPF brought the
+    OpenCongress model to state legislatures with OpenGovernment.org in 2011, and
+    continual online conversation with the question-and-answers platform AskThem.io
+    in 2014. Now, PPF’s primary project is Councilmatic.org, for city-level open government,
+    with the Chicago-based civic tech company DataMade as tech leads. Councilmatic
+    was created by Mjumbe Poe as a Code For America Fellow in Philadelphia in 2011
+    as an open-source web app. In 2015, PPF and DataMade re-factored the Councilmatic
+    open-source code to integrate with the Open Civic Data standard, making it easier
+    to set up open-data versions of Councilmatic in more cities.
+  shortDescription: 'NYC Councilmatic (http://nyc.councilmatic.org/) is a new website
+    for tracking and understanding what’s happening in the NYC Council. It’s free,
+    open-source, and has generated the first-ever open data on every legislative action
+    in the NYC Council. Councilmatic is a non-profit and non-partisan public resource,
+    from the NYC-based Participatory Politics Foundation. It works for individuals
+    and organization to access official NYC government info, public event schedules,
+    and to hold public discussions about issues in their communities. Coming next:
+    email & SMS alerts for committee hearings and council meetings, including agendas
+    and minutes.'
+  impact: "Councilmatic is currently up in three cities: Chicago, New York City, and
+    Philadelphia. Councilmatic is an independent public resource, displaying information
+    in the Open Civic Data open standard. The project has unique areas of impact,
+    as follows:\n\n- First, it creates new open data on everything in city councils:
+    elected officials, committees, public events, and every single legislative item
+    - all the bills in city councils - with every action and full text and more.\n-
+    A fast, user-focused, mobile-responsive web app\n- Advanced search features to
+    filter keyword searches by type of legislation, sponsor, or more\n- Tracking features
+    to follow legislative actions over RSS - and coming soon, email and SMS and social
+    media\n- Public comment forums (optional) on legislative items, for online discussion
+    of local issues\n- SMS outreach (optional) for wider public discussion of community
+    priorities\n- “How local government works” help context and legislative process
+    explainers\n- Address lookup of local elected officials\n- Maps of geographic
+    locations mentioned in bill text\n- Open-data calendar list of upcoming events,
+    such as committee hearings or council meetings\n- In Chicago, advanced categorization
+    of bills by sub-topic using data analysis of bill text language\n- Filtering options
+    to see not just what bills are introduced or recently active, but which were left
+    in committee - a meaningful, unique view on introduced legislation that hasn’t
+    advanced past committee stages. Useful for journalists and researchers.\n- Forthcoming,
+    free embeddable HTML & Javascript widgets for city elected officials, committees
+    and any legislative item, for digital media companies\n- In NYC, a free, volunteer
+    public dialogue program with “verified” council offices - monthly discussions
+    with participating council office staff, to respond online to public comments.
+    This program is designed, at about one staff per month, to close the feedback
+    loop of civic engagement locally and encourage constituents to post their comments
+    on Councilmatic in order to share the response with their community.\n    "
