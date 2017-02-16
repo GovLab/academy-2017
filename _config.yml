@@ -48,17 +48,16 @@ contentful:
         all_entries: true 
 
 
-# page_gen:
-#   - data: 'contentful.spaces.cases.expert'
-#     template: 'expert_template'
-#     name: 'lastName'
-#     dir: 'womenplus/experts'
-
 page_gen:
   - data: 'coaching'
     template: 'coaching_template'
     name: 'title'
     dir: '/'
+    
+  - data: 'contentful.spaces.cases.faculty'
+    template: 'people_template'
+    name: 'lastName'
+    dir: 'faculty'
 
   # - data: 'clinics'
   #   template: 'coaching_template'

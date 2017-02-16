@@ -2,21 +2,22 @@
 layout: default
 ---
 
-<div class="b-faculty-detail m-coaching">
-  <div class="b-faculty-header">
+<div class="faculty-detail faculty-detail--coaching">
+  <div class="faculty-header">
     <div class="row">
       <div class="large-8 column large-centered">
-        <div class="e-faculty-picture" style="background-image:url(/img/faculty/{{ page.name.slug }}.jpg"></div>
-        <h2>{{ page.name.first }} {{ page.name.last }}</h2>
-        <h3 class="e-tagline">{{ page.name.job }}</h3>
+        <div class="faculty-detail__picture" style="background-image:url(/images/faculty/{{ page.firstName | slugify }}-{{ page.lastName | slugify}}.jpg"></div>
+        <h2>{{ page.firstName }} {{ page.lastName }}</h2>
+        <h3 class="faculty-detail__tagline">{{ page.title }}</h3>
       </div>
     </div>
   </div>
-  <div class="b-page-section">
-    <div class="row">
-      <div class="large-8 column large-centered">
-        <div class="e-course-passion">
-          <p>{{ page.description }}</p>
+
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-8 column">
+        <div class="faculty-detail__course-passion">
+          <p>{{ page.longBio | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -24,34 +25,52 @@ layout: default
 
   {% comment %}The sections below will only be rendered if the faculty has classes listed{% endcomment %}
 
-  <div class="b-divider">
+  <div class="divider">
     <div class="row">
       <div class="large-12 column"><h2>Courses</h2></div>
     </div>
   </div>
-  <ul class="b-course-list">
-    {% assign courses = site.data.coaching | where:"faculty_members", page.title %}
-    {% for course in courses %}
-      <li class="e-course-item">
-        <div class="row">
-          <div class="large-12 column">
-            <h2 class="e-course-title">{{ course.name }}</h2>
-          </div>
-          <div class="large-6 column">
+  <ul class="course-list">
+    <li class="course-item">
+      <div class="row">
+        <div class="large-12 column">
+          <h2 class="course-item__title">Tech Innovation in Procurement</h2>
+        </div>
+        <div class="large-6 column">
 
-            <p class="e-course-application">APPLICATION DUE: {{ course.date.application }}</p>
-            <div class="e-course-faculty-team">
-              <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/{{ page.name.slug }}.jpg');">
-                <p>{{ page.name.first }} {{ page.name.last }}</p>
-              </div>
+          <p class="course-item__application">APPLICATION DUE: MAY 23, 2016</p>
+          <div class="course-item__faculty-team">
+            <div class="course-faculty column large-3" style="background-image: url('/images/faculty/daren-brabham.jpg');">
+              <p>Clay Johnson</p>
             </div>
           </div>
-          <div class="large-6 column">
-            <p class="e-course-description">{{ course.description_short }}</p>
-            <a href="{{course.id}}.html" class="b-button">more info</a>
+        </div>
+        <div class="large-6 column">
+          <p class="course-item__description">The way government purchases, especially information technology, is profoundly broken. Government should not be spending as much to make a website as it invests in scientific research to map the human brain. Contracts should not get awarded to the same enterprise over and over again but attract more and more diverse competitors.</p>
+          <a href="#" class="button">more info</a>
+        </div>
+      </div>
+    </li>
+    <li class="course-item">
+      <div class="row">
+        <div class="large-12 column">
+          <h2 class="e-course-title">Tech Innovation in Procurement</h2>
+        </div>
+        <div class="large-6 column">
+
+          <p class="e-course-application">APPLICATION DUE: MAY 23, 2016</p>
+          <div class="e-course-faculty-team">
+            <div class="e-course-faculty column large-3 end" style="background-image: url('/img/faculty/daren-brabham.jpg');">
+              <p>Clay Johnson</p>
+            </div>
           </div>
         </div>
-      </li>
-    {% endfor %}
+        <div class="large-6 column">
+          <p class="e-course-description">The way government purchases, especially information technology, is profoundly broken. Government should not be spending as much to make a website as it invests in scientific research to map the human brain. Contracts should not get awarded to the same enterprise over and over again but attract more and more diverse competitors.</p>
+          <a href="#" class="b-button">more info</a>
+        </div>
+      </div>
+    </li>
   </ul>
+
 </div>
