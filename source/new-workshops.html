@@ -39,6 +39,7 @@ layout: default
             <div class="row">
               <div class="large-6 column">
                 <h2 class="course-item__title">{{ workshop.workshopName }}</h2>
+                <h6 class="course-item__type">{{ workshop.partner }}</h6>
                 {% if type == "By Request" %}
                   <h6 class="course-item__type">{{ workshop.workshopType }}</h6>
                 {% endif %}
@@ -46,7 +47,7 @@ layout: default
               <div class="large-6 column">
                 <p class="e-course-description">{{ workshop.shortDescription }}</p>
                 {% if workshop.website %}
-                  <a class="button" href="{{workshop.website}}">Website</a>
+                  <a class="button" href="{{workshop.website}}">Course Page</a>
                 {% endif %}
                 {% if workshop.workshopPdf %}
                   <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
@@ -72,16 +73,19 @@ layout: default
           <li class="course-item">
             <div class="row">
               <div class="large-6 column">
-                <h2 class="course-item__title">{{ workshop.workshopName }}</h2>
+                <h2 class="course-item__title">{{ workshop.workshopName }} </h2>
                 <h6 class="course-item__type">{{ workshop.partner }}</h6>
               </div>
               <div class="large-6 column">
                 <p class="e-course-description">{{ workshop.shortDescription }}</p>
                 {% if workshop.website %}
-                  <a class="button" href="{{workshop.website}}">Website</a>
+                  <a class="button" href="{{workshop.website}}">Course Page</a>
                 {% endif %}
                 {% if workshop.workshopPdf %}
                   <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                {% endif %}
+                {% if workshop.location %}
+                  <a class="button" href="https://goo.gl/maps/dZ5BZ">LOCATION</a>
                 {% endif %}
               </div>
             </div>

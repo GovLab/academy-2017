@@ -873,7 +873,7 @@ workshop:
   endDate: !ruby/object:DateTime 2015-02-06 09:00:00.000000000 -05:00
   workshopPdf:
     title: ANALYTICS FOR CHANGE
-    description: 
+    description:
     url: "//assets.contentful.com/gvpfsi7zggwe/2tBnW67VjWYsA0c4Aa0OY2/f1bdbd4be650daada8357f355cd7a56b/analytics-for-change-workshop.pdf"
 - sys:
     id: 4Htnuimglq6QiQoY06Aucg
