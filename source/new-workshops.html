@@ -46,16 +46,48 @@ layout: default
               <div class="large-6 column">
                 <p class="e-course-description">{{ workshop.shortDescription }}</p>
                 {% if workshop.website %}
-                  <a class="button" href="{{workshop.website}}">More Info</a>
+                  <a class="button" href="{{workshop.website}}">Website</a>
                 {% endif %}
                 {% if workshop.workshopPdf %}
                   <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
                 {% endif %}
               </div>
             </div>
-
           </li>
         {% endif %}
       {% endfor %}
     {% endfor %}
   </ul>
+  <div class="divider">
+    <div class="row">
+      <div class="large-12 column">
+        <h1>Workshops offered by partner organizations</h1>
+      </div>
+    </div>
+  </div>
+  <ul class="course-list">
+    {% for workshop in site.data.contentful.spaces.cases.workshop %}
+      {% for type in workshop.workshopType %}
+        {% if type == "Partner Workshop" %}
+          <li class="course-item">
+            <div class="row">
+              <div class="large-6 column">
+                <h2 class="course-item__title">{{ workshop.workshopName }}</h2>
+                <h6 class="course-item__type">{{ workshop.partner }}</h6>
+              </div>
+              <div class="large-6 column">
+                <p class="e-course-description">{{ workshop.shortDescription }}</p>
+                {% if workshop.website %}
+                  <a class="button" href="{{workshop.website}}">Website</a>
+                {% endif %}
+                {% if workshop.workshopPdf %}
+                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
