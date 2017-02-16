@@ -1,0 +1,34 @@
+<div class="divider">
+  <div class="row">
+    <div class="large-12 column"><h2>Courses</h2></div>
+  </div>
+</div>
+
+{% assign coachingPrograms = include.courses %}
+
+<ul class="course-list">
+  {% for course in coachingPrograms %}
+      {% comment %}TODO: Filter upcoming events only{% endcomment %}
+      <li class="course-item">
+        <div class="row">
+          <div class="large-12 column">
+            <h2 class="course-item__title">{{ course.programName }}</h2>
+          </div>
+          <div class="large-6 column">
+            <p class="course-item__application">APPLICATION DUE: {{ course.applicationDeadline | date: "%B %-d, %Y"  }}</p>
+            <div class="course-item__faculty-team row column">
+              {% for person in course.faculty %}
+                  <a href="/faculty/{{ person.lastName | slugify }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName |slugify }}.jpg');">
+                    <p>{{ person.firstName }} {{ person.lastName }}</p>
+                  </a>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="large-6 column">
+            <p class="e-course-description">{{ course.shortDescription }}</p>
+            <a href="#" class="button">more info</a>
+          </div>
+        </div>
+      </li>
+  {% endfor %}
+</ul>
