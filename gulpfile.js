@@ -41,7 +41,7 @@ gulp.task('deploy', function (callback) {
   );
 });
 
-gulp.task('jekyll', shell.task(['jekyll build --incremental']));
+gulp.task('jekyll', shell.task(['bundle exec jekyll build --incremental']));
 gulp.task('jekyll-force', shell.task(['jekyll build']));
 
 gulp.task('jekyll-rebuild', ['jekyll'], function () {
