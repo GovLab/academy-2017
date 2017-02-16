@@ -48,6 +48,9 @@ layout: default
                 {% if workshop.website %}
                   <a class="button" href="{{workshop.website}}">More Info</a>
                 {% endif %}
+                {% if workshop.workshopPdf %}
+                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                {% endif %}
               </div>
             </div>
 
