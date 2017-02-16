@@ -32,41 +32,46 @@ layout: default
     </div>
   </div>
   <ul class="course-list">
-    {% for course in site.data.workshops %}
-      {% if !course.is_crosslisted %}
-        <li class="course-item">
-          <div class="row">
-            <div class="large-6 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
-              
-              {% if course.date.application %}
-              <p class="course-item__application">APPLICATION DUE: {{ course.date.application }}</p>
-              {% endif %}
-              {% if course.date.week_start %}
-              <p class="course-item__application">STARTS THE WEEK OF: {{ course.date.week_start }}</p>
-              {% endif %}
-
-              <div class="course-item__faculty-team row column">
-                {% for name in course.faculty_members %}
-                  {% assign person = site.data.people | where:"title", name | first %}
-                  {% if person %}
-                    <a href="./people/{{ person.name.slug }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
-                      <p>{{ person.name.first }} {{ person.name.last }}</p>
-                    </a>
-                  {% endif %}
-                {% endfor %}
+    {% for workshop in site.data.contentful.spaces.cases.workshop %}
+      {% for type in workshop.workshopType %}
+        {% if type != "Partner Workshop" %}
+          <li class="course-item">
+            <div class="row">
+              <div class="large-6 column">
+                <h2 class="course-item__title">{{ workshop.workshopName }}</h2>
+                {% if workshop.partner %}
+                  <h6 class="course-item__type">{{ workshop.partner }}</h6>
+                {% endif %}
+                {% if type == "By Request" %}
+                  <h6 class="course-item__type">{{ workshop.workshopType }}</h6>
+                {% endif %}
+              </div>
+              <div class="large-6 column">
+                <p class="e-course-description">{{ workshop.shortDescription }}</p>
+                {% if workshop.website %}
+                  <a class="button" href="{{workshop.website}}">Course Page</a>
+                {% endif %}
+                {% if workshop.workshopPdf %}
+                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                {% endif %}
+                {% if workshop.faculty %}
+                  {% for member in workshop.faculty %}
+                  <div class="faculty-container">
+                    <div class="faculty-image" style="background-image: url('/images/faculty/{{member.firstName}}-{{member.lastName}}.jpg')">
+                    </div>
+                    <div class="faculty-name">
+                      <p>{{member.firstName}} {{member.lastName}}</p>
+                    </div>
+                  </div>
+                  {% endfor %}
+                {% endif %}
               </div>
             </div>
-            <div class="large-6 column">
-              <p class="e-course-description">{{ course.description_short }}</p>
-              <a href="/coaching/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
-            </div>
-          </div>
-        </li>
-      {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </ul>
-
   <div class="divider">
     <div class="row">
       <div class="large-12 column">
@@ -75,44 +80,31 @@ layout: default
     </div>
   </div>
   <ul class="course-list">
-    {% for course in site.data.workshops %}
-      {% if course.is_crosslisted %}
-        <li class="course-item">
-          <div class="row">
-            <div class="large-6 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
-              {% if course.date.week_start %}
-              <p class="course-item__application">STARTED THE WEEK OF: {{ course.date.week_start }}</p>
-              {% endif %}
-
-              <div class="course-item__faculty-team">
-                {% for name in course.faculty_members %}
-                  {% assign person = site.data.people | where:"title", name | first %}
-
-                  {% if person %}
-                  <a href="{{person.name.slug}}.html" target="_blank">
-                    <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
-                      <p>{{ person.name.first }} {{ person.name.last }}</p>
-                    </div>
-                  </a>
-                  {% endif %}
-              {% endfor %}
+    {% for workshop in site.data.contentful.spaces.cases.workshop %}
+      {% for type in workshop.workshopType %}
+        {% if type == "Partner Workshop" %}
+          <li class="course-item">
+            <div class="row">
+              <div class="large-6 column">
+                <h2 class="course-item__title">{{ workshop.workshopName }} </h2>
+                <h6 class="course-item__type">{{ workshop.partner }}</h6>
+              </div>
+              <div class="large-6 column">
+                <p class="e-course-description">{{ workshop.shortDescription }}</p>
+                {% if workshop.website %}
+                  <a class="button" href="{{workshop.website}}">Course Page</a>
+                {% endif %}
+                {% if workshop.workshopPdf %}
+                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                {% endif %}
+                {% if workshop.location %}
+                  <a class="button" href="https://goo.gl/maps/dZ5BZ">LOCATION</a>
+                {% endif %}
+              </div>
             </div>
-          </div>
-          
-          <div class="large-6 column">
-            <p class="course-item__description">{{ course.description_short | safe }}</p>
-            {% if course.actions %}
-              {% for action in course.actions %}
-                <a class="button" href="{{action.link}}">{{ action.label }}</a>
-              {% endfor %}
-            {% endif %}
-            <!-- END COURSE LINKS FOR WORKSHOP -->
-          </div>
-        </div>
-        </li>
-      {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </ul>
 </div>
-  
