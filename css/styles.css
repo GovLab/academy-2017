@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box; }
+
+.u-disabled, .disabled {
+  opacity: .3;
+  pointer-events: none; }
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+.u-button {
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease; }
+  .u-button:hover {
+    color: white;
+    transition: all 0.3s ease; }
+
+.u-circle {
+  border-radius: 50%;
+  overflow: hidden; }
+
+.footer--sections a {
+  display: block; }
+
+.divider {
+  text-align: center; }
+
+.page-section--sequence {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 50px; }
+  .page-section--sequence:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid #fff;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    bottom: -30px;
+    left: calc(50% - 15px);
+    z-index: 10; }
+  .page-section--sequence:nth-of-type(odd) {
+    background-color: #f1f1f1; }
+    .page-section--sequence:nth-of-type(odd):after {
+      border-top-color: #f1f1f1; }
+
+.slide {
+  min-height: 515px; }
+  .slide h4 {
+    margin-bottom: 0; }
+
+.course-detail.m-clinics .top-section, .course-detail.m-clinics .faculty-header, .course-detail.m-clinics .course-header, .course-list--clinics .top-section, .course-list--clinics .faculty-header, .course-list--clinics .course-header {
+  background-color: #c2c33b; }
+.course-detail--coaching .top-section, .course-detail--coaching .faculty-header, .course-detail--coaching .course-header, .course-list--coaching .top-section, .course-list--coaching .faculty-header, .course-list--coaching .course-header {
+  background-color: #008895; }
+.course-detail.m-masters .top-section, .course-detail.m-masters .faculty-header, .course-detail.m-masters .course-header, .course-list--masters .top-section, .course-list--masters .faculty-header, .course-list--masters .course-header {
+  background-color: #008ab3; }
+.course-detail.m-workshop .top-section, .course-detail.m-workshop .faculty-header, .course-detail.m-workshop .course-header, .course-list--workshop .top-section, .course-list--workshop .faculty-header, .course-list--workshop .course-header {
+  background-color: #ad0054; }
+
+.faculty-header {
+  text-align: center; }
+  .faculty-header .faculty-picture {
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    background-size: 100%;
+    background-position: center; }
+
+.highlights {
+  padding: 0; }
+  .highlights .slide {
+    padding: 140px 0; }
+
+.small-banner {
+  display: flex;
+  flex-flow: column; }
+  .small-banner__item {
+    flex: 1;
+    display: block; }
+  .small-banner--canvas {
+    background-color: orange; }
+  .small-banner--noi {
+    background-color: blue; }
+
+.main-categories__item {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 50px 0;
+  color: white; }
+  .main-categories__item:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+.main-categories--clinics {
+  background-color: #c2c33b; }
+.main-categories--coaching {
+  background-color: #008895; }
+.main-categories--masters {
+  background-color: #008ab3; }
+.main-categories--workshop {
+  background-color: #ad0054; }
+.main-categories--clinics:hover {
+  background-color: #a3a432; }
+.main-categories--coaching:hover {
+  background-color: #00636c; }
+.main-categories--masters:hover {
+  background-color: #006b8a; }
+.main-categories--workshop:hover {
+  background-color: #840040; }
+
+.upcoming-courses__item {
+  padding: 50px;
+  height: 350px; }
+  .upcoming-courses__item .button {
+    color: white; }
+  .upcoming-courses__item:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .upcoming-courses__item--clinics .button {
+    background-color: #c2c33b; }
+  .upcoming-courses__item--coaching .button {
+    background-color: #008895; }
+  .upcoming-courses__item--masters .button {
+    background-color: #ad0054; }
+  .upcoming-courses__item--workshop .button {
+    background-color: #008ab3; }
+
+.course-header {
+  padding-bottom: 0;
+  padding-top: 30px; }
+
+.course-detail__tagline {
+  margin: 40px 0 30px;
+  font-size: 1.6rem;
+  font-weight: 200; }
+.course-detail__apply {
+  text-align: center;
+  padding: 0 0 30px; }
+.course-detail__dates {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.1); }
+.course-detail h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0; }
+.course-detail h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0; }
+.course-detail h5 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: .6; }
+
+.faculty-card {
+  text-align: center; }
+  .faculty-card:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .faculty-card--govlab .faculty-card__name {
+    background-color: purple; }
+  .faculty-card__picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px; }
+  .faculty-card__description {
+    padding: 20px; }
+  .faculty-card__name {
+    margin-top: -35px;
+    height: 35px;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: .5px;
+    background-color: black;
+    opacity: .9; }
+  .faculty-card .more-info {
+    width: 100%; }
+
+.course-list {
+  margin: 0;
+  padding-left: 0; }
+
+.course-list--past-courses > * {
+  opacity: .5; }
+.course-list--past-courses > *:hover {
+  opacity: 1; }
+
+.course-item {
+  padding: 30px 0 20px;
+  list-style-type: none; }
+  .course-item:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .course-item__title {
+    font-size: 1.4rem;
+    margin: 0; }
+  .course-item__application {
+    margin: 10px 0; }
+  .course-item__faculty-team {
+    width: 90%;
+    padding: 0; }
+  .course-item__type {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4); }
+  .course-item__faculty {
+    width: 25%;
+    position: relative;
+    margin: 0 -4px 0 0;
+    padding: 0 0 25%;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    overflow: hidden; }
+    .course-item__faculty p {
+      position: absolute;
+      bottom: -80px;
+      padding: 10px;
+      margin: 0;
+      font-size: .8rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      width: 100%;
+      text-align: center;
+      transition: all .4s ease; }
+    .course-item__faculty:hover p {
+      bottom: 0; }
+  .course-item .faculty-image {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%; }
+  .course-item .faculty-name p {
+    padding: 0;
+    margin: 0; }
