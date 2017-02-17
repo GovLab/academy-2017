@@ -16,7 +16,7 @@ layout: default
     <div class="row expanded align-center featured-authors">
       {% for person in faculty %}
       <div class="large-4 column faculty__list-item">
-        <a href="/faculty/{{person.lastName | slugify }}.html">
+        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html">
           <div class="faculty__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify}}.jpg);"></div>
         </a>
         <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html">
