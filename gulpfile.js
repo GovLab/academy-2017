@@ -48,7 +48,6 @@ gulp.task('jekyll-gh-pages-build', shell.task(['bundle exec jekyll build --incre
 gulp.task('gh-deploy', function (callback) {
   runSequence(
     'jekyll-gh-pages-build',
-    'image',
     'push-gh-master',
     'push-gh-pages',
     callback
