@@ -260,16 +260,71 @@
       transition: all .4s ease; }
     .course-item__faculty:hover p {
       bottom: 0; }
-  .course-item .faculty-image {
-    height: 80px;
-    width: 80px;
-    margin: 15px;
-    margin-bottom: 0;
-    margin-left: 0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 50%; }
-  .course-item .faculty-name p {
-    padding: 0;
-    margin: 0; }
+  .course-item .faculty-container {
+    width: 200px; }
+    .course-item .faculty-container .faculty-image {
+      height: 80px;
+      width: 80px;
+      margin: 15px;
+      margin-bottom: 0;
+      margin-left: 0;
+      border-radius: 50%;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      display: inline-block; }
+    .course-item .faculty-container .faculty-name p {
+      padding: 0;
+      margin: 0; }
+
+.faculty-page a:hover, .faculty-page a:visited, .faculty-page a:link, .faculty-page a:active {
+  text-decoration: none; }
+
+.faculty__list-item {
+  text-align: center;
+  vertical-align: top;
+  padding: 20px;
+  display: inline-block; }
+.faculty__picture {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
+.faculty__name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  border-bottom: 2px solid red;
+  text-decoration: none; }
+  .faculty__name:hover {
+    text-decoration: none;
+    border-bottom: 2px solid orange; }
+.faculty__job {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6); }
+
+.faculty-detail--coaching {
+  background-color: rgba(0, 0, 0, 0.7); }
+.faculty-detail .faculty-header {
+  color: white;
+  padding: 5% 0; }
+  .faculty-detail .faculty-header h2 {
+    font-size: 2rem; }
+  .faculty-detail .faculty-header h3 {
+    font-size: 1.5rem; }
+.faculty-detail__picture {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
+.faculty-detail__extras--social-media {
+  padding: 10px;
+  font-size: 18px; }
+  .faculty-detail__extras--social-media:hover {
+    color: rgba(0, 0, 0, 0.5); }
