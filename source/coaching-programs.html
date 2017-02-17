@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign coachingPrograms = site.data.contentful.spaces.cases.coachingProgram %}
 
 <div class="course-list course-list--coaching">
   <div class="top-section">
@@ -20,36 +21,37 @@ layout: default
     </div>
   </div>
   <ul class="course-list">
-    {% for course in site.data.coaching %}
-      {% if course.is_active %}
-        {% comment %}TODO: Filter upcoming events only{% endcomment %}
+
+  {% assign currentCoachingPrograms = coachingPrograms | find_upcoming_data: 'applicationDeadline' | sort: "applicationDeadline" %}
+    {% assign courseSize = currentCoachingPrograms | size %}
+    {% if courseSize == 0 %}
+          <p>There are no upcoming courses.</p>
+    {% else%}
+      {% for course in currentCoachingPrograms %}
         <li class="course-item">
           <div class="row">
             <div class="large-12 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
+              <h2 class="course-item__title">{{ course.programName }}</h2>
             </div>
             <div class="large-6 column">
-              <p class="course-item__application">APPLICATION DUE: {{ course.date.application }}</p>
-              <p class="course-item__application">STARTS THE WEEK OF: {{ course.date.week_start }}</p>
+              <p class="course-item__application">APPLICATION DUE: {{ course.applicationDeadline | date: "%B %-d, %Y" }}</p>
+              <p class="course-item__application">STARTS THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team row column">
-                {% for name in course.faculty_members %}
-                  {% assign person = site.data.people | where:"title", name | first %}
-                  {% if person %}
-                    <a href="./people/{{ person.name.slug }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
-                      <p>{{ person.name.first }} {{ person.name.last }}</p>
-                    </a>
-                  {% endif %}
+                {% for person in course.faculty %}
+                  <a href="/faculty/{{ person.lastName }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                    <p>{{ person.firstName }} {{ person.lastName }}</p>
+                  </a>
                 {% endfor %}
               </div>
             </div>
             <div class="large-6 column">
-              <p class="e-course-description">{{ course.description_short }}</p>
-              <a href="/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
+              <p class="e-course-description">{{ course.shortDescription }}</p>
+              <a href="#" class="button">more info</a>
             </div>
           </div>
         </li>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    {% endif %}
   </ul>
 
   <div class="divider">
@@ -60,38 +62,39 @@ layout: default
     </div>
   </div>
   <ul class="course-list course-list--past-courses">
-    {% for course in site.data.coaching %}
-      {% if course.is_active %}
-        {% comment %}TODO: Filter past events only{% endcomment %}
+
+    {% assign pastCoachingPrograms = coachingPrograms | find_past_data: 'endDate'  | sort: "endDate" | reverse %}
+
+    {% for course in pastCoachingPrograms %}
         <li class="course-item">
           <div class="row">
             <div class="large-6 column">
-              <h2 class="course-item__title">{{ course.name }}</h2>
-              <p class="course-item__application">STARTED THE WEEK OF: {{ course.date.week_start }}</p>
+              <h2 class="course-item__title">{{ course.programName }}</h2>
+              <p class="course-item__application">STARTED THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team">
-                {% for name in course.faculty_members %}
-                  {% assign person = site.data.people | where:"title", name | first %}
-                  {% if person %}
-                    <a href="{{person.name.slug}}.html" target="_blank">
-                      <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug }}.jpg');">
-                        <p>{{ person.name.first }} {{ person.name.last }}</p>
+                {% for person in course.faculty %}
+                    <a href="/faculty/{{ person.lastName }}.html" target="_blank">
+                      <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                        <p>{{ person.firstName }} {{ person.lastName }}</p>
                       </div>
                     </a>
-                  {% else %}
+                    {%comment%}
+<!--                   {% else %}
                     <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.name.slug  }}.jpg');">
                       <p>{{name}}</p>
                     </div>
-                  {% endif %}
+                  {% endif %} -->
+                  {%endcomment%}
               {% endfor %}
             </div>
           </div>
           <div class="large-6 column">
-            <p class="course-item__description">{{ course.description_short | safe }}</p>
-            <a href="/coaching/{{ course.name | downcase | replace: " ", "-" }}.html" class="button">more info</a>
+            <p class="course-item__description">{{ course.shortDescription | markdownify }}</p>
+            <a href="#" class="button">more info</a>
           </div>
         </div>
         </li>
-      {% endif %}
+
     {% endfor %}
   </ul>
 
@@ -196,22 +199,28 @@ layout: default
 
         <h3>When is the Application Due?</h3>
 
-        <table>
-          <thead>
-            <th>Projects Focus</th>
-            <th>Application due</th>
-            <th>Course begins</th>
-          </thead>
-          <tbody>
-            {% for course in site.data.coaching %}
-              <tr>
-                <td>{{course.name}}</td>
-                <td>{{course.date.application}}</td>
-                <td>{{course.date.start}}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
+        {% assign currentCoachingPrograms = coachingPrograms | find_upcoming_data: 'applicationDeadline' %}
+        {% assign courseSize = currentCoachingPrograms | size %}
+        {% if courseSize == 0 %}
+          <p>There are no upcoming courses.</p>
+        {% else%}
+          <table>
+            <thead>
+              <th>Projects Focus</th>
+              <th>Application due</th>
+              <th>Course begins</th>
+            </thead>
+            <tbody>
+              {% for course in currentCoachingPrograms %}
+                <tr>
+                  <td>{{ course.programName }}</td>
+                  <td>{{ course.applicationDeadline | date: "%B %-d, %Y" }}</td>
+                  <td>{{ course.startDate | date: "%B %-d, %Y" }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {%endif%}
 
         <h3>Who will lead each program?</h3>
         <p>Each coaching program will be led by leading experts of the field with the active support of the GovLab Academy team.</p>

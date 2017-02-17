@@ -2015,3 +2015,73 @@ coachingProgram:
       In 2010, Nina was awarded an Urban and Social Policy Program Fellowships at Columbia University, where she designed and began to implement a program improvement plan. During her tenure, student enrollment in the program doubled, nine new urban policy courses were developed, the Urban and Social Policy speaker series was launched and two additional faculty lines were added.
 
       Nina holds a Bachelor of Arts Degree in Cultural Anthropology from the University of Virginia and a Masters Degree in Urban Policy from Columbia University.
+- sys:
+    id: 3IUYZaK9SgISgEaEaG6mA6
+  programName: Sample course
+  startDate: !ruby/object:DateTime 2017-03-01 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -05:00
+  applicationDeadline: !ruby/object:DateTime 2017-02-24 00:00:00.000000000 -05:00
+  longDescription: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
+
+    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
+  faculty:
+  - sys:
+      id: 6DNzfgavEkkqqIskcGKO6s
+    firstName: Andrew
+    lastName: Young
+    title: Associate Director of Research at the GovLab
+    affiliation: The GovLab
+    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
+      his Master’s degree in the Media, Culture and Communication department of NYU’s
+      Steinhardt School of Culture, Education and Human Development, with a focus
+      on Technology and Society. In addition to open governance, his research interests
+      include privacy, Internet activism, values in design and the ethical implications
+      of the use of new technologies in politics. His Master’s thesis explored the
+      largely unexamined use of data-tracking technologies on congressional campaign
+      websites to inform microtargeting efforts, and won the department’s Outstanding
+      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
+      Stefaan Verhulst at the Markle Foundation, where his research centered on the
+      use of technology to bolster economic security. Prior to his graduate work at
+      NYU, Andrew attended Pennsylvania State University, where he studied English
+      and Communications. He also spent two semesters at Goldsmiths College, University
+      of London. He can be found on Twitter at @AndrewYoungNYC.
+    email: andrew@thegovlab.org
+    website: http://thegovlab.org/andrew-young/
+    twitter: http://twitter.com/AndrewYoungNYC
+    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+- sys:
+    id: 54GlwlXABy68MQw6yoWQq4
+  programName: Sample course II
+  startDate: !ruby/object:DateTime 2018-03-01 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2018-02-15 00:00:00.000000000 -05:00
+  applicationDeadline: !ruby/object:DateTime 2018-02-24 00:00:00.000000000 -05:00
+  longDescription: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
+
+    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
+  faculty:
+  - sys:
+      id: 6DNzfgavEkkqqIskcGKO6s
+    firstName: Andrew
+    lastName: Young
+    title: Associate Director of Research at the GovLab
+    affiliation: The GovLab
+    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
+      his Master’s degree in the Media, Culture and Communication department of NYU’s
+      Steinhardt School of Culture, Education and Human Development, with a focus
+      on Technology and Society. In addition to open governance, his research interests
+      include privacy, Internet activism, values in design and the ethical implications
+      of the use of new technologies in politics. His Master’s thesis explored the
+      largely unexamined use of data-tracking technologies on congressional campaign
+      websites to inform microtargeting efforts, and won the department’s Outstanding
+      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
+      Stefaan Verhulst at the Markle Foundation, where his research centered on the
+      use of technology to bolster economic security. Prior to his graduate work at
+      NYU, Andrew attended Pennsylvania State University, where he studied English
+      and Communications. He also spent two semesters at Goldsmiths College, University
+      of London. He can be found on Twitter at @AndrewYoungNYC.
+    email: andrew@thegovlab.org
+    website: http://thegovlab.org/andrew-young/
+    twitter: http://twitter.com/AndrewYoungNYC
+    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
