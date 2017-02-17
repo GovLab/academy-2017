@@ -61,23 +61,25 @@
       bottom: 0;
     }
   }
-
-  .faculty-image {
-    height: 80px;
-    width: 80px;
-    margin: 15px;
-    margin-bottom: 0;
-    margin-left: 0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-  }
-
-  .faculty-name {
-    p {
-      padding: 0;
-      margin: 0;
+  .faculty-container {
+    width: 200px;
+    .faculty-image {
+      height: 80px;
+      width: 80px;
+      margin: 15px;
+      margin-bottom: 0;
+      margin-left: 0;
+      border-radius: 50%;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+    }
+    .faculty-name {
+      p {
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 }
