@@ -41,6 +41,20 @@ gulp.task('deploy', function (callback) {
   );
 });
 
+// Build gh pages using _config-gh-pages.yml
+gulp.task('jekyll-gh-pages-build', shell.task(['bundle exec jekyll build --incremental --config _config.yml,_config-gh-pages.yml']));
+
+// Deploy to push-gh-pages
+gulp.task('gh-deploy', function (callback) {
+  runSequence(
+    'jekyll-gh-pages-build',
+    'image',
+    'push-gh-master',
+    'push-gh-pages',
+    callback
+  );
+});
+
 gulp.task('jekyll', shell.task(['bundle exec jekyll build --incremental']));
 gulp.task('jekyll-force', shell.task(['jekyll build']));
 
