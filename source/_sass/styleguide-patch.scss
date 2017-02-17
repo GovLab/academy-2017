@@ -9,9 +9,14 @@
   padding-top: 70px;
   padding-bottom: 50px;
 
+  h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
   &:after {
     position: absolute;
-    content: "";
+    // content: "";
     width: 0;
     height: 0;
     border-top: 30px solid #fff;
