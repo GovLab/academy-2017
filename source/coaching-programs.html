@@ -46,7 +46,7 @@ layout: default
             </div>
             <div class="large-6 column">
               <p class="e-course-description">{{ course.shortDescription }}</p>
-              <a href="#" class="button">more info</a>
+              <a href="coaching/{{ course.programName | slugify }}.html" class="button">more info</a>
             </div>
           </div>
         </li>
@@ -90,7 +90,7 @@ layout: default
           </div>
           <div class="large-6 column">
             <p class="course-item__description">{{ course.shortDescription | markdownify }}</p>
-            <a href="#" class="button">more info</a>
+            <a href="coaching/{{ course.programName | slugify }}.html" class="button">more info</a>
           </div>
         </div>
         </li>
