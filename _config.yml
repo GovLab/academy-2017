@@ -49,9 +49,9 @@ contentful:
 
 
 page_gen:
-  - data: 'coaching'
+  - data: 'contentful.spaces.cases.coachingProgram'
     template: 'coaching_template'
-    name: 'title'
+    name: 'programName'
     dir: 'coaching'
 
   - data: 'contentful.spaces.cases.faculty'
