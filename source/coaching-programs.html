@@ -38,7 +38,7 @@ layout: default
               <p class="course-item__application">STARTS THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team row column">
                 {% for person in course.faculty %}
-                  <a href="/faculty/{{ person.lastName }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                  <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
                     <p>{{ person.firstName }} {{ person.lastName }}</p>
                   </a>
                 {% endfor %}
@@ -58,7 +58,7 @@ layout: default
               {% capture slugged-link %}
                 {{ slugged-link | slugify }}
               {% endcapture %}
-              <a href="coaching/{{ slugged-link | replace: "0101010", char  | rstrip | lstrip }}.html" class="button">more info</a>
+              <a href="{{site.url}}{{site.baseurl}}/coaching/{{ slugged-link | replace: "0101010", char  | rstrip | lstrip }}.html" class="button">more info</a>
             </div>
           </div>
         </li>
@@ -85,8 +85,8 @@ layout: default
               <p class="course-item__application">STARTED THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team">
                 {% for person in course.faculty %}
-                    <a href="/faculty/{{ person.lastName }}.html" target="_blank">
-                      <div class="course-item__faculty column large-3 end" style="background-image: url('/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                    <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank">
+                      <div class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
                         <p>{{ person.firstName }} {{ person.lastName }}</p>
                       </div>
                     </a>
@@ -114,7 +114,7 @@ layout: default
             {% capture slugged-link %}
               {{ slugged-link | slugify }}
             {% endcapture %}
-            <a href="coaching/{{ slugged-link | replace: "0101010", char  | rstrip | lstrip }}.html" class="button">more info</a>
+            <a href="{{site.url}}{{site.baseurl}}/coaching/{{ slugged-link | replace: "0101010", char  | rstrip | lstrip }}.html" class="button">more info</a>
           </div>
         </div>
         </li>
