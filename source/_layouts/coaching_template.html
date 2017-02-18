@@ -7,9 +7,10 @@ layout: default
     <div class="row align-center">
       <div class="large-9 column">
         <h4>Coaching Program</h4>
-        <h2>{{ page.title }}</h2>
+        <h2>{{ page.programName }}</h2>
+
         <div class="course-detail__tagline">{{ page.passion.title }}</div>
-        <div class="course-detail__tagline">{{ page.description_short }}</div>
+        <div class="course-detail__tagline">{{ page.shortDescription | markdownify }}</div>
         <div class="course-detail__apply"><a href="#" class="button">Apply</a></div>
       </div>
     </div>
@@ -20,15 +21,15 @@ layout: default
           <div class="row">
             <div class="large-4 column">
               <h5 class="course-detail__date">Application Deadline</h5>
-              <h4 class="course-detail__date">{{ page.date.application }}</h4>
+              <h4 class="course-detail__date">{{ page.applicationDeadline | date: "%B %-d, %Y"  }}</h4>
             </div>
             <div class="large-4 column">
               <h5 class="course-detail__date">starts the week of</h5>
-              <h4 class="course-detail__date">{{ page.date.week_start }}</h4>
+              <h4 class="course-detail__date">{{ page.startDate | date: "%B %-d, %Y" }}</h4>
             </div>
             <div class="large-4 column">
               <h5 class="course-detail__date">Course Ends on</h5>
-              <h4 class="course-detail__date">{{ page.date.end }}</h4>
+              <h4 class="course-detail__date">{{ page.endDate | date: "%B %-d, %Y" }}</h4>
             </div>
           </div>
         </div>
@@ -47,18 +48,11 @@ layout: default
         </div>
         <div class="course-detail__description">
           <h2>Course Description</h2>
-          {{ page.description_long }}  
+          {{ page.longDescription | markdownify }}  
         </div>
         <div class="course-detail__format">
           <h2>Course Format</h2>
-          <p><strong>Course Format:</strong>{{ page.format }}</p>
-          <div class="format">
-          {% if when %}
-            <p>Online sessions will be held <strong>{{ page.when }}</strong></p>
-            {% if when_plus %}<p><em>{{ page.when_plus }}</em></p>{% endif %}
-          {% endif %}
-            <p><strong>Course Duration:</strong> {{ page.duration }}</p>
-          </div>
+          {{ page.courseFormat | markdownify }}
         </div>
       </div>
     </div>
@@ -72,17 +66,12 @@ layout: default
   </div>
   <div class="faculty-members">
     <div class="row expanded collapse align-center">
-      {% for name in page.faculty_members %}
-      {% assign person = site.data.people | where:"title", name | first %}
-        {% if person %}
-          <a href="people/{{person.name.slug}}.html" target="_blank" class="large-3 column faculty-card {% if person.is_govlab %}faculty-card--govlab {% endif%}">
-            <div class="faculty-card__picture" style="background-image: url(/images/faculty/{{ person.name.slug }}.jpg);"></div>
-            <h1 class="faculty-card__name ">{{ person.name.first }} {{ person.name.last }}</h1>
-            <p class="faculty-card__description">{{ person.job }}</p>
-          </a>
-        {% else %}
-        <p>{{ name }}</p>
-        {% endif %}
+      {% for person in page.faculty %}
+        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html" target="_blank" class="large-3 column faculty-card {% if person.is_govlab %}faculty-card--govlab {% endif%}">
+          <div class="faculty-card__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify}}.jpg);"></div>
+          <h1 class="faculty-card__name ">{{ person.firstName }} {{ person.lastName }}</h1>
+          <p class="faculty-card__description">{{ person.title }}</p>
+        </a>
       {% endfor %}
     </div>
   </div>
