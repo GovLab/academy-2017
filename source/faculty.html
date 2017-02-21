@@ -16,10 +16,10 @@ layout: default
     <div class="row expanded align-center featured-authors">
       {% for person in faculty %}
       <div class="large-4 column faculty__list-item">
-        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html">
-          <div class="faculty__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify}}.jpg);"></div>
+        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify | replace: 'ú', 'u'  }}.html">
+          <div class="faculty__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify | replace: 'ú', 'u'}}.jpg);"></div>
         </a>
-        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html">
+        <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify | replace: 'ú', 'u' }}.html">
           <p class="faculty__name">{{ person.firstName }} {{ person.lastName }}</p>
         </a>
         <p class="faculty__job">{{person.title}}</p>
