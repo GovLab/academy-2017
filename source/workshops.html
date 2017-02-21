@@ -60,7 +60,7 @@ layout: default
                     <a href="{{site.url}}{{site.baseurl}}/faculty/{{ member.lastName | slugify }}.html" target="_blank" class="faculty-image" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ member.firstName | slugify }}-{{ member.lastName | slugify }}.jpg');">
                     </a>
                     <div class="faculty-name">
-                      <a href="/faculty/{{ member.lastName | slugify }}.html">{{member.firstName}} {{member.lastName}}</a>
+                      <a href="{{site.url}}{{site.baseurl}}/faculty/{{ member.lastName | slugify }}.html">{{member.firstName}} {{member.lastName}}</a>
                     </div>
                   </div>
                   {% endfor %}
