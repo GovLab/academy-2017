@@ -1418,6 +1418,264 @@ project:
     beyond the scope of disaster relief, including: private communication networks
     for corporations, digital educational curricula distribution, and as a reliable
     grid for hospitals and medical centers.'
+- sys:
+    id: 5ggwuBSHJuocGk8wMyius2
+  projectName: MuckRock
+  projectSubtitle: The easy way to request, analyze & share government documents
+  progress:
+  - Launched
+  category:
+  - Open Data
+  - Open Contracting
+  - Data Analytics
+  - Crowdsourcing
+  - Collective Intelligence
+  - Tech Procurement
+  - Citizen Engagement
+  - Big Data
+  regoin:
+  - North America
+  country: United States
+  website: https://www.muckrock.com/
+  twitter: "@muckrock"
+  facebook: https://www.facebook.com/muckrock
+  email: info@muckrock.com
+  team: |-
+    - Michael Morisy, Co-Founder, http://www.twitter.com/morisy
+    - Mitchell Kotler, Co-Founder, http://j.mp/1NT0MEIJ
+    - Patrick Brown, Editor, https://twitter.com/resentfultweet
+    - Beryl Lipton, Reporter, http://www.twitter.com/_blip_
+    - Allan Lasser, Developer, http://www.twitter.com/allanlasser
+  background: MuckRock is the web's best way to file, track, and share public records
+    and Freedom of Information Act requests. The site has helped file over 19,000
+    requests, helping release over 800,000 pages of government records on subjects
+    ranging from government spending and domestic surveillance to public safety and
+    what Americans think of broadcast television.
+  shortDescription: MuckRock is an independent investigative news site and public
+    records tool, helping journalists, researchers, and the public access and understand
+    government data. It operates in all 50 states and has done in-depth investigations
+    into everything from domestic surveillance to the private prisons system. MuchRock
+    is the easy way to request, analyze & share government documents, making politics
+    more transparent and democracies more informed.
+  impact: As MuckRock has continued to expand its services to include crowdfunding,
+    collaboration, and other key features, it has become the go-to transparency resource
+    for not only individual journalists and researchers, but groups ranging from major
+    digital media outlets to documentary producers to those looking to effect positive
+    change in their cities, states, and nation. MuckRock requests help drive the national
+    conversation on issues of importance to every American. Up to now more than 4,500,000
+    people have read requests on our site.
+- sys:
+    id: 6jCxGBVNPaGoeKiyWUy2QG
+  projectName: Open Journalism
+  projectTitle: Journalists and Citizens United in Reporting Public Issues
+  projectSubtitle: Uniting Journalists and Citizens to Create Public-Oriented News
+    Reports on Public Issues
+  progress:
+  - Prototyping
+  category:
+  - Open Data
+  - Data Analytics
+  - Crowdsourcing
+  - Collective Intelligence
+  - Citizen Engagement
+  - Big Data
+  - Agile Research
+  - Citizen Science
+  - Humanitarian Innovation
+  regoin:
+  - Latin America and the Caribbean
+  website: www.agendapropia.co/PERIODISMOABIERTO/en/
+  twitter: "@PeriodismoAbier"
+  email: ofabro@ofabro.com
+  team: |-
+    - Edilma Prada Cespedes, Journalism Expert, http://twitter.com/edilmaprada
+    - Fabro Steibel, Open Government Expert, http://ofabro.com
+  partners: |-
+    - Publica
+    - the Creative Industries master programme at ESPM University, in Rio
+  background: The project started as a collaboration between two OEA fellows in Open
+    government. Open Journalism connects the tools and techniques of crowdsourcing
+    to news making practices. Instead of opening governments, we are open news media
+    outlets to include citizens to make the news.
+  shortDescription: Our project makes use of crowdsourcing tools to unite journalists
+    and citizens in making the news. We use the participative culture of the web to
+    aid journalists to seek help of citizens in reporting public issues, and to aid
+    motivated citizens to engage in the news agenda. We capacitative, challenge and
+    motivate journalists, citizens and hackers to work together, constructively, in
+    news making processes.
+  impact: News industries are shrinking. Social media is booming. When we create participatory
+    ways to not only consume, but to make the news, we can recreate how news industries
+    are funded, and we can also highlight their role as watchdog, civic institutions.
+    More news made based on open journalism culture means more citizens connected
+    to the news, stronger civil society institutions, and new journalistic posts.
+- sys:
+    id: 4YX4c2odj2ygSa0AS200Mi
+  projectName: PolicyAtlas
+  projectSubtitle: Mapping and crowdsourcing the universe of public policy solutions.
+  progress:
+  - Launched
+  category:
+  - Crowdsourcing
+  - Collective Intelligence
+  - Citizen Engagement
+  regoin:
+  - North America
+  city: New York City
+  country: United States
+  website: http://policyatlas.org/wiki/Main_Page
+  twitter: "@policyatlas"
+  email: policyatlas_exec@googlegroups.com
+  team: |-
+    - Kevin Hansen, http://www.kevinmhansen.com/about/
+    - Matt Lisiecki, http://linkedin.com/in/malisiecki
+    - Neil Reilly, http://reilly.nyc
+  partners: |-
+    - Occupy Sandy Spokescouncil
+    - Staten Island Long Term Recovery Group
+    - Brooklyn Long Term Recovery Groups
+    - LES Ready
+    - NYC Long Term Recovery Coalition
+    - Sahana Software Foundation
+  background: New public policy is made every day by local, national and international
+    government institutions. Although governments operate in different contexts across
+    the world, they nonetheless face very similar governance challenges--for example,
+    educating their populations or increasing their public’s safety. Due to this significant
+    overlap in governmental missions, tremendous potential exists for societies to
+    pool together their collective knowledge and learn from each other’s successes
+    and failures.
+  shortDescription: PolicyAtlas is a growing, non-­partisan project to develop a user-contributed
+    encyclopedia of known public policy solutions (the “Atlas”). The Atlas will cover
+    all major policy fields such as education, environmental, health, and transportation
+    policy. For example, when a local government official seeks to reduce pedestrian
+    deaths from automobile accidents, they can search the Atlas for policies that
+    aim to achieve this goal and be presented with options such as traffic calming
+    devices, pedestrian bridges and complete street designations. Dedicated articles
+    cover each featured policy concept with a summary of its goals, implementation
+    considerations, research studies, and supporters and opponents.
+  impact: Ultimately, the goal of PolicyAtlas is to improve the quality of public
+    policymaking--and the lives of all who are governed--by providing more public
+    policy options, informing better choices among public policies, and improving
+    the design of policies in order to increase their likely political viability and
+    effectiveness. PolicyAtlas is to become the most useful public policy resource
+    in the world. Specific types of people who should find the Atlas useful include
+    government officials, election candidates, journalists, advocates and researchers.
+- sys:
+    id: 1W3hYzerHG0oCoG2WW8aii
+  projectName: Pittsburgh Purchasing Suite
+  projectSubtitle: A collection of apps that help you procure things more quickly
+    and easily
+  progress:
+  - Launched
+  category:
+  - Open Data
+  - Open Contracting
+  - Tech Procurement
+  - Citizen Engagement
+  - Agile Research
+  - Nudges
+  regoin:
+  - North America
+  city: Pittsburgh
+  country: United States
+  email: pittsburgh@codeforamerica.org
+  team: |-
+    - Ben Smithgall, Developer, http://www.codeforamerica.org/people/ben-smithgall/
+    - Shelly Ni, Designer, http://www.codeforamerica.org/people/shelly-ni/
+    - Patrick Hammons, Project Manager, http://www.codeforamerica.org/people/patrick-hammons/
+  partners: |-
+    - Richard King Mellon Foundation
+    - City of Pittsburgh
+  background: A 2015 Code for America Fellowship project rooted in interviews with
+    over 60 city and county staff and 30 local businesses, we found that a path to
+    success in Pittsburgh required fixing the basics.
+  shortDescription: Our apps, Beacon, Scout, and Conductor, have replaced and augmented
+    government purchasing workflows in Pittsburgh. Connected by an open database,
+    these tools enable city staff to transparently and efficiently manage, track,
+    and advertise contract opportunities.
+  impact: Since launching, 500+ businesses have signed up for announcements of contracting
+    opportunities with Beacon, 27 City staff are subscribed for contract updates with
+    Scout, and the procurement team tracks contracts daily with Conductor.
+- sys:
+    id: 2c2evHEOJKmK0cUESIsagC
+  projectName: opnNotice
+  projectTitle: opnNotice by Commune
+  projectSubtitle: Powering Transparency and Access through Digital and Structured
+    Public Records
+  progress:
+  - Private Beta
+  category:
+  - Open Data
+  - Open Contracting
+  - Citizen Engagement
+  - Agile Research
+  - Data Science
+  regoin:
+  - North America
+  city: New York City
+  country: United States
+  website: http://commune.io
+  twitter: "@icommune"
+  email: team@commune.io
+  team: |-
+    - Mikael Hveem
+    - Ravi Tempalli
+    - Joe Lamport
+  partners: |-
+    - Center for Social Innovation
+    - "Manhattan Borough President's Office"
+    - betaNYC
+  background: In our digital age the pressing question is no longer what information
+    should be digitized, but rather how this process of digitalization should take
+    place. Most public information is currently organized by procedure; publisher’s
+    name, due date, etc. However, the content - affected areas or people, topics,
+    participants and more - remain largely unstructured. As a result, despite growing
+    computational power, machines remain surprisingly incapable of giving us an answer
+    to the seemingly simple question; what is going on in my community?
+  shortDescription: Commune offers municipal bodies a digital framework - ‘opn’ -
+    to create, publish and archive public records as well structured open data, while
+    simultaneously increasing their work efficiency and performance.
+  impact: Municipality staffers will save time handling public information - local
+    business and residents will gain better insight to government decision making
+    processes and actions.
+- sys:
+    id: 22xahxONdq6oi8MeMWM2uY
+  projectName: Codeando Monterrey
+  projectTitle: Codeando Monterrey’s Agile Scientific Method
+  projectSubtitle: Bridging the Scientific Method with Projects in Civic Communities
+  progress:
+  - Private Beta
+  category:
+  - Collective Intelligence
+  - Citizen Engagement
+  - Agile Research
+  - Citizen Science
+  regoin:
+  - Latin America and the Caribbean
+  city: Monterrey
+  country: Mexico
+  twitter: "@codeandomty"
+  facebook: http://facebook.com/CodeandoMty
+  email: ricardo@codeandomexico.org
+  team: |-
+    - Ricardo D. Alanis, Coordinator
+    - Lady E. Huerta, Leadership Developer
+    - Catalina Chapa, Community Chief
+  partners: |-
+    - Mujer Digital
+    - Bosque Urbano Mexico
+  background: Civic Hacking is an agile approach that is focused more on solutions
+    than taking a step away and think a lot. The scientific method is what has moved
+    science so far to build robust explanations and solutions to so many different
+    fields. How can we take the best of the two worlds and build robust explanations
+    and solutions to so many different fields. How can we take the best of the worlds
+    and build robust solutions while keeping a fast pace?
+  shortDescription: 'We try to get the best of the scientific method by following
+    a 5 point rulebook to our civic hacking projects, that come from the traditional
+    academic research: (1) Clear problem definition (2) Definition of Roles (3) Mentoring
+    (4) Follow Up (5) Publish and Share'
+  impact: Every project in our brigade needs to have great reach and impact. Taking
+    into account past efforts, building bridges to experienced community and having
+    a philosophy of sharing and publishing, will help build more solid projects.
 coachingProgram:
 - sys:
     id: 4r3SLPQKRakKQG6ui8WciW
@@ -2085,3 +2343,231 @@ coachingProgram:
     website: http://thegovlab.org/andrew-young/
     twitter: http://twitter.com/AndrewYoungNYC
     linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+syllabusClass:
+- sys:
+    id: 5fOzllL7gWu6iyCua6GwGM
+  classTitle: Describing the Project
+  classNumber: 1
+  classWeek: 1
+  classDescription: "During this session we want to talk about what people are doing
+    and why. Get people to refine their problem and project descriptions further.
+    We can support with sample problem and project descriptions and the Public Projects
+    Canvas, which gets people thinking about the arc of their projects.)\nWhen: Friday,
+    April 10, 2015, from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible*
+    guest speaker: TBD (Suggestion: Bring in a guest with a really successful or failed
+    project in your space)\nTo-do: Please fill out the GovLab Public Problem Solving
+    Canvas\n\n*Guest speakers should be people you are also very interested in meeting
+    and you think can learn the most from their experience so please feel free to
+    suggest any changes or additions. "
+- sys:
+    id: 2DlzQLVOByc208MociAIUM
+  classTitle: Engaging with People and Data
+  classNumber: 2
+  classWeek: 2
+  classDescription: |
+    During this session we want to talk about how you are getting smarter about who your users are and their needs. Please use this session to also talk about how are you doing research, share and trade ideas.
+    When: Friday, April 17, 2015 from 8 - 10am EST
+    Link to join: https://zoom.us/j/345797363
+    Possible guest speaker: TBD (Suggestion: Guests might include either someone who can talk about how they did research for their own project or a research specialist such as a librarian or data scientist.)
+    Before the session: Rewrite the Problem Statements
+  resources:
+  - sys:
+      id: j0nGdQvlUOSY6IIoQwWia
+- sys:
+    id: 59nkpvti0MYOg8cEGwCY6O
+  classTitle: Measuring Impact
+  classNumber: 3
+  classWeek: 3
+  classDescription: "During this session the goal is to talk metrics, metrics, metrics
+    and exchange ideas for how to assess impact. We will also discuss how to evolve
+    the project.\nWhen: Friday, April 24, 2015 from, 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible
+    guest speaker: TBD\nBefore the session: \n"
+- sys:
+    id: 2L31ia4bbieoqIMcoeMSQy
+  classTitle: Persuading the Audience
+  classNumber: 4
+  classWeek: 4
+  classDescription: "Exchange decks and 1-page memos and do your pitch! We will bring
+    in guests to give feedback on presentations so be prepared.\nWhen:  Friday, May
+    1, 2015 from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible
+    guest speaker: TBD\nBefore the session: \n"
+  resources:
+  - sys:
+      id: j0nGdQvlUOSY6IIoQwWia
+resource:
+- sys:
+    id: j0nGdQvlUOSY6IIoQwWia
+  title: "“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform"
+  author:
+  - Beth Simone Noveck
+  type:
+  - Journal Article
+  url: http://jolt.law.harvard.edu/articles/pdf/v20/20HarvJLTech123.pdf
+  publicationName: Harvard Journal of Law & Technology
+  publicationDate: !ruby/object:DateTime 2006-09-01 00:00:00.000000000 -05:00
+- sys:
+    id: 3hrTJ3Y812AewOmakaw4GU
+  title: 'Owning the city: new media and citizen engagement in urban design'
+  author:
+  - Michiel de Lange
+  - Martijn de Waal
+  type:
+  - Journal Article
+  url: http://pear.accc.uic.edu/ojs/index.php/fm/article/view/4954/3786
+  publicationName: First Monday
+  publicationDate: !ruby/object:DateTime 2013-11-04 00:00:00.000000000 -05:00
+syllabus:
+- sys:
+    id: 7rwrZOLyikWAOGyYY0IkoY
+  syllabusTitle: Leveraging Crowds in the Public Sector
+  faculty:
+  - sys:
+      id: 5gSD74RzVSgSa2uC6wGScS
+    firstName: Brian
+    lastName: Behlendorf
+    title: Managing Director at Mithril Capital Management
+    longBio: Brian Behlendorf is Managing Director at Mithril Capital Management in
+      San Francisco.  His career has been a mix of technology start-up, public policy,
+      and non-profit tech leadership. Brian serves on the Boards of the Mozilla Foundation,
+      the Electronic Frontier Foundation, and Benetech, three organizations using
+      technology to fight for civil liberties, open technologies, and social impact
+      in the digital domain.  Prior to Mithril, Brian was Chief Technology Officer
+      at the World Economic Forum.  He also served for two years at the White House
+      as advisor to the Open Government project within the Office of Science and Technology
+      Policy, and then later as advisor to Health and Human Services on open software
+      approaches to health information sharing.  Before that he has founded two tech
+      companies (CollabNet and Organic) and several Open Source software projects
+      (Apache, Subversion, and more).
+    email: brian@behlendorf.com
+    website: http://brian.behlendorf.com
+    twitter: https://twitter.com/brianbehlendorf
+    linkedIn: https://www.linkedin.com/in/brianbehlendorf
+    gitHub: https://github.com/brianbehlendorf
+  - sys:
+      id: 5gfjFvZYdiAgkgaY0muu80
+    firstName: Dinorah
+    lastName: Cantú-Pedraza
+    title: The GovLab Academy Coordinator
+    affiliation: The GovLab
+    longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
+      at helping government and social innovators take innovative projects from idea
+      to implementation. Under her direction, the Academy has worked with over five
+      hundred innovators from more than 30 countries online and off over the last
+      two years. Thousands more have watched its skill-building videos. She has put
+      together over 12 Coaching Programs, the Academy’s signature mentoring and peer
+      to peer learning initiative, where over 95% of whose participants complete the
+      program. The Academy is a project of the Governance Lab, based at New York University.
+      GovLab focuses on the use of technology to improve how we govern. Dinorah has
+      also designed the GovLab’s Crowdsorcerer expert system, a software tool to deliver
+      customized case studies to government leaders about open innovation. Working
+      together with lawyers and education experts from NYU, she also designed an expert
+      system to help universities determine the legal requirements for offering online
+      education. She also runs the GovLab’s Demos for Democracy video series where
+      she interviews leading technologists about new platforms to advance the public
+      interest. A lawyer by training, Dinorah founded and directed the Human Rights
+      Center of the Facultad Libre de Derecho de Monterrey prior to coming to New
+      York in 2012. She holds an MPA in Public and Nonprofit Management and Policy
+      at NYU Robert F. Wagner School of Public Service and is passionate about the
+      value of civic technology for strengthening human rights. She is bilingual in
+      English and Spanish and tweets at @dinorah_cantu.
+    email: dinorah@thegovlab.org
+    website: http://thegovlab.org/about/team/
+    twitter: https://twitter.com/dinorah_cantu
+    linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
+    gitHub: https://github.com/dino-at-thegovlab
+  - sys:
+      id: t7GAsnfeU0QGAsemoewSu
+    firstName: Alexandra
+    lastName: Clare
+    longBio: Before arriving at the GovLab, Ali worked as a criminal prosecutor for
+      the Australian Government and as a fellow at United Nations Office of the Special
+      Representative for Children and Armed Conflict, Human Rights Watch and at International
+      Crisis Group undertaking research and advocacy on various crisis situations
+      from Syria to the Democratic Republic of Congo.
+    email: acc578@nyu.edu
+    twitter: https://twitter.com/iraqrecoded
+    linkedIn: https://www.linkedin.com/pub/alexandra-clare/43/582/819
+  - sys:
+      id: 39NgtCQES4QUWe2yyc880a
+    firstName: Gavin
+    lastName: Hayman
+    title: Executive Director of the Open Contracting Partnership
+    longBio: |-
+      Gavin is currently the Executive Director of Global Witness and, before that, he was the organisation's Director of Campaigns since 2006. He oversees all of Global Witness groundbreaking and award-winning investigative, campaigning and advocacy work uncovering secret deals, corruption and conflict around the world. He helped create the international Publish What You Pay campaign and helped negotiate the intergovernmental Extractive Industries Transparency Initiative that brings together oil and mining companies, home- and host-governments and civil society to improve disclosure and oversight of over $1 trillion dollars of oil and mining money.
+
+      He is an expert on illicit financial flows, and helped lead global efforts to end the abuse of anonymous shell companies for money laundering and financial crime, including working with the British government's recent presidency of the G8 and the Open Government Partnership. He has a Doctorate from the University of Reading and has worked with Chatham House in London and the United National Environmental Programme in the past on analysing and investigating global environmental crime.
+    email: haymangavin@gmail.com
+    twitter: https://twitter.com/gavinhayman_gw
+  startDate: !ruby/object:DateTime 2016-04-15 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2017-05-01 00:00:00.000000000 -05:00
+  description: 'More and more organizations are turning to crowds for help in solving
+    their most vexing innovation and research questions. But managers remain understandably
+    cautious. It seems risky and even unnatural to push problems out to vast groups
+    of strangers distributed around the world, particularly for organizations and
+    institutions built on a history of internal innovation. Understanding what kinds
+    of problems a crowd really can handle better and how to manage the process requires
+    careful design. However, after a decade of study, we have identified when crowds
+    tend to outperform internal organizations (or not). This program is designed to
+    help those wishing to integrate crowdsourcing into ongoing projects. Whether policymaking
+    or service delivery in nature, we start from the assumption that, engaging citizens
+    is generally both more effective and more legitimate as a way of working. Together
+    we will explore how to better harness crowdsourcing and distributed innovation
+    networks by offering guidance on choosing the best form of crowdsourcing for a
+    given situation. '
+  syllabusClasses:
+  - sys:
+      id: 5fOzllL7gWu6iyCua6GwGM
+    classTitle: Describing the Project
+    classNumber: 1
+    classWeek: 1
+    classDescription: "During this session we want to talk about what people are doing
+      and why. Get people to refine their problem and project descriptions further.
+      We can support with sample problem and project descriptions and the Public Projects
+      Canvas, which gets people thinking about the arc of their projects.)\nWhen:
+      Friday, April 10, 2015, from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible*
+      guest speaker: TBD (Suggestion: Bring in a guest with a really successful or
+      failed project in your space)\nTo-do: Please fill out the GovLab Public Problem
+      Solving Canvas\n\n*Guest speakers should be people you are also very interested
+      in meeting and you think can learn the most from their experience so please
+      feel free to suggest any changes or additions. "
+  - sys:
+      id: 2DlzQLVOByc208MociAIUM
+    classTitle: Engaging with People and Data
+    classNumber: 2
+    classWeek: 2
+    classDescription: |
+      During this session we want to talk about how you are getting smarter about who your users are and their needs. Please use this session to also talk about how are you doing research, share and trade ideas.
+      When: Friday, April 17, 2015 from 8 - 10am EST
+      Link to join: https://zoom.us/j/345797363
+      Possible guest speaker: TBD (Suggestion: Guests might include either someone who can talk about how they did research for their own project or a research specialist such as a librarian or data scientist.)
+      Before the session: Rewrite the Problem Statements
+    resources:
+    - sys:
+        id: j0nGdQvlUOSY6IIoQwWia
+  - sys:
+      id: 59nkpvti0MYOg8cEGwCY6O
+    classTitle: Measuring Impact
+    classNumber: 3
+    classWeek: 3
+    classDescription: "During this session the goal is to talk metrics, metrics, metrics
+      and exchange ideas for how to assess impact. We will also discuss how to evolve
+      the project.\nWhen: Friday, April 24, 2015 from, 8 - 10am EST\nLink to join:
+      https://zoom.us/j/345797363\nPossible guest speaker: TBD\nBefore the session:
+      \n"
+  - sys:
+      id: 2L31ia4bbieoqIMcoeMSQy
+    classTitle: Persuading the Audience
+    classNumber: 4
+    classWeek: 4
+    classDescription: "Exchange decks and 1-page memos and do your pitch! We will
+      bring in guests to give feedback on presentations so be prepared.\nWhen:  Friday,
+      May 1, 2015 from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible
+      guest speaker: TBD\nBefore the session: \n"
+    resources:
+    - sys:
+        id: j0nGdQvlUOSY6IIoQwWia
+  resources:
+  - sys:
+      id: j0nGdQvlUOSY6IIoQwWia
+  - sys:
+      id: 3hrTJ3Y812AewOmakaw4GU

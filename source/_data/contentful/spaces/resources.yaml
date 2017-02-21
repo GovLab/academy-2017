@@ -1,0 +1,23 @@
+---
+resource:
+- sys:
+    id: j0nGdQvlUOSY6IIoQwWia
+  title: "“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform"
+  author:
+  - Beth Simone Noveck
+  type:
+  - Journal Article
+  url: http://jolt.law.harvard.edu/articles/pdf/v20/20HarvJLTech123.pdf
+  publicationName: Harvard Journal of Law & Technology
+  publicationDate: !ruby/object:DateTime 2006-09-01 00:00:00.000000000 -05:00
+- sys:
+    id: 3hrTJ3Y812AewOmakaw4GU
+  title: 'Owning the city: new media and citizen engagement in urban design'
+  author:
+  - Michiel de Lange
+  - Martijn de Waal
+  type:
+  - Journal Article
+  url: http://pear.accc.uic.edu/ojs/index.php/fm/article/view/4954/3786
+  publicationName: First Monday
+  publicationDate: !ruby/object:DateTime 2013-11-04 00:00:00.000000000 -05:00
