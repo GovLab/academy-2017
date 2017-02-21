@@ -57,7 +57,7 @@ layout: default
                 {% if workshop.faculty %}
                   {% for member in workshop.faculty %}
                   <div class="faculty-container">
-                    <a href="/faculty/{{ member.lastName }}.html" target="_blank" class="faculty-image" style="background-image: url('/images/faculty/{{ member.firstName | slugify }}-{{ member.lastName | slugify }}.jpg');">
+                    <a href="{{site.url}}{{site.baseurl}}/faculty/{{ member.lastName }}.html" target="_blank" class="faculty-image" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ member.firstName | slugify }}-{{ member.lastName | slugify }}.jpg');">
                     </a>
                     <div class="faculty-name">
                       <a href="/faculty/{{ member.lastName }}.html">{{member.firstName}} {{member.lastName}}</a>
