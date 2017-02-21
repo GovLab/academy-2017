@@ -9,7 +9,7 @@ module Jekyll
       if(name.is_a? Integer)
         return name.to_s
       end
-      return name.downcase.strip.gsub(' ', '-').gsub(/[^\w.-]/, '')
+      return name.downcase.strip.gsub(' ', '-').gsub('ú', 'u').gsub(/[^\w.-]/, '')
     end
   end
 
@@ -127,4 +127,3 @@ module Jekyll
 end
 
 Liquid::Template.register_filter(Jekyll::DataPageLinkGenerator)
-
