@@ -70,7 +70,7 @@ layout: default
         {% for card in site.data.contentful.spaces.projects.project %}
         <div class="column large-4 medium-6 small-12" data-equalizer-watch>
           <article class="card-3">
-            <div class="card-3__image" style="background-image: url('{{card.projectLogo.url}}')">
+            <div class="card-3__image" bg-url="{{card.projectLogo.url}}">
               <div class="card-3__content">
                 <h1>{{card.projectName}}</h1>
                 <h2>
@@ -88,3 +88,4 @@ layout: default
       </div>
     </div>
   </section>
+
