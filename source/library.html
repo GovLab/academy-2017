@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign libraryResources = site.data.contentful.spaces.resources.resource %}
+
 
 <div class="library-page">
   <div class="top-section top-section--purple">
@@ -15,33 +17,64 @@ layout: default
     <div class="row expanded collapse">
       <div id="resources" class="columns results-container">
         <div id="list" class="list">
+        {% for resource in libraryResources %}
           <div class="result-item js-open-modal">
-            <h2 class="result-item__name">Title</h2>
-            <p class="result-item__authors">Authors</p>
+            <h2 class="result-item__name">{{ resource.title }}</h2>
+            <p class="result-item__authors">{{ resource.author | join:", "}}</p>
 
             <!-- Short Description -->
             <div class="result-item__short-description">
-              <p>Short Descripton</p>
+              <p>{{ resource.shortDescription }}</p>
             </div>
 
             <!-- Publication -->
             <div class="result-item__publication">
-              <p><span>Published in</span> Day/Month/Time</p>
+              <p><span>Published in</span> {{ resource.publicationName }}</p>
+            </div>
+
+            <!-- Resource pubdate  -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Date</span>
+              <span class="result-item__taxonomy__value">
+                  <p class="result-item__tag resource-date" data-type="all">{{ resource.publicationDate | date: "%F" }}</p>
+              </span>
             </div>
 
             <!-- Resource type -->
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Type</span>
               <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-type" data-type="all">Resource Type</p>
+                  <p class="result-item__tag resource-type" data-type="all">{{ resource.type }}</p>
               </span>
             </div>
 
-            <!-- Resource theme -->
+            <!-- Resource category tags -->
             <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Themes</span>
-              <span class="result-item__taxonomy__value resource-theme" data-theme="all">
-                  <p class="result-item__tag">Resource Theme</p>
+              <span class="result-item__taxonomy__key">Category</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceCategory %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
+              </span>
+            </div>
+
+            <!-- Resource objective tags -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Objective</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceObjective %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
+              </span>
+            </div>
+
+            <!-- Resource methodology tags -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Methodology</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceMethodology %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
               </span>
             </div>
 
@@ -60,7 +93,7 @@ layout: default
                 <!-- URL -->
                 <div class="floating-button">
                   <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="" title="">Go to Resource</a>
+                    <a class="button button--floating button--black" target="_blank" href="{{resource.url}}" title="">Go to Resource</a>
                   </div>
                 </div>
               </header>
@@ -68,12 +101,14 @@ layout: default
               <div class="modal__content">
                 <!-- Short Description -->
                 <div class="result-item__short-description">
-                  <p>Short Description</p>
+                  <p>Add Short Description</p>
                 </div>
-                <p>Annotation</p>
+                <p>Add Annotation</p>
               </div>
             </div>
+
           </div>
+          {% endfor %}
         </div>
       </div>
     </div>
