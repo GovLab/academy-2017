@@ -12,10 +12,7 @@
   &__date-container {
     margin-top: 30px;
     margin-left: 30%;
-
   }
-
-  &__section {}
 
   &__faculty {
     height: 150px;
@@ -31,11 +28,9 @@
   &__description {
     padding-left: 150px;
     padding-right: 150px;
-    // padding-bottom: 150px;
     @include breakpoint($medium) {
       padding-left: 50px;
       padding-right: 50px;
-      // padding-bottom: 50px;
     }
     @include breakpoint($small-only) {
       padding: 0;
