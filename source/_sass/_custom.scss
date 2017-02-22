@@ -28,3 +28,24 @@
   }
 }
 
+.project-gallery-grid {
+  .card-3 {
+    width: 100%;
+    min-height: 300px;
+
+    &__image {
+      min-height: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-items: flex-end;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__content {
+      padding-top: 0;
+      width: 100%;
+    }
+  }
+}

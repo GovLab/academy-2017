@@ -66,20 +66,21 @@ layout: default
         {% endcomment %}
       </div>
 
-      <div class="row">
+      <div class="row project-gallery-grid" data-equalizer data-equalize-by-row="true">
         {% for card in site.data.contentful.spaces.projects.project %}
-        <!-- {{card | inspect}} -->
-        <div class="column large-4">
+        <div class="column large-4 medium-6 small-12" data-equalizer-watch>
           <article class="card-3">
-            <div class="card-3__content" style="background-image: url(./images/bg-image-sample.png);">
-              <h1>{{card.projectName}}</h1>
-              <h2>
-                {% if card.projectTitle %}
-                {{card.projectTitle}}
-                {% else %}
-                {{card.projectSubtitle}}
-                {% endif %}
-              </h2>
+            <div class="card-3__image" style="background-image: url('{{card.projectLogo.url}}')">
+              <div class="card-3__content">
+                <h1>{{card.projectName}}</h1>
+                <h2>
+                  {% if card.projectTitle %}
+                  {{card.projectTitle | truncatewords: 20}}
+                  {% else %}
+                  {{card.projectSubtitle | truncatewords: 20}}
+                  {% endif %}
+                </h2>
+              </div>
             </div>
           </article>
         </div>

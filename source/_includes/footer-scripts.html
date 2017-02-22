@@ -1,6 +1,8 @@
 <script src="{{site.url}}{{site.baseurl}}/vendor/jquery-2.1.4.min.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/vendor/slick.min.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/vendor/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.equalizer.min.js"></script>
 
 <script src="{{site.url}}{{site.baseurl}}/js/project-gallery.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/js/feed.js"></script>
@@ -13,4 +15,10 @@
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', '', 'auto');
 ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $(document).foundation();
+    });
 </script>
