@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% assign syllabuses = site.data.contentful.spaces.syllabuses.syllabus %}
+
+{% for syllabus in syllabuses %}
+<div class="syllabus">
+  <div class="top-section top-section--purple">
+    <div class="row">
+      <div class="column">
+        <h1 class="syllabus__title">{{syllabus.syllabusTitle}}</h1>
+      </div>
+    </div>
+    <div class="row align-right expanded">
+      <div class="column small-4">
+        <h6 class="syllabus__date">Start Date: {{syllabus.startDate | date: "%B %d, %Y"}}</h6>
+        <h6 class="syllabus__date">End Date: {{syllabus.endDate | date: "%B %d, %Y"}}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="row">
+      <div class="column">
+        <p class="syllabus__description">{{syllabus.description}}</p>
+      </div>
+      <div class="column">
+        <div class="syllabus__faculty">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endfor %}
