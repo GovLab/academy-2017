@@ -1,0 +1,48 @@
+.syllabus {
+  &__title {}
+
+  &__date {
+    margin: 0;
+    font-size: 1.5rem;
+    @include breakpoint($small-only) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__date-container {
+    margin-top: 30px;
+    margin-left: 30%;
+  }
+
+  &__faculty {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+  }
+
+  &__description {
+    padding-left: 150px;
+    padding-right: 150px;
+    @include breakpoint($medium) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include breakpoint($small-only) {
+      padding: 0;
+    }
+  }
+
+  &__description-text {
+    padding-left: 150px;
+    padding-top: 50px;
+    @include breakpoint($small-only) {
+      padding: 0;
+    }
+  }
+
+}

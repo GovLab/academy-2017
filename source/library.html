@@ -1,0 +1,140 @@
+---
+layout: default
+---
+{% assign libraryResources = site.data.contentful.spaces.resources.resource | sort: "title"%}
+
+
+<div class="library-page">
+  <div class="top-section top-section--purple">
+    <div class="row">
+      <div class="large-12 column">
+        <h1>Library</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-section">
+    <div class="row expanded collapse">
+      <div id="resources" class="columns results-container">
+        <div id="list" class="list">
+        {% for resource in libraryResources %}
+          <div class="result-item">
+          <div class="js-open-modal">
+            <h2 class="result-item__name">{{ resource.title }}</h2>
+            <p class="result-item__authors">{{ resource.author | join:", "}}</p>
+          </div>
+            {% comment %}
+            <!-- Short Description -->
+<!--             {% if resource.shortDescription %}
+            <div class="result-item__short-description">
+              <p>{{ resource.shortDescription }}</p>
+            </div>
+            {% endif %} -->
+            {% endcomment %}
+
+            <!-- Publication -->
+            {% if resource.publicationName %}
+            <div class="result-item__publication">
+              <p><span>Published in</span> {{ resource.publicationName }}</p>
+            </div>
+            {% endif %}
+
+            <!-- Resource pubdate  -->
+            {% if resource.publicationDate %}
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Date</span>
+              <span class="result-item__taxonomy__value">
+                  <p class="result-item__tag resource-date" data-type="all">{{ resource.publicationDate | date: "%B %Y" }}</p>
+              </span>
+            </div>
+            {% endif %}
+
+            <!-- Resource type -->
+            {% if resource.type %}
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                  <p class="result-item__tag resource-type" data-type="all">{{ resource.type }}</p>
+              </span>
+            </div>
+            {% endif %}
+
+            <!-- Resource category tags -->
+            {% if resource.resourceCategory %}
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Category</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceCategory %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
+              </span>
+            </div>
+            {% endif %}
+
+            <!-- Resource objective tags -->
+            {% if resource.resourceObjective %}
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Objective</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceObjective %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
+              </span>
+            </div>
+            {% endif %}
+
+            <!-- Resource methodology tags -->
+            {% if resource.resourceMethodology %}
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Methodology</span>
+              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+                {% for tag in resource.resourceMethodology %}
+                  <p class="result-item__tag">{{ tag }}</p>
+                {% endfor %}
+              </span>
+            </div>
+            {% endif %}
+
+            <!-- Modal Content -->
+            <div class="modal js-target-modal">
+              <header class="modal__header modal--top-section">
+                <div class="modal__type">
+                  <span>{{ resource.type }}</span>
+                </div>
+
+                <i class="modal__close material-icons js-close-modal">close</i>
+                <h1 class="modal__title">{{ resource.title }}</h1>
+                <h2 class="modal__authors">{{ resource.author | join:", "}}</h2>
+                <!-- publication -->
+                {% if resource.publicationName %}
+                 <p class="modal__publication"><span>Published in</span> {{ resource.publicationName }}</p>
+                {% endif %}
+
+                <!-- URL -->
+                {% if resource.url %}
+                <div class="floating-button">
+                  <div class="floating-button__wrapper">
+                    <a class="button button--floating button--black" target="_blank" href="{{resource.url}}" title="">Go to Resource</a>
+                  </div>
+                </div>
+                {% endif %}
+              </header>
+
+              <div class="modal__content">
+                <!-- Short Description -->
+                {% if resource.shortDescription %}
+                <div class="result-item__short-description">
+                  <p>{{ resource.shortDescription }}</p>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
