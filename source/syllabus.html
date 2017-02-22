@@ -39,11 +39,9 @@ layout: default
             </div>
           {% endfor %}
           </div>
-
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="divider">
@@ -67,7 +65,26 @@ layout: default
             <div class="result-item__publication">
               <p><span>Class week</span> {{class.classWeek}}</p>
             </div>
-            {% include class-modal.html %}
+
+            {% if class.resources %}
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Resources</span>
+                {% assign all_resources = site.data.contentful.spaces.resources.resource %}
+
+                  <span class="result-item__taxonomy__value">
+
+                    {% for resource in class.resources %}
+                      {% assign class_resource = resource %}
+                    {% endfor %}
+
+
+                        <p class="result-item__tag resource-type" data-type="all">{{a_resource}}</p>
+                
+                  </span>
+
+            </div>
+          {% endif %}
+          {% include class-modal.html %}
           </div>
         {% endfor %}
         </div>
