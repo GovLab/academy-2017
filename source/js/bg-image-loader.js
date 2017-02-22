@@ -12,7 +12,7 @@ $(function () {
         $(img).on('load', function(){
             var ar = img.width / img.height;
             if (ar > 1 + threshold) {
-                size = 'contain';
+                size = '90%';
             }
             $bgElement.css( 'background-image',  'url(' + url + ')' );
             $bgElement.css( 'background-size', size );
