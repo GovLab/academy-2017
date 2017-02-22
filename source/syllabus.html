@@ -43,8 +43,7 @@ layout: default
         </div>
       </div>
     </div>
-    {% assign all_classes = syllabus.syllabusClasses %}
-  {% endfor %}
+
   </div>
 
   <div class="divider">
@@ -55,9 +54,7 @@ layout: default
     <div class="row expanded collapse">
       <div id="resources" class="columns results-container">
         <div id="list" class="list">
-
-        {% for class in all_classes %}
-
+          {% for class in syllabus.syllabusClasses %}
           <div class="result-item js-open-modal">
             <h2 class="result-item__name">{{class.classTitle}}</h2>
 
@@ -72,11 +69,10 @@ layout: default
             </div>
             {% include class-modal.html %}
           </div>
-
         {% endfor %}
         </div>
       </div>
     </div>
   </div>
-
+  {% endfor %}
 </div>
