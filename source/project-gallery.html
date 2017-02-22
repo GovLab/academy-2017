@@ -2,24 +2,24 @@
 layout: default
 ---
 
-<section class="b-project-gallery-page">
-  <header class="b-top-section m-blue">
+<section class="project-gallery-page">
+  <header class="top-section m-blue">
     <div class="row">
       <div class="large-10 large-offset-1 columns end">
         <h2>Project Gallery</h2>
         <h3>Showcasing Our Alumni’s Innovative Civic and Governance Projects. Get Inspired. Connect. Collaborate.</h3>
-        <p class="e-sponsor m-centered">
+<!--         <p class="e-sponsor m-centered">
           With support from <img id="knight-logo" src="/images/knight-logo-white.png" alt="Knight Foundation">
-        </p>
+        </p> -->
       </div>
     </div>
   </header>
 
-  <div class="b-project-list">
-    <div class="b-wrap row">
-      <div class="b-filter-ui">
+  <div class="project-list">
+    <div class="row">
+      <div class="filter-ui">
         <!-- single select -->
-        <form action="#" class="b-form">
+        <form action="#" class="form">
           <div class="e-select medium-6 medium-offset-3">
             <select>
               <option value="*">Select a project category...</option>
@@ -69,26 +69,20 @@ layout: default
       <div class="row">
         {% for card in site.data.contentful.spaces.projects.project %}
         <!-- {{card | inspect}} -->
-        <div class="e-pg-card column large-4 medium-6 b-filter-item">
-          <a href="" class="b-card m-project">
-            <article class="e-card-inner ">
-              <section class="e-card-front" {% if card.img_url %}style="background-image: url('/img/faculty/{{card.img_url}}')"{% endif %}>
-                <p class="e-front-title">{{card.projectName}}</p>
-              </section>
-
-              <section class="e-card-back">
-                <p class="e-project-title">test</p>
-                <p class="e-tagline">test</p>
-              </section>
-            </article>
-          </a>
+        <div class="column large-4">
+          <article class="card-3">
+            <div class="card-3__content" style="background-image: url(./images/bg-image-sample.png);">
+              <h1>{{card.projectName}}</h1>
+              <h2>
+                {% if card.projectTitle %}
+                {{card.projectTitle}}
+                {% else %}
+                {{card.projectSubtitle}}
+                {% endif %}
+              </h2>
+            </div>
+          </article>
         </div>
-        <article class="card-3">
-          <div class="card-3__content" style="background-image: url(./images/bg-image-sample.png);">
-            <h1>Beth Simone Noveck</h1>
-            <h2>Founder of the GovLab</h2>
-          </div>
-        </article>
         {% endfor %}
       </div>
     </div>

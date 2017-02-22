@@ -32,7 +32,7 @@ layout: default
     </div>
   </div>
   <ul class="course-list">
-    {% for workshop in site.data.contentful.spaces.cases.workshop %}
+    {% for workshop in site.data.contentful.spaces.workshops.workshop %}
       {% for type in workshop.workshopType %}
         {% if type != "Partner Workshop" %}
           <li class="course-item">
@@ -80,7 +80,7 @@ layout: default
     </div>
   </div>
   <ul class="course-list">
-    {% for workshop in site.data.contentful.spaces.cases.workshop %}
+    {% for workshop in site.data.contentful.spaces.workshops.workshop %}
       {% for type in workshop.workshopType %}
         {% if type == "Partner Workshop" %}
           <li class="course-item">
