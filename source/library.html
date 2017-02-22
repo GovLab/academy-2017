@@ -18,10 +18,11 @@ layout: default
       <div id="resources" class="columns results-container">
         <div id="list" class="list">
         {% for resource in libraryResources %}
-          <div class="result-item js-open-modal">
+          <div class="result-item">
+          <div class="js-open-modal">
             <h2 class="result-item__name">{{ resource.title }}</h2>
             <p class="result-item__authors">{{ resource.author | join:", "}}</p>
-
+          </div>
             {% comment %}
             <!-- Short Description -->
 <!--             {% if resource.shortDescription %}
