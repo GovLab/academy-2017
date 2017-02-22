@@ -13,24 +13,39 @@ layout: default
       </div>
     </div>
     <div class="row align-right expanded">
-      <div class="column small-4">
-        <h6 class="syllabus__date">Start Date: {{syllabus.startDate | date: "%B %d, %Y"}}</h6>
-        <h6 class="syllabus__date">End Date: {{syllabus.endDate | date: "%B %d, %Y"}}</h6>
+      <div class="column small-12 large-4">
+        <div class="syllabus__date-container">
+          <h6 class="syllabus__date">Starts: {{syllabus.startDate | date: "%B %d, %Y"}}</h6>
+          <h6 class="syllabus__date">Ends: {{syllabus.endDate | date: "%B %d, %Y"}}</h6>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="page-section">
-    <div class="row">
-      <div class="column">
+  <div class="syllabus__section">
+    <div class="row medium-uncollapse expanded">
+      <div class="column medium-6 large-10 small-12 columns">
+        <h4 class="syllabus__description-text">Description</h4>
         <p class="syllabus__description">{{syllabus.description}}</p>
       </div>
-      <div class="column">
-        <div class="syllabus__faculty">
-          
+      <div class="column large-2 medium-2 small-10">
+        <div class="syllabus__faculty-list">
+        {% for faculty in syllabus.faculty %}
+        <div class="row align-right">
+
+            <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
+            </div>
+
+        </div>
+
+        {% endfor %}
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="divider">
+    <h1>Classes</h1>
   </div>
 
 </div>
