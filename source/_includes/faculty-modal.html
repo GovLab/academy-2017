@@ -1,0 +1,47 @@
+<!-- Modal Content -->
+<div class="modal js-target-modal">
+  <header class="modal__header modal--top-section">
+
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">{{faculty.firstName}} {{faculty.lastName}}</h1>
+    <p class="modal__publication">{{faculty.title}}</p>
+    <p class="modal__publication">{{faculty.affiliation}}</p>
+
+    <!-- URL -->
+    <div class="floating-button">
+      <div class="floating-button__wrapper">
+        <!-- <a class="button button--floating button--black" target="_blank" href="" title="">Go to Resource</a> -->
+      </div>
+    </div>
+  </header>
+
+  <div class="modal__content">
+    <!-- Short Description -->
+    <div class="result-item__short-description">
+      <p>{{faculty.longBio}}</p>
+    </div>
+
+    <div class="result-item__short-description">
+      {% if faculty.email %}
+        <a href="mailto:{{faculty.email}}">{{faculty.email}}</a>
+        <br>
+      {% endif %}
+      {% if faculty.website %}
+        <a href="{{faculty.website}}">Website</a>
+        <br>
+      {% endif %}
+      {% if faculty.twitter %}
+        <a href="{{faculty.twitter}}">Twitter</a>
+        <br>
+      {% endif %}
+      {% if faculty.linkedIn %}
+        <a href="{{faculty.linkedIn}}">LinkedIn</a>
+        <br>
+      {% endif %}
+      {% if faculty.gitHub %}
+        <a href="{{faculty.gitHub}}">GitHub</a>
+        <br>
+      {% endif %}
+    </div>
+  </div>
+</div>

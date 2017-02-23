@@ -14,6 +14,14 @@
     margin-left: 30%;
   }
 
+  &___faculty-list {
+    position: relative;
+  }
+
+  &__section {
+    position: relative;
+  }
+
   &__faculty {
     height: 150px;
     width: 150px;
@@ -23,6 +31,10 @@
     background-size: cover;
     background-position: center;
     display: inline-block;
+    float: right;
+    right: 0;
+    cursor: pointer;
+
   }
 
   &__description {
