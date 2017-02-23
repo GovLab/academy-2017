@@ -99,10 +99,37 @@
   }
 }
 
-.project--location {
-  span {
-    &:not(:last-child)::after {
-      content: ", "
+.project {
+  &--location {
+    span {
+      &:not(:last-child)::after {
+        content: ", "
+      }
+    }
+  }
+  &--slider {
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 515px;
+    }
+
+    &__image-wrapper {
+      max-height: 400px;
+      flex-basis: 100%;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      max-height: 400px;
+    }
+
+    &__description {
+      text-align: center;
     }
   }
 }
