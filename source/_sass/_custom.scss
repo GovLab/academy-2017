@@ -9,6 +9,22 @@
   .course-list--masters  &   { background-color: $workshop-color; }
   .course-detail.m-workshop &,
   .course-list--workshop &   { background-color: $masters-color; }
+
+  &--project {
+    i {
+      font-size: 1.5rem;
+      padding: 2rem;
+      &:hover {
+        color: #fff;
+        transition: color 0.2s ease-out;
+      }
+      transition: color 0.2s ease-out;
+    }
+
+    h1, h2, h3, h4, h5 {
+      padding: 0 20px;
+    }
+  }
 }
 
 // Faculty Page Styles
@@ -80,5 +96,13 @@
     }
 
     transition: border 0.2s ease-out;
+  }
+}
+
+.project--location {
+  span {
+    &:not(:last-child)::after {
+      content: ", "
+    }
   }
 }

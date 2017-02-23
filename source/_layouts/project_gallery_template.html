@@ -2,104 +2,109 @@
 layout: default
 ---
 
-<section class="b-main-content">
-  <header class="b-top-section m-blue">
-    <section class="b-single-landing">
-      <div class="row">
-        <div class="large-12 column">
-          <h2 class="e-project-name">{{ page.title }}</h2>
-          <h3 class="e-question">{{ page.tagline }}</h3>
-        </div>
-      </div>
-      <div class="e-wrap row">
-        <div class="e-half">
-        </div>
-        <div class="e-half">
-        </div>
-        <div class="e-progress m-{{status}}">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <section class="b-single-description">
-    <div class="e-wrap row">
-      <div class="e-content column large-6">
-        {% if page.background %}
-          <h4>Background</h4>
-          {{ page.background }}
-          <br>
-        {% endif %}
-        {% if page.shortDescription %}
-          <h4>Description</h4>
-          {{ page.shortDescription }}
-          <br>
-        {% endif %}
-        {% if page.impact %}
-          <h4>Impact</h4>
-          {{ page.impact }}
-          <br>
-        {% endif %}
-      </div>
-
-      <div class="e-content large-6 column">
-        {% if page.location %}
-          <p class="e-place"><strong>Location:</strong> {{ page.location }}</p>
-        {% endif %}
-        {% if page.www %}
-          <p><strong>Project Website:</strong> <a href="{{www}}" target="_blank" class="e-project-link">{{ page.www }}</a></p>
-        {% endif %}
-        <div class="e-social-media">
-          {% if page.twitter %}
-            <a href="http://twitter.com/{{ page.twitter | replace: '@', '' }}" target="_blank" class=""><i class="fa fa-twitter"></i></a>
-          {% endif %}
-          {% if page.facebook %}
-            <a href="{{ page.facebook }}" target="_blank" class=""><i class="fa fa-facebook"></i></a>
-          {% endif %}
-          {% if page.email %}
-            <a href="mailto:{{ page.email }}" target="_blank" class=""><i class="fa fa-envelope"></i></a>
-          {% endif %}
-        </div>
-        <div class="e-tags">
-          <h5>Tags:</h5>
-          {% for tag in page.category %}
-            <a href="/project-gallery.html?filter=.{{tag | slugify | lower}}" class="button">{{ tag }}</a>
-          {% endfor %}
-        </div>
-        {% if page.team %}
-        <div class="e-team">
-          <h4>Team</h4>
-          {{ page.team | markdownify }}
-        </div>
-        {% endif %}
-
-        {% if page.partners %}
-          <div class="e-team">
-            <h4>Partners</h4>
-            {{page.partners | markdownify }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </section>
-
-  <div class="b-page-section project-photo-slider">
-    {% if page.images %}
-      <div class="b-slider slick">
-        {% for image in page.images %}
-          <div id="slide-id" class="b-slide m-white">
-              <div class="row e-content">
-                <img class="slider-img" src="/img/projects/{{image}}">
-              </div>
-          </div>
-        {% endfor %}
-      </div>
+<div class="top-section top-section--blue top-section--project">
+  <h1>{{ page.projectName }}</h1>
+  <h4>{{ page.projectTitle }}</h4>
+  <h3>{{ page.projectSubtitle }}</h3>
+  <div class="social-media">
+    {% if page.twitter %}
+    <a href="http://twitter.com/{{ page.twitter | replace: '@', '' }}" target="_blank" class=""><i class="fa fa-twitter"></i></a>
+    {% endif %}
+    {% if page.facebook %}
+    <a href="{{ page.facebook }}" target="_blank" class=""><i class="fa fa-facebook"></i></a>
+    {% endif %}
+    {% if page.email %}
+    <a href="mailto:{{ page.email }}" target="_blank" class=""><i class="fa fa-envelope"></i></a>
+    {% endif %}
+    {% if page.website %}
+    <a href="{{page.website}}" target="_blank" class=""><i class="fa fa-globe"></i></a>
     {% endif %}
   </div>
-</section>
+</div>
+<div class="page-section">
+  <div class="row">
+    <div class="column large-6 medium-12 small-12">
+
+      {% if page.background %}
+      <h4>Background</h4>
+      {{ page.background }}
+      <br>
+      {% endif %}
+      {% if page.shortDescription %}
+      <h4>Description</h4>
+      {{ page.shortDescription }}
+      <br>
+      {% endif %}
+      {% if page.impact %}
+      <h4>Impact</h4>
+      {{ page.impact }}
+      <br>
+      {% endif %}
+    </div>
+
+    <div class="column large-6 medium-12 small-12">
+
+      {% if page.regoin or page.country or page.city %}
+      <div class="project--location">
+        <h4>Location</h4>
+        {% if page.city %}
+        <span>{{ page.city }}</span>
+        {% endif %}
+        {% if page.country %}
+        <span>{{ page.country }}</span>
+        {% endif %}
+        {% if page.regoin %}
+        <span>{{ page.regoin }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <div>
+        <h4>Categories</h4>
+        {% for tag in page.category %}
+        <a href="/project-gallery.html?filter=.{{tag | slugify | lower}}" class="button">{{ tag }}</a>
+        {% endfor %}
+      </div>
+
+      {% if page.team %}
+      <div>
+        <h4>Team</h4>
+        {{ page.team | markdownify }}
+      </div>
+      {% endif %}
+
+      {% if page.partners %}
+      <div>
+        <h4>Partners</h4>
+        {{page.partners | markdownify }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="row">
+
+    {% if page.images %}
+    <div class="b-slider slick">
+      {% for image in page.images %}
+      <div id="slide-id" class="b-slide m-white">
+        <div class="row e-content">
+          <img class="slider-img" src="{{image.url}}">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="row">
+    <div class="column large-12">
+      <a class="button" href="{{site.url}}{{site.baseurl}}/project-gallery.html">Back to Project Gallery</a>
+    </div>
+  </div>
+</div>
