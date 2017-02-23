@@ -151,6 +151,21 @@
 
 .project--location span:not(:last-child)::after {
   content: ", "; }
+.project--slider__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 515px; }
+.project--slider__image-wrapper {
+  max-height: 400px;
+  flex-basis: 100%; }
+.project--slider__image {
+  display: block;
+  margin: 0 auto;
+  max-height: 400px; }
+.project--slider__description {
+  text-align: center; }
 
 .highlights {
   padding: 0; }
