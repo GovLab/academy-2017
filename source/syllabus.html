@@ -126,13 +126,74 @@ layout: default
                         <div class="result-item__publication">
                           <p><span>Published</span> {{item.publicationDate | date: "%B %d, %Y"}}</p>
                         </div>
+
+
+                      <!-- Authors -->
+                      <div class="result-item__taxonomy result-item__taxonomy--type">
+                        <span class="result-item__taxonomy__key">Author</span>
+                        <span class="result-item__taxonomy__value resource-theme" data-theme="all">
+                          {% for authors in item.author %}
+                            <p class="result-item__tag">{{authors}}</p>
+                          {% endfor %}
+                        </span>
+                      </div>
+
+                      <!-- Resource theme -->
+                      <div class="result-item__taxonomy result-item__taxonomy--type">
+                        <span class="result-item__taxonomy__key">Publisher</span>
+                        <span class="result-item__taxonomy__value resource-theme" data-theme="all">
+                            <p class="result-item__tag">{{item.publicationName}}</p>
+                        </span>
+                      </div>
+
+                      <!-- Resource type -->
+                      <div class="result-item__taxonomy result-item__taxonomy--type">
+                        <span class="result-item__taxonomy__key">Type</span>
+                        <span class="result-item__taxonomy__value">
+                            <p class="result-item__tag resource-type" data-type="all">{{item.type}}</p>
+                        </span>
                       </div>
                     </div>
+
+                    <!-- Modal Content -->
+                    <div class="modal js-target-modal">
+                      <header class="modal__header modal--top-section">
+                        <div class="modal__type">
+                          <span>{{item.type}}</span>
+                        </div>
+
+                        <i class="modal__close material-icons js-close-modal">close</i>
+                        <h1 class="modal__title">{{item.title}}</h1>
+                        {% for authors in item.author %}
+                          <h2 class="modal__authors">{{authors}}</h2>
+                        {% endfor %}
+
+                        <p class="modal__publication"><span>Published</span> {{item.publicationDate | date: "%B %d, %Y"}}</p>
+
+                        <!-- URL -->
+                        <div class="floating-button">
+                          <div class="floating-button__wrapper">
+                            {% if item.url %}
+                              <a class="button button--floating button--black" target="_blank" href="{{item.url}}" title="">Visit Webpage</a>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </header>
+
+                      <div class="modal__content">
+                        <!-- Short Description -->
+                        <div class="result-item__short-description">
+                          <p>{{item.shortDescription}}</p>
+                        </div>
+                        <p>Published by <b>{{item.publicationName}}</b></p>
+                        <p>Type <b>{{item.type}}</b></p>
+                      </div>
+                    </div>
+                  </div>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
             {% endif %}
-
           </div>
         </div>
       </div>

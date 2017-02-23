@@ -18,9 +18,16 @@
   <div class="modal__content">
     <!-- Short Description -->
     <div class="result-item__short-description">
-      
-      {% assign description = class.classDescription %}
-      <p>{{description}}</p>
+      <p>{{class.classDescription}}</p>
+    </div>
+
+    <div class="result-item__short-description">
+      <p>References:</p>
+      {% for item in all_resources %}
+        {% if item.sys.id == class_resource_id %}
+        <p><i>{{item.title}}</i></p>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
