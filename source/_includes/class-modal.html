@@ -20,5 +20,14 @@
     <div class="result-item__short-description">
       <p>{{class.classDescription}}</p>
     </div>
+
+    <div class="result-item__short-description">
+      <p>References:</p>
+      {% for item in all_resources %}
+        {% if item.sys.id == class_resource_id %}
+        <p><i>{{item.title}}</i></p>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>

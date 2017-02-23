@@ -128,6 +128,11 @@ page_gen:
     name: 'projectName'
     dir: 'projects'
 
+  - data: 'contentful.spaces.syllabuses.syllabus'
+    template: 'syllabus_template'
+    name: 'syllabusTitle'
+    dir: 'syllabus'
+
   # - data: 'clinics'
   #   template: 'coaching_template'
   #   name: 'title'
