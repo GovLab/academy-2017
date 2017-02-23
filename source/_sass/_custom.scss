@@ -29,15 +29,26 @@
 }
 
 .project-gallery-grid {
+  max-width: 1020px;
+
+  @media (max-width: 1020px) {
+    max-width: 680px;
+  }
+  @media (max-width: 680px) {
+    max-width: 340px;
+  }
+
+  margin: 0 auto;
   a {
     text-decoration: none;
   }
   .card-3 {
-    width: 100%;
-    min-height: 300px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
 
     &__image {
-      min-height: 300px;
+      height: 100%;
       background-size: 50%;
       background-repeat: no-repeat;
       background-position: center;
@@ -50,21 +61,24 @@
       width: 100%;
       h1 {
         font-weight: normal;
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0.0);
         color: #222;
         vertical-align: text-bottom;
         padding-bottom: 4%;
         transition: all 0.2s ease-out;
       }
     }
+
     &:hover {
       border: 1px solid rgba(0,0,0,0.3);
       transition: all 0.2s ease-out;
     }
+
     &:hover .card-3__content h1 {
-      background-color: rgba(0,0,0,0.2);
+      background-color: rgba(0,0,0,0.1);
       transition: all 0.2s ease-out;
     }
+
     transition: all 0.2s ease-out;
   }
 }
