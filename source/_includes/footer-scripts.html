@@ -8,7 +8,9 @@
 <script src="{{site.url}}{{site.baseurl}}/js/feed.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/js/bg-image-loader.js"></script>
 <script src="{{site.url}}{{site.baseurl}}/js/scripts.js"></script>
-
+{% if page.custom_js %}
+<script src="{{site.url}}{{site.baseurl}}/js/{{page.custom_js}}"></script>
+{% endif %}
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
