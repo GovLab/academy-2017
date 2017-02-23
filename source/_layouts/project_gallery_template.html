@@ -21,6 +21,15 @@ layout: default
     {% endif %}
   </div>
 </div>
+<div class="progress progress--complete">
+  <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <div class="page-section">
   <div class="row">
     <div class="column large-6 medium-12 small-12">
@@ -84,21 +93,22 @@ layout: default
 </div>
 
 <div class="page-section">
-  <div class="row">
 
-    {% if page.images %}
-    <div class="b-slider slick">
-      {% for image in page.images %}
-      <div id="slide-id" class="b-slide m-white">
-        <div class="row e-content">
-          <img class="slider-img" src="{{image.url}}">
+  {% if page.images %}
+  <div class="slider project--slider">
+    {% for image in page.images %}
+    <div class="slide">
+      <div class="project--slider__container">
+        <div class="project--slider__image-wrapper">
+          <img class="project--slider__image" src="{{image.url}}">
         </div>
+        <p class="project--slider__description">{{image.description}}</p>
       </div>
-      {% endfor %}
     </div>
-    {% endif %}
-
+    {% endfor %}
   </div>
+  {% endif %}
+
 </div>
 
 <div class="page-section">
