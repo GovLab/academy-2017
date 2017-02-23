@@ -1,5 +1,6 @@
 ---
 layout: default
+custom_js: library.js
 ---
 {% assign libraryResources = site.data.contentful.spaces.resources.resource | sort: "title"%}
 
@@ -12,6 +13,97 @@ layout: default
       </div>
     </div>
   </div>
+
+  <!-- begin dropdown filters -->
+  <div class="page-section">
+
+    <!-- create dropdown arrays from contentful-->
+    {% assign type_list = "" | split: "" %}
+    {% assign category_list = "" | split: "" %}
+    {% assign objective_list = "" | split: "" %}
+    {% assign methodology_list = "" | split: "" %}
+
+    {% for item in site.data.contentful.spaces.resources.resource %}
+        {% assign type_name = item.type %}
+        {% assign type_list = type_list | push: type_name %}
+
+      {% for category in item.resourceCategory %}
+        {% assign category_name = category %}
+        {% assign category_list = category_list | push: category_name %}
+      {% endfor %}
+
+      {% for objective in item.resourceObjective%}
+        {% assign objective_name = objective %}
+        {% assign objective_list = objective_list | push: objective_name %}
+      {% endfor %}
+
+      {% for methodology in item.resourceMethodology %}
+        {% assign methodology_name = methodology %}
+        {% assign methodology_list = methodology_list | push: methodology_name %}
+      {% endfor %}
+
+    {% endfor %}
+
+    {% assign type_list = type_list | uniq %}
+    {% assign category_list = category_list | uniq %}
+    {% assign objective_list = objective_list | uniq %}
+    {% assign methodology_list = methodology_list | uniq %}
+
+    <div class="filter-panel dropdown-wrapper">
+      <div class="row large-unstack expanded align-right ">
+
+        <div class="columns resource-type">
+          <div class="select">
+            <select data-filter="resource-type" id="type-filter" class="dropdown-content">
+              <option id="all">Filter by Type</option>
+              {% for t in type_list %}
+                <option id="{{ t | join: ' ' | slugify }}">{{ t }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns resource-category">
+          <div class="select">
+            <select data-filter="resource-category" id="category-filter" class="dropdown-content">
+              <option id="all">Filter by Category</option>
+              {% for category in category_list %}
+              <option id="{{ category | join: '' | slugify }}">{{category}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns resource-methodology">
+          <div class="select">
+            <select data-filter="resource-methodology" id="methodology-filter" class="dropdown-content">
+              <option id="all">Filter by Methodology</option>
+              {% for methodology in methodology_list %}
+              <option id="{{ methodology | join: '' | slugify }}">{{methodology}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns resource-objective">
+          <div class="select">
+            <select data-filter="resource-objective" id="objective-filter" class="dropdown-content">
+              <option id="all">Filter by Objective</option>
+              {% for objective in objective_list %}
+              <option id="{{ objective | join: '' | slugify }}">{{objective}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns clear_filters">
+          <button class="button button--icon-only" type="button" name="button">Clear Filters</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end dropdowns -->
 
   <div class="resources-section">
     <div class="row expanded collapse">
@@ -44,7 +136,7 @@ layout: default
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Date</span>
               <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date" data-type="all">{{ resource.publicationDate | date: "%B %Y" }}</p>
+                  <p class="result-item__tag resource-date">{{ resource.publicationDate | date: "%B %Y" }}</p>
               </span>
             </div>
             {% endif %}
@@ -54,7 +146,9 @@ layout: default
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Type</span>
               <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-type" data-type="all">{{ resource.type }}</p>
+              {% for t in resource.type %}
+                <p class="result-item__tag resource-type" data-type="all {{t | slugify}}">{{ t }}</p>
+              {% endfor %}
               </span>
             </div>
             {% endif %}
@@ -63,7 +157,7 @@ layout: default
             {% if resource.resourceCategory %}
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+              <span class="result-item__taxonomy__value resource-category" data-category="all {% for tag in resource.resourceCategory %} {{ tag | slugify }} {% endfor %}">
                 {% for tag in resource.resourceCategory %}
                   <p class="result-item__tag">{{ tag }}</p>
                 {% endfor %}
@@ -75,7 +169,7 @@ layout: default
             {% if resource.resourceObjective %}
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+              <span class="result-item__taxonomy__value resource-objective" data-objective="all {% for tag in resource.resourceObjective %} {{tag | slugify}} {% endfor %}">
                 {% for tag in resource.resourceObjective %}
                   <p class="result-item__tag">{{ tag }}</p>
                 {% endfor %}
@@ -87,7 +181,7 @@ layout: default
             {% if resource.resourceMethodology %}
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-tags" data-theme="all">
+              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all {% for tag in resource.resourceMethodology %} {{tag | slugify }} {% endfor %}">
                 {% for tag in resource.resourceMethodology %}
                   <p class="result-item__tag">{{ tag }}</p>
                 {% endfor %}

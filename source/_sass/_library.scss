@@ -5,4 +5,34 @@
       width: 85px;
   }
 
+// dropdown filters
+  .dropdown-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    .select {
+      margin-bottom: 25px;
+      margin-right: 10px;
+
+      select {
+        width: 110%;
+      }
+    }
+    .button--icon-only {
+      @include breakpoint($small-only) {
+        display: block;
+      }
+    }
+  }
+
+  .filter-panel {
+    .select,
+    .button { margin: 12px 0; }
+    .button--icon-only { padding: 13px; }
+  }
+// end dropdown filters
+
+
+
 }
