@@ -96,5 +96,31 @@ layout: default
       </div>
     </div>
   </div>
+
+  <div class="divider">
+    <h1>Resources</h1>
+  </div>
+
+  <div class="syllabus__section">
+    <div class="row  collapse">
+
+      {% if syllabus.resources %}
+        {% for resource in syllabus.resources %}
+          <div class="column">
+            {% assign resource_id =  resource.sys.id%}
+            {% for item in all_resources %}
+              {% if item.sys.id == resource_id %}
+                <h6>{{item.title}}</h6>
+                {% for authors in item.author %}
+                  <p>{{authors}}</p>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+
   {% endfor %}
 </div>
