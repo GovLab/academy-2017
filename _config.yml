@@ -41,75 +41,75 @@ sass:
 
 contentful:
   spaces:
-    - cases: 
-        space: gvpfsi7zggwe       
+    - cases:
+        space: gvpfsi7zggwe
         access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
-        base_path: ./source   
-        all_entries: true      
-        cda_query:                  
+        base_path: ./source
+        all_entries: true
+        cda_query:
           include: 10
           limit: 1000
-    - resources: 
-        space: gvpfsi7zggwe        
-        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64 
-        cda_query:                  
+    - resources:
+        space: gvpfsi7zggwe
+        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
+        cda_query:
           content_type: resource
           include: 2
           limit: 1000
-        base_path: ./source   
-        all_entries: true      
-    - syllabuses: 
-        space: gvpfsi7zggwe        
-        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64 
-        cda_query:                  
+        base_path: ./source
+        all_entries: true
+    - syllabuses:
+        space: gvpfsi7zggwe
+        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
+        cda_query:
           content_type: syllabus
           include: 2
           limit: 1000
-        base_path: ./source   
-        all_entries: true      
-    - faculty: 
-        space: gvpfsi7zggwe        
-        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64 
-        cda_query:                  
+        base_path: ./source
+        all_entries: true
+    - faculty:
+        space: gvpfsi7zggwe
+        access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
+        cda_query:
           content_type: faculty
           include: 2
           limit: 1000
         base_path: ./source
-    - coaching_programs: 
-        space: gvpfsi7zggwe        
+    - coaching_programs:
+        space: gvpfsi7zggwe
         access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
-        cda_query:                  
+        cda_query:
           content_type: coachingProgram
           include: 2
           limit: 1000
-        base_path: ./source 
-    - testimonials: 
-        space: gvpfsi7zggwe        
+        base_path: ./source
+    - testimonials:
+        space: gvpfsi7zggwe
         access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
-        cda_query:                  
+        cda_query:
           content_type: testimonial
           include: 2
           limit: 1000
-        base_path: ./source   
+        base_path: ./source
         all_entries: true
-    - projects: 
-        space: gvpfsi7zggwe        
+    - projects:
+        space: gvpfsi7zggwe
         access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
-        cda_query:                  
+        cda_query:
           content_type: project
           include: 2
           limit: 1000
-        base_path: ./source   
+        base_path: ./source
         all_entries: true
-    - workshops: 
-        space: gvpfsi7zggwe        
+    - workshops:
+        space: gvpfsi7zggwe
         access_token: 3a7e015d277bfd033bc1fc10b8399e0672a3fe1729df8575db21f19e76832d64
-        cda_query:                  
+        cda_query:
           content_type: workshop
           include: 2
           limit: 1000
-        base_path: ./source   
-        all_entries: true          
+        base_path: ./source
+        all_entries: true
 
 
 page_gen:
@@ -122,6 +122,11 @@ page_gen:
     template: 'people_template'
     name: 'lastName'
     dir: 'faculty'
+
+  - data: 'contentful.spaces.projects.project'
+    template: 'project_gallery_template'
+    name: 'projectName'
+    dir: 'projects'
 
   # - data: 'clinics'
   #   template: 'coaching_template'
