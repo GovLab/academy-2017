@@ -87,6 +87,15 @@
   background-color: #366473; }
 .course-detail.m-workshop .top-section, .course-detail.m-workshop .faculty-header, .course-detail.m-workshop .course-header, .course-list--workshop .top-section, .course-list--workshop .faculty-header, .course-list--workshop .course-header {
   background-color: #f9b26f; }
+.top-section--project i {
+  font-size: 1.5rem;
+  padding: 2rem;
+  transition: color 0.2s ease-out; }
+  .top-section--project i:hover {
+    color: #fff;
+    transition: color 0.2s ease-out; }
+.top-section--project h1, .top-section--project h2, .top-section--project h3, .top-section--project h4, .top-section--project h5 {
+  padding: 0 20px; }
 
 .faculty-header {
   text-align: center; }
@@ -100,35 +109,48 @@
     background-size: 100%;
     background-position: center; }
 
-.project-gallery-grid a {
-  text-decoration: none; }
-.project-gallery-grid .card-3 {
-  width: 100%;
-  min-height: 300px;
-  transition: all 0.2s ease-out; }
-  .project-gallery-grid .card-3__image {
-    min-height: 300px;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: flex-end;
-    display: flex; }
-  .project-gallery-grid .card-3__content {
-    padding-top: 0;
-    width: 100%; }
-    .project-gallery-grid .card-3__content h1 {
-      font-weight: normal;
+.project-gallery-grid {
+  max-width: 1020px;
+  margin: 0 auto; }
+  @media (max-width: 1020px) {
+    .project-gallery-grid {
+      max-width: 680px; } }
+  @media (max-width: 680px) {
+    .project-gallery-grid {
+      max-width: 340px; } }
+  .project-gallery-grid a {
+    text-decoration: none; }
+  .project-gallery-grid .card-3 {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transition: border 0.2s ease-out; }
+    .project-gallery-grid .card-3__image {
+      height: 100%;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-items: flex-end;
+      display: flex; }
+    .project-gallery-grid .card-3__content {
+      padding-top: 0;
+      width: 100%; }
+      .project-gallery-grid .card-3__content h1 {
+        font-weight: normal;
+        background-color: transparent;
+        color: #222;
+        vertical-align: text-bottom;
+        padding-bottom: 4%;
+        transition: background-color 0.2s ease-out; }
+    .project-gallery-grid .card-3:hover {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      transition: border 0.2s ease-out; }
+    .project-gallery-grid .card-3:hover .card-3__content h1 {
       background-color: rgba(0, 0, 0, 0.1);
-      color: #222;
-      vertical-align: text-bottom;
-      padding-bottom: 4%;
-      transition: all 0.2s ease-out; }
-  .project-gallery-grid .card-3:hover {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease-out; }
-  .project-gallery-grid .card-3:hover .card-3__content h1 {
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-out; }
+      transition: background-color 0.2s ease-out; }
+
+.project--location span:not(:last-child)::after {
+  content: ", "; }
 
 .highlights {
   padding: 0; }
@@ -393,6 +415,10 @@
 .syllabus__date-container {
   margin-top: 30px;
   margin-left: 30%; }
+.syllabus___faculty-list {
+  position: relative; }
+.syllabus__section {
+  position: relative; }
 .syllabus__faculty {
   height: 150px;
   width: 150px;
@@ -401,7 +427,10 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  display: inline-block; }
+  display: inline-block;
+  float: right;
+  right: 0;
+  cursor: pointer; }
 .syllabus__description {
   padding-left: 150px;
   padding-right: 150px; }
@@ -418,6 +447,9 @@
   @media (max-width: 40em) {
     .syllabus__description-text {
       padding: 0; } }
+.syllabus__objectives {
+  padding: 50px;
+  background-color: #e6e6e6; }
 
 .library-page .resources-section .result-item__taxonomy__key {
   width: 85px; }
