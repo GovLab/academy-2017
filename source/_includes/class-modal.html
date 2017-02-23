@@ -18,7 +18,9 @@
   <div class="modal__content">
     <!-- Short Description -->
     <div class="result-item__short-description">
-      <p>{{class.classDescription}}</p>
+      
+      {% assign description = class.classDescription %}
+      <p>{{description}}</p>
     </div>
   </div>
 </div>

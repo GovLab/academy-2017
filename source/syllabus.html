@@ -52,46 +52,48 @@ layout: default
     <h1>Classes</h1>
   </div>
 
-  <div class="resources-section">
-    <div class="row expanded collapse">
-      <div id="resources" class="columns results-container">
-        <div id="list" class="list">
-          {% for class in syllabus.syllabusClasses %}
-          <div class="result-item">
-            <div class="js-open-modal">
-              <h2 class="result-item__name">{{class.classTitle}}</h2>
+  <div class="syllabus__classes">
+    <div class="resources-section">
+      <div class="row expanded collapse">
+        <div id="resources" class="columns results-container">
+          <div id="list" class="list">
+            {% for class in syllabus.syllabusClasses %}
+            <div class="result-item">
+              <div class="js-open-modal">
+                <h2 class="result-item__name">{{class.classTitle}}</h2>
 
-              <!-- Short Description -->
-              <div class="result-item__short-description">
-                <p>{{class.classDescription | strip_html | truncatewords: 30}}</p>
+                <!-- Short Description -->
+                <div class="result-item__short-description">
+                  <p>{{class.classDescription | strip_html | truncatewords: 30}}</p>
+                </div>
+
+                <!-- Publication -->
+                <div class="result-item__publication">
+                  <p><span>Class week</span> {{class.classWeek}}</p>
+                </div>
               </div>
 
-              <!-- Publication -->
-              <div class="result-item__publication">
-                <p><span>Class week</span> {{class.classWeek}}</p>
+              {% if class.resources %}
+                <div class="result-item__taxonomy result-item__taxonomy--type">
+                  <span class="result-item__taxonomy__key">Resources</span>
+                  {% assign all_resources = site.data.contentful.spaces.resources.resource %}
+
+                  <span class="result-item__taxonomy__value">
+                    {% for resource in class.resources %}
+                      {% assign class_resource_id = resource.sys.id %}
+                        {% for item in all_resources %}
+                          {% if item.sys.id == class_resource_id %}
+                          <p class="result-item__tag resource-type" data-type="all">{{item.title}}</p>
+                          {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                  </span>
               </div>
+            {% endif %}
+            {% include class-modal.html %}
             </div>
-
-            {% if class.resources %}
-              <div class="result-item__taxonomy result-item__taxonomy--type">
-                <span class="result-item__taxonomy__key">Resources</span>
-                {% assign all_resources = site.data.contentful.spaces.resources.resource %}
-
-                <span class="result-item__taxonomy__value">
-
-                  {% for resource in class.resources %}
-                    {% assign class_resource = resource %}
-                  {% endfor %}
-
-                  <p class="result-item__tag resource-type" data-type="all">{{a_resource}}</p>
-
-                </span>
-
-            </div>
-          {% endif %}
-          {% include class-modal.html %}
+          {% endfor %}
           </div>
-        {% endfor %}
         </div>
       </div>
     </div>
@@ -101,24 +103,39 @@ layout: default
     <h1>Resources</h1>
   </div>
 
-  <div class="syllabus__section">
-    <div class="row  collapse">
+  <div class="syllabus__resources">
+    <div class="resources-section">
+      <div class="row expanded collapse">
+        <div id="resources" class="columns results-container">
+          <div id="list" class="list">
+            {% if syllabus.resources %}
+              {% for resource in syllabus.resources %}
+                <div class="result-item">
+                  <div class="js-open-modal">
+                    {% assign resource_id =  resource.sys.id%}
+                    {% for item in all_resources %}
+                      {% if item.sys.id == resource_id %}
+                        <h2 class="result-item__name">{{item.title}}</h2>
 
-      {% if syllabus.resources %}
-        {% for resource in syllabus.resources %}
-          <div class="column">
-            {% assign resource_id =  resource.sys.id%}
-            {% for item in all_resources %}
-              {% if item.sys.id == resource_id %}
-                <h6>{{item.title}}</h6>
-                {% for authors in item.author %}
-                  <p>{{authors}}</p>
+                        <!-- Short Description -->
+                        <div class="result-item__short-description">
+                          <p>{{item.shortDescription | strip_html | truncatewords: 30}}</p>
+                        </div>
+
+                        <!-- Publication -->
+                        <div class="result-item__publication">
+                          <p><span>Published</span> {{item.publicationDate | date: "%B %d, %Y"}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
                 {% endfor %}
-              {% endif %}
-            {% endfor %}
+              {% endfor %}
+            {% endif %}
+
           </div>
-        {% endfor %}
-      {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 
