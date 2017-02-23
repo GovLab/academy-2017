@@ -19,9 +19,10 @@
         width: 110%;
       }
     }
+
     .button--icon-only {
       @include breakpoint($small-only) {
-        display: block;
+        width: 100%;
       }
     }
   }
@@ -32,7 +33,17 @@
     .button--icon-only { padding: 13px; }
   }
 // end dropdown filters
+  
+  .search {
+    input[type='text'] {
 
+      @include placeholder { color: white; }
+      
+    }
+  }
+  .search--fixed, .js-active {
+      z-index: 1;
+  }
 
 
 }

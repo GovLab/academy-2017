@@ -38,3 +38,10 @@ $masters-color: #f9b26f;
 @import 'faculty-detail';
 @import 'syllabus';
 @import 'library';
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}

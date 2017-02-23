@@ -17,6 +17,9 @@ custom_js: library.js
   <!-- begin dropdown filters -->
   <div class="divider">
 
+
+
+
     <!-- create dropdown arrays from contentful-->
     {% assign type_list = "" | split: "" %}
     {% assign category_list = "" | split: "" %}
@@ -50,6 +53,15 @@ custom_js: library.js
     {% assign methodology_list = methodology_list | uniq %}
 
     <div class="filter-panel dropdown-wrapper">
+      <div class="row align-center expanded">
+        <div class="columns large-12">
+          <form class="search search--fixed js-target-search" action="">
+            <input class="fuzzy-search" type="text" placeholder="Keyword Search">
+            <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+          </form>
+        </div>
+      </div>
+
       <div class="row large-unstack expanded align-right ">
 
         <div class="columns resource-type">
@@ -96,11 +108,12 @@ custom_js: library.js
           </div>
         </div>
 
-        <div class="columns clear_filters">
-          <button class="button button--icon-only" type="button" name="button">Clear Filters</button>
-        </div>
 
       </div>
+        <div class="columns">
+          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="sort button button--icon-only" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
+          <button class="button button--icon-only clear_filters" type="button" name="button">Clear Filters <i class="material-icons">close</i></button>
+        </div>
     </div>
   </div>
   <!-- end dropdowns -->
@@ -124,20 +137,10 @@ custom_js: library.js
             {% endif %} -->
             {% endcomment %}
 
-            <!-- Publication -->
+            <!-- Publication and pubdate -->
             {% if resource.publicationName %}
             <div class="result-item__publication">
-              <p><span>Published in</span> {{ resource.publicationName }}</p>
-            </div>
-            {% endif %}
-
-            <!-- Resource pubdate  -->
-            {% if resource.publicationDate %}
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">{{ resource.publicationDate | date: "%B %Y" }}</p>
-              </span>
+              <p><span>Published in</span> {{ resource.publicationName }} {% if resource.publicationDate %} in <span class="result-item__publicationDate" data-timestamp="{{resource.publicationDate}}" >{{ resource.publicationDate | date: "%B %Y" }}</span> {% endif %}</p>
             </div>
             {% endif %}
 
@@ -147,7 +150,7 @@ custom_js: library.js
               <span class="result-item__taxonomy__key">Type</span>
               <span class="result-item__taxonomy__value">
               {% for t in resource.type %}
-                <p class="result-item__tag resource-type" data-type="all {{t | slugify}}">{{ t }}</p>
+                <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all {{t | slugify}}">{{ t }}</p>
               {% endfor %}
               </span>
             </div>
@@ -159,7 +162,7 @@ custom_js: library.js
               <span class="result-item__taxonomy__key">Category</span>
               <span class="result-item__taxonomy__value resource-category" data-category="all {% for tag in resource.resourceCategory %} {{ tag | slugify }} {% endfor %}">
                 {% for tag in resource.resourceCategory %}
-                  <p class="result-item__tag">{{ tag }}</p>
+                  <p class="result-item__tag" data-filter="resource-category">{{ tag }}</p>
                 {% endfor %}
               </span>
             </div>
@@ -171,7 +174,7 @@ custom_js: library.js
               <span class="result-item__taxonomy__key">Objective</span>
               <span class="result-item__taxonomy__value resource-objective" data-objective="all {% for tag in resource.resourceObjective %} {{tag | slugify}} {% endfor %}">
                 {% for tag in resource.resourceObjective %}
-                  <p class="result-item__tag">{{ tag }}</p>
+                  <p class="result-item__tag" data-filter="resource-objective">{{ tag }}</p>
                 {% endfor %}
               </span>
             </div>
@@ -183,7 +186,7 @@ custom_js: library.js
               <span class="result-item__taxonomy__key">Methodology</span>
               <span class="result-item__taxonomy__value resource-methodology" data-methodology="all {% for tag in resource.resourceMethodology %} {{tag | slugify }} {% endfor %}">
                 {% for tag in resource.resourceMethodology %}
-                  <p class="result-item__tag">{{ tag }}</p>
+                  <p class="result-item__tag" data-filter="resource-methodology">{{ tag }}</p>
                 {% endfor %}
               </span>
             </div>
