@@ -139,7 +139,7 @@ custom_js: library.js
 
             <!-- Publication and pubdate -->
             {% if resource.publicationName %}
-            <div class="result-item__publication">
+            <div class="result-item__publication" data-publication="{{ resource.publicationName }}">
               <p><span>Published in</span> {{ resource.publicationName }} {% if resource.publicationDate %} in <span class="result-item__publicationDate" data-timestamp="{{resource.publicationDate}}" >{{ resource.publicationDate | date: "%B %Y" }}</span> {% endif %}</p>
             </div>
             {% endif %}

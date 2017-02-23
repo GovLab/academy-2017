@@ -10,11 +10,10 @@ $(document).ready(function() {
   };
 
   var options = {
-    valueNames: [ 'result-item__name', 'result-item__authors', 'result-item__publication', 'result-item__publicationDate', 'result-item__short-description', {name:'resource-type', attr:'data-type'}, {name:'resource-category', attr:'data-category'}, {name:'resource-objective', attr:'data-objective'}, {name:'resource-methodology', attr:'data-methodology'}]
+    valueNames: [ 'result-item__name', 'result-item__authors', {name:'result-item__publication', attr:'data-publication'}, {name:'result-item__publicationDate', attr:"data-timestamp"}, 'result-item__short-description', {name:'resource-type', attr:'data-type'}, {name:'resource-category', attr:'data-category'}, {name:'resource-objective', attr:'data-objective'}, {name:'resource-methodology', attr:'data-methodology'}]
   };
 
   var resourceList = new List('resources', options);
-
   // Filter by name and location
   $(".fuzzy-search").keyup(function() {
     var searchString = $(this).val();
