@@ -49,13 +49,18 @@
 .divider {
   text-align: center; }
 
+.divider--dark-teal {
+  background-color: #00616b; }
+
 .page-section--sequence {
   position: relative;
   padding-top: 70px;
   padding-bottom: 50px; }
+  .page-section--sequence h2 {
+    font-size: 2.8rem;
+    line-height: 1.2; }
   .page-section--sequence:after {
     position: absolute;
-    content: "";
     width: 0;
     height: 0;
     border-top: 30px solid #fff;
@@ -75,13 +80,13 @@
     margin-bottom: 0; }
 
 .course-detail.m-clinics .top-section, .course-detail.m-clinics .faculty-header, .course-detail.m-clinics .course-header, .course-list--clinics .top-section, .course-list--clinics .faculty-header, .course-list--clinics .course-header {
-  background-color: #c2c33b; }
+  background-color: #efce7c; }
 .course-detail--coaching .top-section, .course-detail--coaching .faculty-header, .course-detail--coaching .course-header, .course-list--coaching .top-section, .course-list--coaching .faculty-header, .course-list--coaching .course-header {
-  background-color: #008895; }
+  background-color: #22a69b; }
 .course-detail.m-masters .top-section, .course-detail.m-masters .faculty-header, .course-detail.m-masters .course-header, .course-list--masters .top-section, .course-list--masters .faculty-header, .course-list--masters .course-header {
-  background-color: #008ab3; }
+  background-color: #366473; }
 .course-detail.m-workshop .top-section, .course-detail.m-workshop .faculty-header, .course-detail.m-workshop .course-header, .course-list--workshop .top-section, .course-list--workshop .faculty-header, .course-list--workshop .course-header {
-  background-color: #ad0054; }
+  background-color: #f9b26f; }
 
 .faculty-header {
   text-align: center; }
@@ -94,6 +99,36 @@
     padding: 0;
     background-size: 100%;
     background-position: center; }
+
+.project-gallery-grid a {
+  text-decoration: none; }
+.project-gallery-grid .card-3 {
+  width: 100%;
+  min-height: 300px;
+  transition: all 0.2s ease-out; }
+  .project-gallery-grid .card-3__image {
+    min-height: 300px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+    display: flex; }
+  .project-gallery-grid .card-3__content {
+    padding-top: 0;
+    width: 100%; }
+    .project-gallery-grid .card-3__content h1 {
+      font-weight: normal;
+      background-color: rgba(0, 0, 0, 0.1);
+      color: #222;
+      vertical-align: text-bottom;
+      padding-bottom: 4%;
+      transition: all 0.2s ease-out; }
+  .project-gallery-grid .card-3:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out; }
+  .project-gallery-grid .card-3:hover .card-3__content h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-out; }
 
 .highlights {
   padding: 0; }
@@ -123,21 +158,41 @@
     text-decoration: none;
     cursor: pointer; }
 .main-categories--clinics {
-  background-color: #c2c33b; }
+  background-color: #efce7c; }
 .main-categories--coaching {
-  background-color: #008895; }
+  background-color: #22a69b; }
 .main-categories--masters {
-  background-color: #008ab3; }
+  background-color: #f9b26f; }
 .main-categories--workshop {
-  background-color: #ad0054; }
+  background-color: #366473; }
 .main-categories--clinics:hover {
-  background-color: #a3a432; }
+  background-color: #ebc058; }
 .main-categories--coaching:hover {
-  background-color: #00636c; }
+  background-color: #1b847b; }
 .main-categories--masters:hover {
-  background-color: #006b8a; }
+  background-color: #f79d48; }
 .main-categories--workshop:hover {
-  background-color: #840040; }
+  background-color: #294c57; }
+
+.homepage .page-section--sequence {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+.homepage .page-section__content {
+  padding: 30px; }
+  .homepage .page-section__content--clinics {
+    background-color: rgba(239, 206, 124, 0.8); }
+  .homepage .page-section__content--coaching {
+    background-color: rgba(34, 166, 155, 0.8); }
+  .homepage .page-section__content--masters {
+    background-color: rgba(249, 178, 111, 0.8); }
+  .homepage .page-section__content--workshop {
+    background-color: rgba(54, 100, 115, 0.8); }
+  .homepage .page-section__content > * {
+    color: white; }
+  .homepage .page-section__content :first-child,
+  .homepage .page-section__content :last-child {
+    margin: 0; }
 
 .upcoming-courses__item {
   padding: 50px;
@@ -147,13 +202,13 @@
   .upcoming-courses__item:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05); }
   .upcoming-courses__item--clinics .button {
-    background-color: #c2c33b; }
+    background-color: #efce7c; }
   .upcoming-courses__item--coaching .button {
-    background-color: #008895; }
+    background-color: #22a69b; }
   .upcoming-courses__item--masters .button {
-    background-color: #ad0054; }
+    background-color: #f9b26f; }
   .upcoming-courses__item--workshop .button {
-    background-color: #008ab3; }
+    background-color: #366473; }
 
 .course-header {
   padding-bottom: 0;
@@ -328,3 +383,58 @@
   font-size: 18px; }
   .faculty-detail__extras--social-media:hover {
     color: rgba(0, 0, 0, 0.5); }
+
+.syllabus__date {
+  margin: 0;
+  font-size: 1.5rem; }
+  @media (max-width: 40em) {
+    .syllabus__date {
+      font-size: 1.2rem; } }
+.syllabus__date-container {
+  margin-top: 30px;
+  margin-left: 30%; }
+.syllabus__faculty {
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: inline-block; }
+.syllabus__description {
+  padding-left: 150px;
+  padding-right: 150px; }
+  @media (min-width: 40.063em) and (max-width: 64em) {
+    .syllabus__description {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 40em) {
+    .syllabus__description {
+      padding: 0; } }
+.syllabus__description-text {
+  padding-left: 150px;
+  padding-top: 50px; }
+  @media (max-width: 40em) {
+    .syllabus__description-text {
+      padding: 0; } }
+
+.library-page .resources-section .result-item__taxonomy__key {
+  width: 85px; }
+.library-page .dropdown-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+  .library-page .dropdown-wrapper .select {
+    margin-bottom: 25px;
+    margin-right: 10px; }
+    .library-page .dropdown-wrapper .select select {
+      width: 110%; }
+  @media (max-width: 40em) {
+    .library-page .dropdown-wrapper .button--icon-only {
+      display: block; } }
+.library-page .filter-panel .select,
+.library-page .filter-panel .button {
+  margin: 12px 0; }
+.library-page .filter-panel .button--icon-only {
+  padding: 13px; }
