@@ -65,20 +65,20 @@
         color: #222;
         vertical-align: text-bottom;
         padding-bottom: 4%;
-        transition: all 0.2s ease-out;
+        transition: background-color 0.2s ease-out;
       }
     }
 
     &:hover {
       border: 1px solid rgba(0,0,0,0.3);
-      transition: all 0.2s ease-out;
+      transition: border 0.2s ease-out;
     }
 
     &:hover .card-3__content h1 {
       background-color: rgba(0,0,0,0.1);
-      transition: all 0.2s ease-out;
+      transition: background-color 0.2s ease-out;
     }
 
-    transition: all 0.2s ease-out;
+    transition: border 0.2s ease-out;
   }
 }
