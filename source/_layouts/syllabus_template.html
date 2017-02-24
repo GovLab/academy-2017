@@ -83,24 +83,26 @@ layout: default
   <div class="syllabus__classes">
     <div class="resources-section">
       <div class="row expanded collapse">
-        <div id="resources" class="columns results-container">
+        <div id="events" class="columns results-container">
           <div id="list" class="list">
             {% for class in page.syllabusClasses %}
             <div class="result-item">
               <div class="js-open-modal">
                 <h2 class="result-item__name">{{class.classTitle}}</h2>
-
                 <!-- Short Description -->
                 <div class="result-item__short-description">
-                  <p>{{class.classDescription | strip_html | truncatewords: 30}}</p>
+                  <p>{{class.classDescription | strip_html | truncatewords: 25 | markdownify}}</p>
                 </div>
 
-                <!-- Publication -->
-                <div class="result-item__publication">
-                  <p><span>Class week</span> {{class.classWeek}}</p>
+                <div class="result-item--event__date fancy-date">
+                  <div class="fancy-date__stack">
+                    <span class="fancy-date__weekday">Class</span>
+                    <span class="fancy-date__month">Week</span>
+                  </div>
+                  <span class="fancy-date__day">{{class.classWeek}}</span>
                 </div>
+
               </div>
-
             {% include class-modal.html %}
             </div>
           {% endfor %}
@@ -127,37 +129,31 @@ layout: default
                     {% for item in all_resources %}
                       {% if item.sys.id == resource_id %}
                         <h2 class="result-item__name">{{item.title}}</h2>
-
                         <!-- Short Description -->
                         <div class="result-item__short-description">
                           <p>{{item.shortDescription | strip_html | truncatewords: 30}}</p>
                         </div>
-
                         <!-- Publication -->
                         <div class="result-item__publication">
                           <p><span>Published by</span> {{item.publicationName}}, {{item.publicationDate | date: "%Y"}}</p>
                         </div>
-
-
-                      <!-- Authors -->
-                      <div class="result-item__taxonomy result-item__taxonomy--type">
-                        <span class="result-item__taxonomy__key">Author</span>
-                        <span class="result-item__taxonomy__value resource-theme" data-theme="all">
-                          {% for authors in item.author %}
-                            <p class="result-item__tag">{{authors}}</p>
-                          {% endfor %}
-                        </span>
-                      </div>
-
-                      <!-- Resource type -->
-                      <div class="result-item__taxonomy result-item__taxonomy--type">
-                        <span class="result-item__taxonomy__key">Type</span>
-                        <span class="result-item__taxonomy__value">
-                            <p class="result-item__tag resource-type" data-type="all">{{item.type}}</p>
-                        </span>
-                      </div>
+                        <!-- Authors -->
+                        <div class="result-item__taxonomy result-item__taxonomy--type">
+                          <span class="result-item__taxonomy__key">Author</span>
+                          <span class="result-item__taxonomy__value resource-theme" data-theme="all">
+                            {% for authors in item.author %}
+                              <p class="result-item__tag">{{authors}}</p>
+                            {% endfor %}
+                          </span>
+                        </div>
+                        <!-- Resource type -->
+                        <div class="result-item__taxonomy result-item__taxonomy--type">
+                          <span class="result-item__taxonomy__key">Type</span>
+                          <span class="result-item__taxonomy__value">
+                              <p class="result-item__tag resource-type" data-type="all">{{item.type}}</p>
+                          </span>
+                        </div>
                     </div>
-
                     <!-- Modal Content -->
                     <div class="modal js-target-modal">
                       <header class="modal__header modal--top-section">
