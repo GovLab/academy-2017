@@ -1,9 +1,5 @@
 .syllabus {
-  &__title {
-    // @include breakpoint($small-only) {
-    //   font-size: 3.3rem!important;
-    // }
-  }
+  &__title {}
 
   &__date {
     margin: 0;
@@ -37,14 +33,11 @@
     display: inline-block;
     float: right;
     right: 0;
-    cursor: pointer;
-
-    // margin: 0 -4px 0 0;
-    // padding: 0 0 25%;
-    // background-size: cover;
-    // background-position: center;
     display: inline-block;
     overflow: hidden;
+    @include breakpoint($small-only) {
+      right: 45px;
+    }
 
     p {
       position: absolute;
@@ -58,7 +51,6 @@
       text-align: center;
       @include transition;
     }
-
     &:hover p {
       bottom: 0;
     }
@@ -112,5 +104,4 @@
       border-bottom: 1px solid rgba(0,0,0,0.4);
     }
   }
-
 }
