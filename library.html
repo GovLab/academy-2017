@@ -14,7 +14,7 @@
 <script src="https://use.typekit.net/mvc3cdb.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.3.0/list.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
 <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
 </head>
@@ -59,828 +59,772 @@
   </div>
 
   <!-- begin dropdown filters -->
-  <div class="divider">
+  <section id="resources">
+    <div class="divider">
 
-    <!-- create dropdown arrays from contentful-->
-    
-    
-    
-    
 
-    
 
-    
-    
-    
-    
 
-    <div class="filter-panel dropdown-wrapper">
-      <div class="row large-unstack expanded align-right ">
+      <!-- create dropdown arrays from contentful-->
+      
+      
+      
+      
 
-        <div class="columns resource-type">
-          <div class="select">
-            <select data-filter="resource-type" id="type-filter" class="dropdown-content">
-              <option id="all">Filter by Type</option>
-              
-                <option id="journal-article">Journal Article</option>
-              
-                <option id="book">Book</option>
-              
-            </select>
+      
+
+      
+      
+      
+      
+
+      <div class="filter-panel dropdown-wrapper">
+        <div class="row align-center expanded">
+          <div class="columns large-12">
+            <form class="search search--fixed js-target-search" action="">
+              <input class="fuzzy-search" type="text" placeholder="Keyword Search">
+              <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+            </form>
           </div>
         </div>
 
-        <div class="columns resource-category">
-          <div class="select">
-            <select data-filter="resource-category" id="category-filter" class="dropdown-content">
-              <option id="all">Filter by Category</option>
-              
-              <option id="citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</option>
-              
-              <option id="smart-cities">Smart Cities</option>
-              
-              <option id="behavioral-science-and-nudges">Behavioral Science and Nudges</option>
-              
-              <option id="open-data">Open Data</option>
-              
-              <option id="data-governance">Data Governance</option>
-              
-              <option id="collective-intelligence">Collective Intelligence</option>
-              
-            </select>
-          </div>
-        </div>
+        <div class="row large-unstack expanded align-right ">
 
-        <div class="columns resource-methodology">
-          <div class="select">
-            <select data-filter="resource-methodology" id="methodology-filter" class="dropdown-content">
-              <option id="all">Filter by Methodology</option>
-              
-              <option id="case-studies">Case Studies</option>
-              
-              <option id="conceptual-framework">Conceptual Framework</option>
-              
-              <option id="quantitative-analysis">Quantitative Analysis</option>
-              
-            </select>
+          <div class="columns resource-type">
+            <div class="select">
+              <select data-filter="resource-type" id="type-filter" class="dropdown-content">
+                <option id="all">Filter by Type</option>
+                
+                  <option id="journal-article">Journal Article</option>
+                
+                  <option id="book">Book</option>
+                
+              </select>
+            </div>
           </div>
-        </div>
 
-        <div class="columns resource-objective">
-          <div class="select">
-            <select data-filter="resource-objective" id="objective-filter" class="dropdown-content">
-              <option id="all">Filter by Objective</option>
-              
-              <option id="effectiveness">Effectiveness</option>
-              
-              <option id="participation">Participation</option>
-              
-              <option id="legitimacy">Legitimacy</option>
-              
-              <option id="privacy">Privacy</option>
-              
-              <option id="security">Security</option>
-              
-            </select>
+          <div class="columns resource-category">
+            <div class="select">
+              <select data-filter="resource-category" id="category-filter" class="dropdown-content">
+                <option id="all">Filter by Category</option>
+                
+                <option id="citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</option>
+                
+                <option id="smart-cities">Smart Cities</option>
+                
+                <option id="behavioral-science-and-nudges">Behavioral Science and Nudges</option>
+                
+                <option id="open-data">Open Data</option>
+                
+                <option id="data-governance">Data Governance</option>
+                
+                <option id="collective-intelligence">Collective Intelligence</option>
+                
+              </select>
+            </div>
           </div>
-        </div>
 
-        <div class="columns clear_filters">
-          <button class="button button--icon-only" type="button" name="button">Clear Filters</button>
-        </div>
+          <div class="columns resource-methodology">
+            <div class="select">
+              <select data-filter="resource-methodology" id="methodology-filter" class="dropdown-content">
+                <option id="all">Filter by Methodology</option>
+                
+                <option id="case-studies">Case Studies</option>
+                
+                <option id="conceptual-framework">Conceptual Framework</option>
+                
+                <option id="quantitative-analysis">Quantitative Analysis</option>
+                
+              </select>
+            </div>
+          </div>
+
+          <div class="columns resource-objective">
+            <div class="select">
+              <select data-filter="resource-objective" id="objective-filter" class="dropdown-content">
+                <option id="all">Filter by Objective</option>
+                
+                <option id="effectiveness">Effectiveness</option>
+                
+                <option id="participation">Participation</option>
+                
+                <option id="legitimacy">Legitimacy</option>
+                
+                <option id="privacy">Privacy</option>
+                
+                <option id="security">Security</option>
+                
+              </select>
+            </div>
+          </div>
+
 
       </div>
-    </div>
-  </div>
-  <!-- end dropdowns -->
-
-  <div class="resources-section">
-    <div class="row expanded collapse">
-      <div id="resources" class="columns results-container">
-        <div id="list" class="list">
-        
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">Government Data Does Not Mean Data Governance: Lessons Learned from a Public Sector Application Audit</h2>
-            <p class="result-item__authors">Nik Thompson, Ravi Ravindran, Salvatore Nicosia</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span> Government Information Quarterly</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">July 2015</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-category" data-category="all  open-data  data-governance ">
-                
-                  <p class="result-item__tag">Open Data</p>
-                
-                  <p class="result-item__tag">Data Governance</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource objective tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-objective" data-objective="all  legitimacy  privacy  security ">
-                
-                  <p class="result-item__tag">Legitimacy</p>
-                
-                  <p class="result-item__tag">Privacy</p>
-                
-                  <p class="result-item__tag">Security</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource methodology tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
-                
-                  <p class="result-item__tag">Case Studies</p>
-                
-                  <p class="result-item__tag">Conceptual Framework</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">Government Data Does Not Mean Data Governance: Lessons Learned from a Public Sector Application Audit</h1>
-                <h2 class="modal__authors">Nik Thompson, Ravi Ravindran, Salvatore Nicosia</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span> Government Information Quarterly</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0740624X15000593" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-                <div class="result-item__short-description">
-                  <p>Public sector agencies routinely store large volumes of information about individuals in the community. The storage and analysis of this information benefits society, as it enables relevant agencies to make better informed decisions and to address the individual's needs more appropriately. Members of the public often assume that the authorities are well equipped to handle personal data; however, due to implementation errors and lack of data governance, this is not always the case.</p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">Initial Conditions Matter: Social Capital and Participatory Development</h2>
-            <p class="result-item__authors">Lisa A. Cameron, Susan Olivia, Manisha Shah</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span>  Institute for the Study of Labor (IZA), Research Paper Series</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">December 2015</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-category" data-category="all  citizen-engagement-and-crowdsourcing ">
-                
-                  <p class="result-item__tag">Citizen Engagement and Crowdsourcing</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource objective tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
-                
-                  <p class="result-item__tag">Effectiveness</p>
-                
-                  <p class="result-item__tag">Participation</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource methodology tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  quantitative-analysis ">
-                
-                  <p class="result-item__tag">Case Studies</p>
-                
-                  <p class="result-item__tag">Quantitative Analysis</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">Initial Conditions Matter: Social Capital and Participatory Development</h1>
-                <h2 class="modal__authors">Lisa A. Cameron, Susan Olivia, Manisha Shah</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span>  Institute for the Study of Labor (IZA), Research Paper Series</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-                <div class="result-item__short-description">
-                  <p>Billions of dollars have been spent on participatory development programs in the developing world. These programs give community members an active decision-making role. Given the emphasis on community involvement, one might expect that the effectiveness of this approach would depend on communities' pre-existing social capital stocks.  </p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">Owning the city: new media and citizen engagement in urban design</h2>
-            <p class="result-item__authors">Michiel de Lange, Martijn de Waal</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span> First Monday</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">November 2013</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-
-            <!-- Resource objective tags -->
-            
-
-            <!-- Resource methodology tags -->
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">Owning the city: new media and citizen engagement in urban design</h1>
-                <h2 class="modal__authors">Michiel de Lange, Martijn de Waal</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span> First Monday</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://pear.accc.uic.edu/ojs/index.php/fm/article/view/4954/3786" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">Reinventing Discovery: The New Era of Networked Science</h2>
-            <p class="result-item__authors">Michael Nielsen</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">December 2017</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all book">Book</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-category" data-category="all  collective-intelligence ">
-                
-                  <p class="result-item__tag">Collective Intelligence</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource objective tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
-                
-                  <p class="result-item__tag">Effectiveness</p>
-                
-                  <p class="result-item__tag">Participation</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource methodology tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
-                
-                  <p class="result-item__tag">Case Studies</p>
-                
-                  <p class="result-item__tag">Conceptual Framework</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Book</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">Reinventing Discovery: The New Era of Networked Science</h1>
-                <h2 class="modal__authors">Michael Nielsen</h2>
-                <!-- publication -->
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-                <div class="result-item__short-description">
-                  <p>In Reinventing Discovery, Michael Nielsen argues that we are living at the dawn of the most dramatic change in science in more than 300 years. This change is being driven by powerful new cognitive tools, enabled by the internet, which are greatly accelerating scientific discovery. There are many books about how the internet is changing business or the workplace or government. </p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City</h2>
-            <p class="result-item__authors">Carlo Francesco Capra</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span> International Journal of E-Planning Research</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">January 2016</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-category" data-category="all  citizen-engagement-and-crowdsourcing  smart-cities ">
-                
-                  <p class="result-item__tag">Citizen Engagement and Crowdsourcing</p>
-                
-                  <p class="result-item__tag">Smart Cities</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource objective tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
-                
-                  <p class="result-item__tag">Effectiveness</p>
-                
-                  <p class="result-item__tag">Participation</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource methodology tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
-                
-                  <p class="result-item__tag">Case Studies</p>
-                
-                  <p class="result-item__tag">Conceptual Framework</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City</h1>
-                <h2 class="modal__authors">Carlo Francesco Capra</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span> International Journal of E-Planning Research</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-                <div class="result-item__short-description">
-                  <p>Smart cities are associated almost exclusively with modern technology and infrastructure. However, smart cities have the possibility to enhance the involvement and contribution of citizens to urban development. This work explores the role of governance as one of the factors influencing the participation of citizens in smart cities projects. Governance characteristics play a major role in explaining different typologies of citizen participation.</p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">Why a Nudge is Not Enough: A social identity critique of governanceby stealth</h2>
-            <p class="result-item__authors">Frank Mols, S. Alexander Haslam, Jolanda Jetten, Niklas K. Steffens</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span> European Journal of Political Research</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">January 2015</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Category</span>
-              <span class="result-item__taxonomy__value resource-category" data-category="all  behavioral-science-and-nudges ">
-                
-                  <p class="result-item__tag">Behavioral Science and Nudges</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource objective tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Objective</span>
-              <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness ">
-                
-                  <p class="result-item__tag">Effectiveness</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Resource methodology tags -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Methodology</span>
-              <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  conceptual-framework ">
-                
-                  <p class="result-item__tag">Conceptual Framework</p>
-                
-              </span>
-            </div>
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">Why a Nudge is Not Enough: A social identity critique of governanceby stealth</h1>
-                <h2 class="modal__authors">Frank Mols, S. Alexander Haslam, Jolanda Jetten, Niklas K. Steffens</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span> European Journal of Political Research</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-                <div class="result-item__short-description">
-                  <p>Policy makers can use four different modes of governance: ‘hierarchy’, ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’ represents a distinct (fifth) mode of governance. </p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="result-item">
-          <div class="js-open-modal">
-            <h2 class="result-item__name">“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform</h2>
-            <p class="result-item__authors">Beth Simone Noveck</p>
-          </div>
-            
-
-            <!-- Publication -->
-            
-            <div class="result-item__publication">
-              <p><span>Published in</span> Harvard Journal of Law & Technology</p>
-            </div>
-            
-
-            <!-- Resource pubdate  -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Date</span>
-              <span class="result-item__taxonomy__value">
-                  <p class="result-item__tag resource-date">September 2006</p>
-              </span>
-            </div>
-            
-
-            <!-- Resource type -->
-            
-            <div class="result-item__taxonomy result-item__taxonomy--type">
-              <span class="result-item__taxonomy__key">Type</span>
-              <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
-              
-              </span>
-            </div>
-            
-
-            <!-- Resource category tags -->
-            
-
-            <!-- Resource objective tags -->
-            
-
-            <!-- Resource methodology tags -->
-            
-
-            <!-- Modal Content -->
-            <div class="modal js-target-modal">
-              <header class="modal__header modal--top-section">
-                <div class="modal__type">
-                  <span>Journal Article</span>
-                </div>
-
-                <i class="modal__close material-icons js-close-modal">close</i>
-                <h1 class="modal__title">“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform</h1>
-                <h2 class="modal__authors">Beth Simone Noveck</h2>
-                <!-- publication -->
-                
-                 <p class="modal__publication"><span>Published in</span> Harvard Journal of Law & Technology</p>
-                
-
-                <!-- URL -->
-                
-                <div class="floating-button">
-                  <div class="floating-button__wrapper">
-                    <a class="button button--floating button--black" target="_blank" href="http://jolt.law.harvard.edu/articles/pdf/v20/20HarvJLTech123.pdf" title="">Go to Resource</a>
-                  </div>
-                </div>
-                
-              </header>
-
-              <div class="modal__content">
-                <!-- Short Description -->
-                
-              </div>
-            </div>
-
-          </div>
-          
+        <div class="columns">
+          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="button button--icon-only sort" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
+          <button class="button button--icon-only clear_filters" type="button" name="button">Clear Filters <i class="material-icons">close</i></button>
         </div>
       </div>
     </div>
-  </div>
+    <!-- end dropdowns -->
 
+    <div class="resources-section">
+      <div class="row expanded collapse">
+        <div class="columns results-container">
+          <div id="list" class="list">
+          
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">Government Data Does Not Mean Data Governance: Lessons Learned from a Public Sector Application Audit</h2>
+              <p class="result-item__authors">Nik Thompson, Ravi Ravindran, Salvatore Nicosia</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication="Government Information Quarterly">
+                <p><span>Published in</span> Government Information Quarterly  in <span class="result-item__publicationDate" data-timestamp="2015-07-01 01:00:00 -0400" >July 2015</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Category</span>
+                <span class="result-item__taxonomy__value resource-category" data-category="all  open-data  data-governance ">
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Open Data</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Data Governance</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource objective tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Objective</span>
+                <span class="result-item__taxonomy__value resource-objective" data-objective="all  legitimacy  privacy  security ">
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Legitimacy</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Privacy</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Security</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource methodology tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Methodology</span>
+                <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Case Studies</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Conceptual Framework</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">Government Data Does Not Mean Data Governance: Lessons Learned from a Public Sector Application Audit</h1>
+                  <h2 class="modal__authors">Nik Thompson, Ravi Ravindran, Salvatore Nicosia</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span> Government Information Quarterly</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0740624X15000593" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                  <div class="result-item__short-description">
+                    <p>Public sector agencies routinely store large volumes of information about individuals in the community. The storage and analysis of this information benefits society, as it enables relevant agencies to make better informed decisions and to address the individual's needs more appropriately. Members of the public often assume that the authorities are well equipped to handle personal data; however, due to implementation errors and lack of data governance, this is not always the case.</p>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">Initial Conditions Matter: Social Capital and Participatory Development</h2>
+              <p class="result-item__authors">Lisa A. Cameron, Susan Olivia, Manisha Shah</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication=" Institute for the Study of Labor (IZA), Research Paper Series">
+                <p><span>Published in</span>  Institute for the Study of Labor (IZA), Research Paper Series  in <span class="result-item__publicationDate" data-timestamp="2015-12-01 00:00:00 -0500" >December 2015</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Category</span>
+                <span class="result-item__taxonomy__value resource-category" data-category="all  citizen-engagement-and-crowdsourcing ">
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Citizen Engagement and Crowdsourcing</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource objective tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Objective</span>
+                <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Effectiveness</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Participation</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource methodology tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Methodology</span>
+                <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  quantitative-analysis ">
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Case Studies</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Quantitative Analysis</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">Initial Conditions Matter: Social Capital and Participatory Development</h1>
+                  <h2 class="modal__authors">Lisa A. Cameron, Susan Olivia, Manisha Shah</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span>  Institute for the Study of Labor (IZA), Research Paper Series</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                  <div class="result-item__short-description">
+                    <p>Billions of dollars have been spent on participatory development programs in the developing world. These programs give community members an active decision-making role. Given the emphasis on community involvement, one might expect that the effectiveness of this approach would depend on communities' pre-existing social capital stocks.  </p>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">Owning the city: new media and citizen engagement in urban design</h2>
+              <p class="result-item__authors">Michiel de Lange, Martijn de Waal</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication="First Monday">
+                <p><span>Published in</span> First Monday  in <span class="result-item__publicationDate" data-timestamp="2013-11-04 00:00:00 -0500" >November 2013</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+
+              <!-- Resource objective tags -->
+              
+
+              <!-- Resource methodology tags -->
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">Owning the city: new media and citizen engagement in urban design</h1>
+                  <h2 class="modal__authors">Michiel de Lange, Martijn de Waal</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span> First Monday</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://pear.accc.uic.edu/ojs/index.php/fm/article/view/4954/3786" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">Reinventing Discovery: The New Era of Networked Science</h2>
+              <p class="result-item__authors">Michael Nielsen</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all book">Book</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Category</span>
+                <span class="result-item__taxonomy__value resource-category" data-category="all  collective-intelligence ">
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Collective Intelligence</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource objective tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Objective</span>
+                <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Effectiveness</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Participation</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource methodology tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Methodology</span>
+                <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Case Studies</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Conceptual Framework</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Book</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">Reinventing Discovery: The New Era of Networked Science</h1>
+                  <h2 class="modal__authors">Michael Nielsen</h2>
+                  <!-- publication -->
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                  <div class="result-item__short-description">
+                    <p>In Reinventing Discovery, Michael Nielsen argues that we are living at the dawn of the most dramatic change in science in more than 300 years. This change is being driven by powerful new cognitive tools, enabled by the internet, which are greatly accelerating scientific discovery. There are many books about how the internet is changing business or the workplace or government. </p>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City</h2>
+              <p class="result-item__authors">Carlo Francesco Capra</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication="International Journal of E-Planning Research">
+                <p><span>Published in</span> International Journal of E-Planning Research  in <span class="result-item__publicationDate" data-timestamp="2016-01-01 00:00:00 -0500" >January 2016</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Category</span>
+                <span class="result-item__taxonomy__value resource-category" data-category="all  citizen-engagement-and-crowdsourcing  smart-cities ">
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Citizen Engagement and Crowdsourcing</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Smart Cities</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource objective tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Objective</span>
+                <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness  participation ">
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Effectiveness</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Participation</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource methodology tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Methodology</span>
+                <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  case-studies  conceptual-framework ">
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Case Studies</p>
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Conceptual Framework</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City</h1>
+                  <h2 class="modal__authors">Carlo Francesco Capra</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span> International Journal of E-Planning Research</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                  <div class="result-item__short-description">
+                    <p>Smart cities are associated almost exclusively with modern technology and infrastructure. However, smart cities have the possibility to enhance the involvement and contribution of citizens to urban development. This work explores the role of governance as one of the factors influencing the participation of citizens in smart cities projects. Governance characteristics play a major role in explaining different typologies of citizen participation.</p>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">Why a Nudge is Not Enough: A social identity critique of governanceby stealth</h2>
+              <p class="result-item__authors">Frank Mols, S. Alexander Haslam, Jolanda Jetten, Niklas K. Steffens</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication="European Journal of Political Research">
+                <p><span>Published in</span> European Journal of Political Research  in <span class="result-item__publicationDate" data-timestamp="2015-01-01 00:00:00 -0500" >January 2015</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Category</span>
+                <span class="result-item__taxonomy__value resource-category" data-category="all  behavioral-science-and-nudges ">
+                  
+                    <p class="result-item__tag" data-filter="resource-category">Behavioral Science and Nudges</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource objective tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Objective</span>
+                <span class="result-item__taxonomy__value resource-objective" data-objective="all  effectiveness ">
+                  
+                    <p class="result-item__tag" data-filter="resource-objective">Effectiveness</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Resource methodology tags -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Methodology</span>
+                <span class="result-item__taxonomy__value resource-methodology" data-methodology="all  conceptual-framework ">
+                  
+                    <p class="result-item__tag" data-filter="resource-methodology">Conceptual Framework</p>
+                  
+                </span>
+              </div>
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">Why a Nudge is Not Enough: A social identity critique of governanceby stealth</h1>
+                  <h2 class="modal__authors">Frank Mols, S. Alexander Haslam, Jolanda Jetten, Niklas K. Steffens</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span> European Journal of Political Research</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                  <div class="result-item__short-description">
+                    <p>Policy makers can use four different modes of governance: ‘hierarchy’, ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’ represents a distinct (fifth) mode of governance. </p>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="result-item">
+            <div class="js-open-modal">
+              <h2 class="result-item__name">“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform</h2>
+              <p class="result-item__authors">Beth Simone Noveck</p>
+            </div>
+              
+
+              <!-- Publication and pubdate -->
+              
+              <div class="result-item__publication" data-publication="Harvard Journal of Law & Technology">
+                <p><span>Published in</span> Harvard Journal of Law & Technology  in <span class="result-item__publicationDate" data-timestamp="2006-09-01 01:00:00 -0400" >September 2006</span> </p>
+              </div>
+              
+
+              <!-- Resource type -->
+              
+              <div class="result-item__taxonomy result-item__taxonomy--type">
+                <span class="result-item__taxonomy__key">Type</span>
+                <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-filter="resource-type" data-type="all journal-article">Journal Article</p>
+                
+                </span>
+              </div>
+              
+
+              <!-- Resource category tags -->
+              
+
+              <!-- Resource objective tags -->
+              
+
+              <!-- Resource methodology tags -->
+              
+
+              <!-- Modal Content -->
+              <div class="modal js-target-modal">
+                <header class="modal__header modal--top-section">
+                  <div class="modal__type">
+                    <span>Journal Article</span>
+                  </div>
+
+                  <i class="modal__close material-icons js-close-modal">close</i>
+                  <h1 class="modal__title">“Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform</h1>
+                  <h2 class="modal__authors">Beth Simone Noveck</h2>
+                  <!-- publication -->
+                  
+                   <p class="modal__publication"><span>Published in</span> Harvard Journal of Law & Technology</p>
+                  
+
+                  <!-- URL -->
+                  
+                  <div class="floating-button">
+                    <div class="floating-button__wrapper">
+                      <a class="button button--floating button--black" target="_blank" href="http://jolt.law.harvard.edu/articles/pdf/v20/20HarvJLTech123.pdf" title="">Go to Resource</a>
+                    </div>
+                  </div>
+                  
+                </header>
+
+                <div class="modal__content">
+                  <!-- Short Description -->
+                  
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
   </main>
   
