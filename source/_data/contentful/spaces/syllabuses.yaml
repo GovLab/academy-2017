@@ -103,16 +103,18 @@ syllabus:
     classTitle: Describing the Project
     classNumber: 1
     classWeek: 1
-    classDescription: "During this session we want to talk about what people are doing
-      and why. Get people to refine their problem and project descriptions further.
-      We can support with sample problem and project descriptions and the Public Projects
-      Canvas, which gets people thinking about the arc of their projects.)\nWhen:
-      Friday, April 10, 2015, from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible*
-      guest speaker: TBD (Suggestion: Bring in a guest with a really successful or
-      failed project in your space)\nTo-do: Please fill out the GovLab Public Problem
-      Solving Canvas\n\n*Guest speakers should be people you are also very interested
-      in meeting and you think can learn the most from their experience so please
-      feel free to suggest any changes or additions. "
+    classDescription: |-
+      During this session we want to talk about what people are doing and why. Get people to refine their problem and project descriptions further. We can support with sample problem and project descriptions and the Public Projects Canvas, which gets people thinking about the arc of their projects.)
+
+      When: Friday, April 10, 2015, from 8 - 10am EST
+
+      Link to join: [https://zoom.us/j/345797363](https://zoom.us/j/345797363)
+
+      Possible* *guest speaker: TBD (Suggestion: Bring in a guest with a really successful or failed project in your space) *
+
+      To-do: Please fill out the GovLab Public Problem Solving Canvas
+
+      **Guest speakers should be people you are also very interested in meeting and you think can learn the most from their experience so please feel free to suggest any changes or additions. *
   - sys:
       id: 2DlzQLVOByc208MociAIUM
     classTitle: Engaging with People and Data
@@ -120,9 +122,13 @@ syllabus:
     classWeek: 2
     classDescription: |
       During this session we want to talk about how you are getting smarter about who your users are and their needs. Please use this session to also talk about how are you doing research, share and trade ideas.
+
       When: Friday, April 17, 2015 from 8 - 10am EST
-      Link to join: https://zoom.us/j/345797363
+
+      Link to join: [https://zoom.us/j/345797363](https://zoom.us/j/345797363)
+
       Possible guest speaker: TBD (Suggestion: Guests might include either someone who can talk about how they did research for their own project or a research specialist such as a librarian or data scientist.)
+
       Before the session: Rewrite the Problem Statements
     resources:
     - sys:
@@ -132,20 +138,28 @@ syllabus:
     classTitle: Measuring Impact
     classNumber: 3
     classWeek: 3
-    classDescription: "During this session the goal is to talk metrics, metrics, metrics
-      and exchange ideas for how to assess impact. We will also discuss how to evolve
-      the project.\nWhen: Friday, April 24, 2015 from, 8 - 10am EST\nLink to join:
-      https://zoom.us/j/345797363\nPossible guest speaker: TBD\nBefore the session:
-      \n"
+    classDescription: |+
+      During this session the goal is to talk metrics, metrics, metrics and exchange ideas for how to assess impact. We will also discuss how to evolve the project.
+
+      When: Friday, April 24, 2015 from, 8 - 10am EST
+
+      Link to join: [https://zoom.us/j/345797363](https://zoom.us/j/345797363)
+
+      Possible guest speaker: TBD
+
   - sys:
       id: 2L31ia4bbieoqIMcoeMSQy
     classTitle: Persuading the Audience
     classNumber: 4
     classWeek: 4
-    classDescription: "Exchange decks and 1-page memos and do your pitch! We will
-      bring in guests to give feedback on presentations so be prepared.\nWhen:  Friday,
-      May 1, 2015 from 8 - 10am EST\nLink to join: https://zoom.us/j/345797363\nPossible
-      guest speaker: TBD\nBefore the session: \n"
+    classDescription: |
+      Exchange decks and 1-page memos and do your pitch! We will bring in guests to give feedback on presentations so be prepared.
+
+      When:  Friday, May 1, 2015 from 8 - 10am EST
+
+      Link to join: [https://zoom.us/j/345797363](https://zoom.us/j/345797363)
+
+      Possible guest speaker: TBD
     resources:
     - sys:
         id: j0nGdQvlUOSY6IIoQwWia
