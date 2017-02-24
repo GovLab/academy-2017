@@ -445,10 +445,28 @@
   display: inline-block;
   float: right;
   right: 0;
-  cursor: pointer; }
+  display: inline-block;
+  overflow: hidden; }
+  @media (max-width: 40em) {
+    .syllabus__faculty {
+      right: 45px; } }
+  .syllabus__faculty p {
+    position: absolute;
+    bottom: -80px;
+    padding: 10px;
+    margin: 0;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    text-align: center;
+    transition: all .4s ease; }
+  .syllabus__faculty:hover p {
+    bottom: 0; }
 .syllabus__description {
   padding-left: 150px;
-  padding-right: 150px; }
+  padding-right: 150px;
+  font-size: 1.1rem; }
   @media (min-width: 40.063em) and (max-width: 64em) {
     .syllabus__description {
       padding-left: 50px;
@@ -465,6 +483,19 @@
 .syllabus__objectives {
   padding: 50px;
   background-color: #e6e6e6; }
+.syllabus__references {
+  padding: 0;
+  margin: 0;
+  font-weight: bold; }
+  .syllabus__references--ref {
+    margin-top: 0;
+    padding-top: 0; }
+.syllabus a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .syllabus a:hover {
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
 
 .library-page .resources-section .result-item__taxonomy__key {
   width: 85px; }
