@@ -31,21 +31,16 @@ layout: default
       {% if page.faculty %}
       <div class="column large-2 medium-2 small-12">
         <div class="row expanded collapse">
-          <div id="resources" class="columns results-container">
-            <div id="list" class="list">
-              <div class="syllabus__faculty-list">
-                <div class="result-item">
-                  {% for faculty in page.faculty %}
-                    <div class="result-item">
-                      <div class="js-open-modal">
-                        <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
-                        </div>
-                      </div>
-                      {% include faculty-modal.html %}
-                    </div>
-                  {% endfor %}
-              </div>
+          <div class="syllabus__faculty-list">
+            {% for faculty in page.faculty %}
+            <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
+
+              <a href="{{site.url}}{{site.baseurl}}/faculty/{{ faculty.lastName | slugify | replace: 'ú', 'u' }}.html" target="_blank" class="syllabus__faculty"></a>
+              <p>{{faculty.firstName}} {{faculty.lastName}}</p>
+
             </div>
+
+            {% endfor %}
           </div>
         </div>
       </div>
