@@ -6,7 +6,7 @@ layout: default
   <div class="faculty-header">
     <div class="row align-center">
       <div class="large-6 column">
-        <div class="faculty-detail__picture" style="background-image:url({{site.url}}{{site.baseurl}}/images/faculty/{{ page.firstName | slugify }}-{{ page.lastName | slugify}}.jpg"></div>
+        <div class="faculty-detail__picture" style="background-image:url({{site.url}}{{site.baseurl}}/images/faculty/{{ page.firstName | slugify | replace: 'í', 'i' }}-{{ page.lastName | slugify | replace: 'ú', 'u'}}.jpg"></div>
         <h2>{{ page.firstName }} {{ page.lastName }}</h2>
             <div class="faculty-detail__extras">
               {% if page.website %}
