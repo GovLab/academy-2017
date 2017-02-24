@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign all_resources = site.data.contentful.spaces.resources.resource %}
 
 <div class="syllabus">
   <div class="top-section top-section--purple">
@@ -30,21 +31,16 @@ layout: default
       {% if page.faculty %}
       <div class="column large-2 medium-2 small-12">
         <div class="row expanded collapse">
-          <div id="resources" class="columns results-container">
-            <div id="list" class="list">
-              <div class="syllabus__faculty-list">
-                <div class="result-item">
-                  {% for faculty in page.faculty %}
-                    <div class="result-item">
-                      <div class="js-open-modal">
-                        <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
-                        </div>
-                      </div>
-                      {% include faculty-modal.html %}
-                    </div>
-                  {% endfor %}
-              </div>
+          <div class="syllabus__faculty-list">
+            {% for faculty in page.faculty %}
+            <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
+
+              <a href="{{site.url}}{{site.baseurl}}/faculty/{{ faculty.lastName | slugify | replace: 'ú', 'u' }}.html" target="_blank" class="syllabus__faculty"></a>
+              <p>{{faculty.firstName}} {{faculty.lastName}}</p>
+
             </div>
+
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -82,41 +78,26 @@ layout: default
   <div class="syllabus__classes">
     <div class="resources-section">
       <div class="row expanded collapse">
-        <div id="resources" class="columns results-container">
+        <div id="events" class="columns results-container">
           <div id="list" class="list">
             {% for class in page.syllabusClasses %}
             <div class="result-item">
               <div class="js-open-modal">
                 <h2 class="result-item__name">{{class.classTitle}}</h2>
-
                 <!-- Short Description -->
                 <div class="result-item__short-description">
-                  <p>{{class.classDescription | strip_html | truncatewords: 30}}</p>
+                  <p>{{class.classDescription | strip_html | truncatewords: 25 | markdownify}}</p>
                 </div>
 
-                <!-- Publication -->
-                <div class="result-item__publication">
-                  <p><span>Class week</span> {{class.classWeek}}</p>
+                <div class="result-item--event__date fancy-date">
+                  <div class="fancy-date__stack">
+                    <span class="fancy-date__weekday">Class</span>
+                    <span class="fancy-date__month">Week</span>
+                  </div>
+                  <span class="fancy-date__day">{{class.classWeek}}</span>
                 </div>
-              </div>
 
-              {% if class.resources %}
-                <div class="result-item__taxonomy result-item__taxonomy--type">
-                  <span class="result-item__taxonomy__key">Resources</span>
-                  {% assign all_resources = site.data.contentful.spaces.resources.resource %}
-
-                  <span class="result-item__taxonomy__value">
-                    {% for resource in class.resources %}
-                      {% assign class_resource_id = resource.sys.id %}
-                        {% for item in all_resources %}
-                          {% if item.sys.id == class_resource_id %}
-                          <p class="result-item__tag resource-type" data-type="all">{{item.title}}</p>
-                          {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                  </span>
               </div>
-            {% endif %}
             {% include class-modal.html %}
             </div>
           {% endfor %}
@@ -143,45 +124,31 @@ layout: default
                     {% for item in all_resources %}
                       {% if item.sys.id == resource_id %}
                         <h2 class="result-item__name">{{item.title}}</h2>
-
                         <!-- Short Description -->
                         <div class="result-item__short-description">
                           <p>{{item.shortDescription | strip_html | truncatewords: 30}}</p>
                         </div>
-
                         <!-- Publication -->
                         <div class="result-item__publication">
-                          <p><span>Published</span> {{item.publicationDate | date: "%B %d, %Y"}}</p>
+                          <p><span>Published by</span> {{item.publicationName}}, {{item.publicationDate | date: "%Y"}}</p>
                         </div>
-
-
-                      <!-- Authors -->
-                      <div class="result-item__taxonomy result-item__taxonomy--type">
-                        <span class="result-item__taxonomy__key">Author</span>
-                        <span class="result-item__taxonomy__value resource-theme" data-theme="all">
-                          {% for authors in item.author %}
-                            <p class="result-item__tag">{{authors}}</p>
-                          {% endfor %}
-                        </span>
-                      </div>
-
-                      <!-- Resource theme -->
-                      <div class="result-item__taxonomy result-item__taxonomy--type">
-                        <span class="result-item__taxonomy__key">Publisher</span>
-                        <span class="result-item__taxonomy__value resource-theme" data-theme="all">
-                            <p class="result-item__tag">{{item.publicationName}}</p>
-                        </span>
-                      </div>
-
-                      <!-- Resource type -->
-                      <div class="result-item__taxonomy result-item__taxonomy--type">
-                        <span class="result-item__taxonomy__key">Type</span>
-                        <span class="result-item__taxonomy__value">
-                            <p class="result-item__tag resource-type" data-type="all">{{item.type}}</p>
-                        </span>
-                      </div>
+                        <!-- Authors -->
+                        <div class="result-item__taxonomy result-item__taxonomy--type">
+                          <span class="result-item__taxonomy__key">Author</span>
+                          <span class="result-item__taxonomy__value resource-theme" data-theme="all">
+                            {% for authors in item.author %}
+                              <p class="result-item__tag">{{authors}}</p>
+                            {% endfor %}
+                          </span>
+                        </div>
+                        <!-- Resource type -->
+                        <div class="result-item__taxonomy result-item__taxonomy--type">
+                          <span class="result-item__taxonomy__key">Type</span>
+                          <span class="result-item__taxonomy__value">
+                              <p class="result-item__tag resource-type" data-type="all">{{item.type}}</p>
+                          </span>
+                        </div>
                     </div>
-
                     <!-- Modal Content -->
                     <div class="modal js-target-modal">
                       <header class="modal__header modal--top-section">
@@ -195,7 +162,7 @@ layout: default
                           <h2 class="modal__authors">{{authors}}</h2>
                         {% endfor %}
 
-                        <p class="modal__publication"><span>Published</span> {{item.publicationDate | date: "%B %d, %Y"}}</p>
+                        <p class="modal__publication"><span>Published by</span> {{item.publicationName}}, {{item.publicationDate | date: "%Y"}}</p>
 
                         <!-- URL -->
                         <div class="floating-button">
@@ -212,7 +179,6 @@ layout: default
                         <div class="result-item__short-description">
                           <p>{{item.shortDescription}}</p>
                         </div>
-                        <p>Published by <b>{{item.publicationName}}</b></p>
                         <p>Type <b>{{item.type}}</b></p>
                       </div>
                     </div>
