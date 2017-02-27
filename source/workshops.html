@@ -57,7 +57,7 @@ layout: default
                   {% for member in workshop.faculty %}
                   <div class="faculty-container">
                     <div class="faculty-image" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ member.firstName | slugify }}-{{ member.lastName | slugify }}.jpg');">
-                      <a href="{{site.url}}{{site.baseurl}}/faculty/{{ member.lastName | slugify }}.html" target="_blank" class="" ></a>
+                      <a href="{{site.url}}{{site.baseurl}}/faculty/{{ member.lastName | slugify }}.html" target="_blank" class="faculty-image"></a>
                       <p>{{member.firstName}} {{member.lastName}}</p>
                     </div>
                   </div>
