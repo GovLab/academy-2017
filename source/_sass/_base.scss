@@ -3,18 +3,15 @@
     background-color: $orange;
   }
 
-  .main-link {
+  .menu-item {
     border-bottom: none;
     padding-bottom: 0;
-  }
-  .sub-link {
-    font-size: .9rem;
-    border-bottom: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .last {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    &--sub {
+      font-size: .9rem;
+      border-bottom: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &--last { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    }
   }
 }
