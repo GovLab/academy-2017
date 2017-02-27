@@ -12,15 +12,18 @@ $large: 64.063em;
 $large-up: (min-width 64.063em);
 
 // Colors
-$main-color: red;
-$orange: orange;
+$orange: #ee5b43;
 $blue: blue;
 $purple: purple;
+
+$main-color: $orange;
 
 $clinics-color: #efce7c;
 $coaching-color: #22a69b;
 $workshop-color: #366473;
 $masters-color: #f9b26f;
+
+
 
 
 @import 'breakpoint';
