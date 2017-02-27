@@ -27,4 +27,63 @@ layout: default
       </div>
     </div>
   </div>
+
+  <div class="divider">
+    <h1>The GovLab Digest</h1>
+  </div>
+
+  <!-- NEW SLIDER -->
+  <!-- <div class="govlab-digest banner-container"> -->
+    <div class="slider slick">
+      {% for i in (1..5) %}
+      <!-- ARTICLE 1 -->
+      <section id="slide-id" class="slide slide--purple">
+        <div class="row">
+          <div class="column medium-6">
+            <h4>The GovLab Digest</h4>
+          </div>
+        </div>
+        <div class="row slide__content">
+          <div class="column medium-6">
+            <h2 class="slide__project-name js-article-{{i}}-title"></h2>
+            <h3 class="js-article-{{i}}-author"></h3>
+          </div>
+          <div class="column medium-6">
+            <p class="js-article-{{i}}-content"></p>
+          </div>
+        </div>
+        <div class="row slide__content">
+          <div class="column medium-6">
+            <div class="slide__action">
+              <a class="button button--naked" href="http://thegovlab.org/category/govlab-digest/">Read the Digest<i class="material-icons">arrow_forward</i></a>
+            </div>
+          </div>
+          <div class="column medium-6">
+            <div class="slide__action">
+              <a class="button button--naked js-article-{{i}}-link" href='#'>Find out more<i class="material-icons">arrow_forward</i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- END NEW SLIDER -->
+
+  <div class="divider divider--dark-teal">
+    <div class="row">
+      <div class="large-12 column">
+        <div>
+          <h4><strong>Subscribe</strong>
+          The GovLab Digest</h4>
+          <p>A weekly curation of new findings and developments on innovation in governance</p>
+        </div>
+        <form class="form form--negative" method="post" action="//thegovlab.us6.list-manage.com/subscribe/post?u=1a990feb5c&amp;id=d90a01c7ff" target="_blank" >
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_1a990feb5c_d90a01c7ff" tabindex="-1" value=""></div>
+          <input type="email" name="EMAIL" placeholder="Email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
