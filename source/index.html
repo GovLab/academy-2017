@@ -9,16 +9,14 @@ custom_body: homepage
       <div class="row expanded collapse">
         <div class="large-12 column">
           <div class="slider">
-            <div class="slide slide--orange">
-              <h1>Checkout our MOOC</h1>
-            </div>
-            <div class="slide slide--purple">
-              <h1>Demos for Democracy</h1>
-            </div>
-            <a class="slide slide--blue" href="http://bit.ly/academy10lessons" target="_blank">
-              <h1>10 lessons learned</h1>
-              <h3>How to train public entrepreneurs?</h3>
-            </a>
+            {% assign carousel_data = site.data.contentful.spaces.cases.carousel %}
+            {% for carousel in carousel_data %}
+              <div class="slide" style="background-image: url({{carousel.slideImage.url }})">
+                <a class="slide__title" href="{{carousel.destinationUrl}}"><h1>{{carousel.slideTitle}}</h1></a>
+                <h5 class="slide__subtitle">{{carousel.slideSubtitle}}</h5>
+                <p class="slide__description">{{carousel.slideDescription}}</p>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
