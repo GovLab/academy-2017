@@ -41,6 +41,7 @@ $masters-color: #f9b26f;
 @import 'faculty-detail';
 @import 'syllabus';
 @import 'library';
+@import 'community';
 
 @mixin placeholder {
   &::-webkit-input-placeholder { @content }
