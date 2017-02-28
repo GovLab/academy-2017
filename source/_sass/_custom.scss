@@ -137,3 +137,55 @@
     }
   }
 }
+
+.regions {
+  h4 {
+    text-align: center;
+    font-weight: 200;
+    // margin-bottom: 0;
+  }
+  &__map #region-map path {
+    fill: black;
+    fill-opacity: .1;
+  }
+
+  &--worldwide #region-map path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--north-america #north-america path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--latin-america #latin-america path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--east-asia #east-asia path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--south-asia #south-asia path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--sub-saharan-africa #sub-saharan-africa path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--north-africa #north-africa path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+
+  &--europe #europe path {
+    fill: $main-color;
+    fill-opacity: 1;
+  }
+}
