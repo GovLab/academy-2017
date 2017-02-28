@@ -20,20 +20,18 @@ layout: default
     <a href="{{page.website}}" target="_blank" class=""><i class="fa fa-globe"></i></a>
     {% endif %}
   </div>
-  {{page.progress.first | downcase}}
   <div class="row">
     <div class="column">
-      <div class="progress progress--{{page.progress.first | downcase}}">
+      <div class="progress progress--{{page.progress.first | slugify}}">
         <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="ideation"></span>
+        <span class="prototyping"></span>
+        <span class="private-beta"></span>
+        <span class="public-beta"></span>
+        <span class="launched"></span>
       </div>
     </div>
   </div>
-
 </div>
 
 <div class="page-section">
