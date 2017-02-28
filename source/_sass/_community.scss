@@ -1,21 +1,30 @@
 .about-page {
-  .noi {
-    .slick-slide {
-      background-color: white;
-    }
+  background-color: #008ab3;
+  color: white;
 
-    .slick-arrow:after  {
-      color: darken(white, 10);
-    }
+  .noi-section {
+    .noi {
+      .slick-slide {
+        background-color: transparent;
+      }
 
-    .slick-arrow:before {
-      color: darken(white, 10);
-    }
+      // .noi-logo {
+      //   width: 50%;
+      // }
 
-    .image-container {
-      width: 100%;
-      max-height: 500px;
-      overflow: hidden;
+      .slick-arrow:after  {
+        color: darken(white, 10);
+      }
+
+      .slick-arrow:before {
+        color: darken(white, 10);
+      }
+
+      .image-container {
+        width: 100%;
+        max-height: 500px;
+        overflow: hidden;
+      }
     }
   }
 
