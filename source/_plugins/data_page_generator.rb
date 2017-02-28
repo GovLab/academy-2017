@@ -3,15 +3,15 @@
 # Distributed under the conditions of the MIT License
 module Jekyll
 
-  module Sanitizer
-    # strip characters and whitespace to create valid filenames, also lowercase
-    def sanitize_filename(name)
-      if(name.is_a? Integer)
-        return name.to_s
+    module Sanitizer
+      # strip characters and whitespace to create valid filenames, also lowercase
+      def sanitize_filename(name)
+        if(name.is_a? Integer)
+          return name.to_s
+        end
+        return name.tr("ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÑñÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž","AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz").downcase.strip.gsub(' ', '-').gsub(/[^\w.-]/, '')
       end
-      return name.downcase.strip.gsub(' ', '-').gsub('ú', 'u').gsub(/[^\w.-]/, '')
     end
-  end
 
   # this class is used to tell Jekyll to generate a page
   class DataPage < Page
