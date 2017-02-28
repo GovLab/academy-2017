@@ -20,16 +20,20 @@ layout: default
     <a href="{{page.website}}" target="_blank" class=""><i class="fa fa-globe"></i></a>
     {% endif %}
   </div>
+  <div class="row">
+    <div class="column">
+      <div class="progress progress--{{page.progress.first | slugify}}">
+        <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
+        <span class="ideation"></span>
+        <span class="prototyping"></span>
+        <span class="private-beta"></span>
+        <span class="public-beta"></span>
+        <span class="launched"></span>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="progress progress--complete">
-  <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+
 <div class="page-section">
   <div class="row">
     <div class="column large-6 medium-12 small-12">
@@ -92,9 +96,8 @@ layout: default
   </div>
 </div>
 
+{% if page.images %}
 <div class="page-section">
-
-  {% if page.images %}
   <div class="slider project--slider">
     {% for image in page.images %}
     <div class="slide">
@@ -107,14 +110,55 @@ layout: default
     </div>
     {% endfor %}
   </div>
-  {% endif %}
-
 </div>
+{% endif %}
 
 <div class="page-section">
   <div class="row">
     <div class="column large-12">
       <a class="button" href="{{site.url}}{{site.baseurl}}/project-gallery.html">Back to Project Gallery</a>
+    </div>
+  </div>
+</div>
+
+<div class="regions">
+  <div class="row align-center">
+    <div class="column large-10">
+      {% assign region = page.regoin.first %}
+      <h4>Region: {{ region }}</h4>
+      {% if region == 'Worldwide' %}
+        <div class="regions__map regions--worldwide">
+          {% include map.html %}
+        </div>
+      {% elsif region == "North America" %}
+        <div class="regions__map regions--north-america">
+          {% include map.html %}
+        </div>
+      {% elsif region == 'Latin America and the Caribbean' %}
+        <div class="regions__map regions--latin-america">
+          {% include map.html %}
+        </div>
+      {% elsif region == 'East Asia and Pacific' %}
+        <div class="regions__map regions--east-asia">
+          {% include map.html %}
+        </div>
+        {% elsif region == 'South Asia' %}
+          <div class="regions__map regions--south-asia">
+            {% include map.html %}
+          </div>
+      {% elsif region == 'Sub-Saharan Africa'%}
+        <div class="regions__map regions--sub-saharan-africa">
+          {% include map.html %}
+        </div>
+      {% elsif region == 'Middle East and North Africa' %}
+        <div class="regions__map regions--north-africa">
+          {% include map.html %}
+        </div>
+      {% elsif region == 'Europe and Central Asia' %}
+        <div class="regions__map regions--europe">
+          {% include map.html %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
