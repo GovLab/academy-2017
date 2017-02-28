@@ -1,16 +1,11 @@
 .about-page {
-  background-color: #008ab3;
-  color: white;
-
   .noi-section {
+    background-color: #008ab3;
+    color: white;
     .noi {
       .slick-slide {
         background-color: transparent;
       }
-
-      // .noi-logo {
-      //   width: 50%;
-      // }
 
       .slick-arrow:after  {
         color: darken(white, 10);
