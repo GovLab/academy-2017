@@ -50,7 +50,7 @@ layout: default
     </div>
     <div class="project-gallery-grid isotope">
       {% for card in site.data.contentful.spaces.projects.project %}
-      <a href="{{site.url}}{{site.baseurl}}/projects/{{card.projectName | slugify}}">
+      <a href="{{site.url}}{{site.baseurl}}/projects/{{card.projectName | slugify}}.html">
         <article class="card-3 result-item
         {% for c in card.category %}
         {{c | slugify}}
@@ -68,4 +68,3 @@ layout: default
   </div>
 </div>
 </section>
-

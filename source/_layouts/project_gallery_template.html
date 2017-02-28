@@ -20,16 +20,22 @@ layout: default
     <a href="{{page.website}}" target="_blank" class=""><i class="fa fa-globe"></i></a>
     {% endif %}
   </div>
+  {{page.progress.first | downcase}}
+  <div class="row">
+    <div class="column">
+      <div class="progress progress--{{page.progress.first | downcase}}">
+        <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
 </div>
-<div class="progress progress--complete">
-  <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+
 <div class="page-section">
   <div class="row">
     <div class="column large-6 medium-12 small-12">
