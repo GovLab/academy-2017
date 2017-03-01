@@ -104,4 +104,28 @@
       border-bottom: 1px solid rgba(0,0,0,0.4);
     }
   }
+
+  .resources-section .result-item:before {
+    border-top: 12px solid $main-color!important;
+    border-left: 12px solid $main-color!important;
+  }
+
+  .modal--top-section {
+    background-color: $main-color;
+  }
+
+  .modal__type>span {
+    background-color: darken($main-color, 5);
+    color: darken($main-color, 20);
+  }
+
+  #events {
+    .modal--top-section {
+      background-color: $main-color;
+    }
+  }
+
+  #events .result-item .fancy-date__day {
+    color: $main-color;
+  }
 }
