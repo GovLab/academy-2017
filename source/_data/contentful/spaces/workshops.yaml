@@ -152,7 +152,7 @@ workshop:
       id: 6Ip5C7EfGoGy2AKAaA6qI0
     firstName: Alan
     lastName: Kantrow
-    title: Senior Advisor at the GovLab
+    facultyTitle: Senior Advisor at the GovLab
     affiliation: The GovLab
     longBio: Alan Kantrow is Senior Advisor of The GovLab. Prior to joining The GovLab,
       Alan was Managing Partner of Alan Kantrow LLC, where he provided advice on strategy,
@@ -176,7 +176,7 @@ workshop:
     facultyImage:
       title: alan-kantrow
       description: Alan Kantrow
-      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/cd1e24b4637231473e96149f6957ad06/alan-kantrow.jpg"
   startDate: !ruby/object:DateTime 2015-02-05 06:00:00.000000000 -05:00
   endDate: !ruby/object:DateTime 2015-02-06 09:00:00.000000000 -05:00
   partner:
