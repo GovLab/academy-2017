@@ -46,7 +46,7 @@ layout: default
             <div class="large-12 column">
               <h2 class="course-item__title">{{ course.programName }}</h2>
             </div>
-            <div class="large-6 column">
+            <div class="large-6 medium-6 small-12 column">
               <p class="course-item__application">APPLICATION DUE: {{ course.applicationDeadline | date: "%B %-d, %Y" }}</p>
               <p class="course-item__application">STARTS THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team row column">
@@ -57,7 +57,7 @@ layout: default
                 {% endfor %}
               </div>
             </div>
-            <div class="large-6 column">
+            <div class="large-6 medium-6 small-12 column">
               <p class="e-course-description">{{ course.shortDescription }}</p>
               {% assign link = course.programName %}
               {% assign char = "-" %}
@@ -93,7 +93,7 @@ layout: default
     {% for course in pastCoachingPrograms %}
         <li class="course-item">
           <div class="row">
-            <div class="large-6 column">
+            <div class="large-6 medium-6 small-12 column">
               <h2 class="course-item__title">{{ course.programName }}</h2>
               <p class="course-item__application">STARTED THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team">
@@ -113,7 +113,7 @@ layout: default
               {% endfor %}
             </div>
           </div>
-          <div class="large-6 column">
+          <div class="large-6 medium-6 small-12 column">
             <p class="course-item__description">{{ course.shortDescription | markdownify }}</p>
             {% assign link = course.programName %}
             {% assign char = "-" %}
