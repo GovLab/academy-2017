@@ -24,7 +24,7 @@ layout: default
   <div class="page-section">
     <div class="row expanded align-center featured-authors">
       {% for person in faculty %}
-      <div class="large-4 column faculty__list-item">
+      <div class="large-4 medium-6 small-12 column faculty__list-item">
         <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify | replace_diacritics }}.html">
           <div class="faculty__picture" style="background-image: url({{person.facultyImage.url}});"></div>
         </a>
