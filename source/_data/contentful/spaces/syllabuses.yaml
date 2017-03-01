@@ -8,7 +8,7 @@ syllabus:
       id: 5gSD74RzVSgSa2uC6wGScS
     firstName: Brian
     lastName: Behlendorf
-    title: Managing Director at Mithril Capital Management
+    facultyTitle: Managing Director at Mithril Capital Management
     longBio: Brian Behlendorf is Managing Director at Mithril Capital Management in
       San Francisco.  His career has been a mix of technology start-up, public policy,
       and non-profit tech leadership. Brian serves on the Boards of the Mozilla Foundation,
@@ -34,7 +34,7 @@ syllabus:
       id: 5gfjFvZYdiAgkgaY0muu80
     firstName: Dinorah
     lastName: Cantú-Pedraza
-    title: The GovLab Academy Coordinator
+    facultyTitle: The GovLab Academy Coordinator
     affiliation: The GovLab
     longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
       at helping government and social innovators take innovative projects from idea
@@ -81,12 +81,12 @@ syllabus:
     facultyImage:
       title: alexandra-clare
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5548166f821144496f342eb86eed1f66/alexandra-clare.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5ff19c5302f33a0a6d0f41d7b84d6ed6/alexandra-clare.jpg"
   - sys:
       id: 39NgtCQES4QUWe2yyc880a
     firstName: Gavin
     lastName: Hayman
-    title: Executive Director of the Open Contracting Partnership
+    facultyTitle: Executive Director of the Open Contracting Partnership
     longBio: |-
       Gavin is currently the Executive Director of Global Witness and, before that, he was the organisation's Director of Campaigns since 2006. He oversees all of Global Witness groundbreaking and award-winning investigative, campaigning and advocacy work uncovering secret deals, corruption and conflict around the world. He helped create the international Publish What You Pay campaign and helped negotiate the intergovernmental Extractive Industries Transparency Initiative that brings together oil and mining companies, home- and host-governments and civil society to improve disclosure and oversight of over $1 trillion dollars of oil and mining money.
 

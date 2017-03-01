@@ -4,7 +4,7 @@ faculty:
     id: 62a8KQocb6aeikQUe6iqGw
   firstName: Jos
   lastName: Berens
-  title: Project Coordinator of the Data Governance Project
+  facultyTitle: Project Coordinator of the Data Governance Project
   longBio: Jos Berens is the Project Coordinator of the Data Governance Project (DGP),
     an international multidisciplinary collaboration between the Governance Lab, the
     World Economic Forum, and Leiden University. The collaboration focuses on building
@@ -29,7 +29,7 @@ faculty:
     id: 5gSD74RzVSgSa2uC6wGScS
   firstName: Brian
   lastName: Behlendorf
-  title: Managing Director at Mithril Capital Management
+  facultyTitle: Managing Director at Mithril Capital Management
   longBio: Brian Behlendorf is Managing Director at Mithril Capital Management in
     San Francisco.  His career has been a mix of technology start-up, public policy,
     and non-profit tech leadership. Brian serves on the Boards of the Mozilla Foundation,
@@ -55,8 +55,8 @@ faculty:
     id: 52NJACTaNO2QQgM2owqCIm
   firstName: Karin
   lastName: Christiansen
-  title: Chair of Open Knowledge International, Founder and Board Member of Publish
-    What You Fund
+  facultyTitle: Chair of Open Knowledge International, Founder and Board Member of
+    Publish What You Fund
   longBio: Karin is an experienced CEO and board member including in the transparency,
     open data, co-operative and not for profit sectors. She has extensive facilitation
     and chairing experience and  She is the chair of Open Knowledge International
@@ -81,12 +81,12 @@ faculty:
   facultyImage:
     title: alexandra-clare
     description: 
-    url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5548166f821144496f342eb86eed1f66/alexandra-clare.jpg"
+    url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5ff19c5302f33a0a6d0f41d7b84d6ed6/alexandra-clare.jpg"
 - sys:
     id: 4Qfo2nOXK0yAK0wYyy4q84
   firstName: Geoff
   lastName: Mulgan
-  title: Chief Executive of NESTA
+  facultyTitle: Chief Executive of NESTA
   longBio: 'Geoff Mulgan CBE (born 1961) is Chief Executive of the National Endowment
     for Science Technology and the Arts (NESTA)[1] and Visiting Professor at University
     College London, the London School of Economics, the University of Melbourne and
@@ -111,7 +111,7 @@ faculty:
     id: 76jQmCfNmweoqWUoQIIYiy
   firstName: Benjamin
   lastName: Kallos
-  title: Chair of the Committee on Governmental Operations of the City Council
+  facultyTitle: Chair of the Committee on Governmental Operations of the City Council
   longBio: At the beginning of his career in public service, Ben Kallos put Albany
     voting records online so New Yorkers could hold politicians accountable. Since
     then, he has run a government reform organization that helped defeat a corrupt
@@ -138,7 +138,7 @@ faculty:
     id: 1an2paUAwwukcKuGO8Coew
   firstName: Tiago
   lastName: Peixoto
-  title: Team Lead at the Digital Engagement Unit of the World Bank
+  facultyTitle: Team Lead at the Digital Engagement Unit of the World Bank
   longBio: Tiago Peixoto (PhD) is a Team Lead at the World Bank’s Digital Engagement
     Unit. Featured in TechCrunch as one of the “20 Most Innovative People in Democracy”,
     Tiago is an internationally recognized expert working at the intersection of technology
@@ -167,7 +167,7 @@ faculty:
     id: 7hGouXC4fuEeO8o6SAISI4
   firstName: Miriam
   lastName: Nisbet
-  title: Former Director of the Office of Government Information Services
+  facultyTitle: Former Director of the Office of Government Information Services
   longBio: Miriam Nisbet was the founding Director of the Office of Government Information
     Services (OGIS), National Archives and Records Administration (NARA). Created
     by the 2007 amendments to the Freedom of Information Act, OGIS is the federal
@@ -186,7 +186,7 @@ faculty:
     id: 2qZW4xsqSgWMuys6w8Ki4w
   firstName: Hollie
   lastName: Russon Gilman
-  title: Fellow, New America Foundation and expert, Participatory Budgeting
+  facultyTitle: Fellow, New America Foundation and expert, Participatory Budgeting
   longBio: Hollie Russon Gilman holds a Ph.D. and M.A. from the Department of Government
     at Harvard University and A.B. from the University of Chicago with highest honors
     in political science.  Her dissertation is the first academic study of participatory
@@ -216,7 +216,7 @@ faculty:
     id: n4HlUiwcKcyWeKYEQWSiE
   firstName: Beth Simone
   lastName: Noveck
-  title: Founder of The GovLab
+  facultyTitle: Founder of The GovLab
   affiliation: The GovLab
   longBio: 'Beth Simone Noveck directs The Governance Lab and its MacArthur Research
     Network on Opening Governance. Funded by the John D. and Catherine T. MacArthur
@@ -259,7 +259,7 @@ faculty:
     id: 6Ip5C7EfGoGy2AKAaA6qI0
   firstName: Alan
   lastName: Kantrow
-  title: Senior Advisor at the GovLab
+  facultyTitle: Senior Advisor at the GovLab
   affiliation: The GovLab
   longBio: Alan Kantrow is Senior Advisor of The GovLab. Prior to joining The GovLab,
     Alan was Managing Partner of Alan Kantrow LLC, where he provided advice on strategy,
@@ -283,12 +283,12 @@ faculty:
   facultyImage:
     title: alan-kantrow
     description: Alan Kantrow
-    url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
+    url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/cd1e24b4637231473e96149f6957ad06/alan-kantrow.jpg"
 - sys:
     id: 6DNzfgavEkkqqIskcGKO6s
   firstName: Andrew
   lastName: Young
-  title: Associate Director of Research at the GovLab
+  facultyTitle: Associate Director of Research at the GovLab
   affiliation: The GovLab
   longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
     his Master’s degree in the Media, Culture and Communication department of NYU’s
@@ -316,7 +316,7 @@ faculty:
     id: 1lA9oSyatOy8wWUIM2SAkA
   firstName: Arnaud
   lastName: Sahuguet
-  title: Director of The Foundry @ Cornell Tech
+  facultyTitle: Director of The Foundry @ Cornell Tech
   affiliation: The GovLab
   longBio: Dr. Arnaud Sahuguet was until recently a Product Manager for Google.org
     in New York working on civic innovation, as part of the Google social impact team.
@@ -346,7 +346,7 @@ faculty:
     id: 5gfjFvZYdiAgkgaY0muu80
   firstName: Dinorah
   lastName: Cantú-Pedraza
-  title: The GovLab Academy Coordinator
+  facultyTitle: The GovLab Academy Coordinator
   affiliation: The GovLab
   longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
     at helping government and social innovators take innovative projects from idea
@@ -381,7 +381,7 @@ faculty:
     id: 5kS5wQk33qWKoA4e4AEwiG
   firstName: Stefaan
   lastName: Verhulst
-  title: Co-Founder and Chief Research and Development Officer at the GovLab
+  facultyTitle: Co-Founder and Chief Research and Development Officer at the GovLab
   affiliation: The GovLab
   longBio: 'Stefaan G. Verhulst is Co-Founder and Chief Research and Development Officer
     of the Governance Laboratory @NYU (GovLab) where he is responsible for building
@@ -437,7 +437,7 @@ faculty:
     id: 3OrVaJWUdGqKOeSOmEIkyY
   firstName: Francois
   lastName: Grey
-  title: 'Coordinator of the Citizen Cyberscience Centre '
+  facultyTitle: 'Coordinator of the Citizen Cyberscience Centre '
   longBio: "Francois Grey is a physicist by training, with a background in nanotechnology
     and a passion for citizen science. Since September 2014, he is Invited Professor
     at the University of Geneva and Manager of the Citizen Cyberscience Centre, a
@@ -474,7 +474,7 @@ faculty:
     id: 6gfUomlYC4QQq6QIOceKqW
   firstName: Clay
   lastName: Johnson
-  title: Chairman of the Department of Better Technology
+  facultyTitle: Chairman of the Department of Better Technology
   longBio: Clay Johnson is an American technologist, co-founder and Chairman of the
     Department of Better Technology and best known for his role in supporting political
     campaigns and government agencies with technology services. He was one of the
@@ -503,7 +503,7 @@ faculty:
     id: 4VUV824TYkG0S8qqCwi6SS
   firstName: Joeri
   lastName: van den Steenhoven
-  title: Director of the MaRS Solutions Lab
+  facultyTitle: Director of the MaRS Solutions Lab
   longBio: Joeri van den Steenhoven is the Director of the MaRS Solutions Lab. He
     is a longtime social innovator fascinated by our society’s transition towards
     the knowledge society. Being a systems thinker, he likes to work on wicked problems
@@ -526,8 +526,8 @@ faculty:
     id: nYPHeMVMpU8qaSUuMkwKE
   firstName: Karim
   lastName: Lakhani
-  title: Lumry Family Associate Professor of Business Administration at the Harvard
-    Business School
+  facultyTitle: Lumry Family Associate Professor of Business Administration at the
+    Harvard Business School
   longBio: |-
     Karim R. Lakhani is the Lumry Family Associate Professor of Business Administration at the Harvard Business School and the Principal Investigator of the Harvard-NASA Tournament Lab at the Institute for Quantitative Social Science. He specializes in the management of technological innovation in firms and communities. His research is on distributed innovation systems and the movement of innovative activity to the edges of organizations and into communities. He has extensively studied the emergence of open source software communities and their unique innovation and product development strategies. He has also investigated how critical knowledge from outside of the organization can be accessed through innovation contests. Currently Professor Lakhani is investigating incentives and behavior in contests and the mechanisms behind scientific team formation through field experiments on the TopCoder platform and the Harvard Medical School.
 
@@ -546,7 +546,7 @@ faculty:
     id: 39NgtCQES4QUWe2yyc880a
   firstName: Gavin
   lastName: Hayman
-  title: Executive Director of the Open Contracting Partnership
+  facultyTitle: Executive Director of the Open Contracting Partnership
   longBio: |-
     Gavin is currently the Executive Director of Global Witness and, before that, he was the organisation's Director of Campaigns since 2006. He oversees all of Global Witness groundbreaking and award-winning investigative, campaigning and advocacy work uncovering secret deals, corruption and conflict around the world. He helped create the international Publish What You Pay campaign and helped negotiate the intergovernmental Extractive Industries Transparency Initiative that brings together oil and mining companies, home- and host-governments and civil society to improve disclosure and oversight of over $1 trillion dollars of oil and mining money.
 
@@ -561,7 +561,7 @@ faculty:
     id: 1H0CMTHvEcsCUgmiyeI0Is
   firstName: Amen Ra
   lastName: Mashariki
-  title: Chief Analytics Officer of New York City
+  facultyTitle: Chief Analytics Officer of New York City
   longBio: Amen Ra, former White House Fellow and currently Chief Analytics Officer
     for the New York City Mayor's Office of Data Analytics, is a computer scientist
     at the Johns Hopkins University Applied Physics Laboratory (JHU APL). As a senior
@@ -587,7 +587,7 @@ faculty:
     id: 5x6EMlJNW8cO8qSQSiiUgK
   firstName: Liz
   lastName: Barry
-  title: Co-founder & Director of Community Development at the Public Lab
+  facultyTitle: Co-founder & Director of Community Development at the Public Lab
   longBio: 'Liz is an activist and designer interested in collaborative urban environments.
     My early days in New York involved catalyzing public interactions on sidewalks
     and subway stations with a giant "Talk To Me" sign as well as working 25 floors
@@ -610,8 +610,8 @@ faculty:
     id: 3OblSnyffy6WcQ4E2Ck0Oo
   firstName: Puneet
   lastName: Kishor
-  title: Univ of Wisconsin and Former Manager of Science and Data Policy at Creative
-    Commons
+  facultyTitle: Univ of Wisconsin and Former Manager of Science and Data Policy at
+    Creative Commons
   longBio: |-
     Since 1985 Puneet’s career has spanned rural appropriate technology design to international development, academia, research and science information policy.
 
@@ -630,7 +630,7 @@ faculty:
     id: 6o4mPD58aWK6YS8q8GukyY
   firstName: Daren C.
   lastName: Brabham
-  title: Assistant Professor in the Annenberg School for Communication & Journalism
+  facultyTitle: Assistant Professor in the Annenberg School for Communication & Journalism
     at the University of Southern California
   longBio: Daren C. Brabham conducts research into online communities and the role
     of new media technologies in society. He has written extensively about crowdsourcing,
@@ -655,7 +655,7 @@ faculty:
     id: 1zapWeT8k8iwOu0gM2mQ0m
   firstName: Henry
   lastName: Timms
-  title: 'Executive Director 92Y and Founder #GivingTuesday'
+  facultyTitle: 'Executive Director 92Y and Founder #GivingTuesday'
   longBio: 'As Executive Director of 92nd Street Y, Henry creates programs and movements
     that foster learning, civic responsibility, culture and innovation, both in New
     York City and around the world. He is the founder of #GivingTuesday, a global
@@ -682,8 +682,8 @@ faculty:
     id: 6eIh9c6RFYmwSwsYCiMiUW
   firstName: Julian
   lastName: Carver
-  title: Data Driven Innovation Consultant and Former CIO of the Canterbury Earthquake
-    Recovery Authority
+  facultyTitle: Data Driven Innovation Consultant and Former CIO of the Canterbury
+    Earthquake Recovery Authority
   longBio: Julian Carver is an investor, startup mentor, and technology innovator
     in the public and private sectors. He founded and exited three web software startups
     from 1995-2000. From 2000-2011 he led large shared services projects and data
@@ -706,7 +706,7 @@ faculty:
     id: 1GNls55iM0sSAuwY646MUW
   firstName: María
   lastName: Hermosilla
-  title: Research Fellow at the GovLab
+  facultyTitle: Research Fellow at the GovLab
   affiliation: The GovLab
   longBio: |-
     Research Fellow Maria Hermosilla focuses her work on governance innovation in Latin America. At the GovLab, she does both research and project design and management.
@@ -736,7 +736,7 @@ faculty:
     id: J1oe5ZIAACqeumUYAuM2q
   firstName: Ana
   lastName: Tovar
-  title: Legal Research Fellow at the GovLab
+  facultyTitle: Legal Research Fellow at the GovLab
   affiliation: The GovLab
   longBio: |-
     Ana is a Legal Research Fellow at the GovLab. She is a native of Mexico City. Ana recently received her Masters of Law from Yale Law School where she was selected to be a Global Health Justice Partnership (GHJP) Student Fellow in a collaborative initiative of Yale Law School and Yale School of Public Health. She was a staff editor of the Yale Journal of Health Policy, Law and Ethics.
@@ -759,7 +759,7 @@ faculty:
     id: 19NzSNrZxiSSw8aCE4YKmo
   firstName: Uthman
   lastName: Olagoke
-  title: Project Manager at Citymart
+  facultyTitle: Project Manager at Citymart
   longBio: |-
     Uthman is an experienced project manager at Citymart, working with cities to find solutions that will elevate the quality of life for citizens and bring innovation to the inner-workings of government.
 
@@ -774,7 +774,7 @@ faculty:
     id: 41jcliotLG4IAAcaMOiQwy
   firstName: Claus
   lastName: Mullie
-  title: Analyst at Citymart
+  facultyTitle: Analyst at Citymart
   longBio: |-
     Claus Mullie joined Citymart in 2015, Claus contributed extensively to Citymart’s Procurement Institute, a large online resource designed to train city officials on innovative procurement. This included researching and compiling case study material.
 
@@ -818,7 +818,7 @@ faculty:
     id: 3wl1z9JkX6iAOq2qQCeaWu
   firstName: Philippa
   lastName: Parry
-  title: Analyst at Citymart
+  facultyTitle: Analyst at Citymart
   longBio: |2-
 
     Philippa works as an Analyst at Citymart and is currently working on introducing problem-based procurement to the governments of Long Beach and New York City, supporting challenge-based procurement strategy and delivery at all stages. Philippa also led the strategy and research on past Citymart challenges with the Government Laboratory in Chile, focused on how to the healthcare system could better meet the public’s needs, and the Bristol Social Cohesion Challenge (UK), improving social integration in a rapidly changing city.
@@ -834,7 +834,7 @@ faculty:
     id: 6DnfIkrlD2uEYI0iYKi0uE
   firstName: Nina
   lastName: Robbins
-  title: Project Manager at Citymart
+  facultyTitle: Project Manager at Citymart
   longBio: |-
     Nina Robbins is a Project Manager at Citymart responsible for a portfolio of partnerships with leading global cities such as New York City and Eindhoven. At Citymart, she has successfully led challenge-based procurement and problem-solving projects for the cities of Long Beach, Philadelphia and New York City. Nina further managed the co-creation of Citymart’s Opportunity Builder online tool with a group of partner cities to establish common needs, taxonomies and use-cases.
 
