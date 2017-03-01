@@ -260,45 +260,42 @@ coachingProgram:
       title: andrew-young
       description: 
       url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
-- sys:
-    id: 3IUYZaK9SgISgEaEaG6mA6
-  programName: Sample course
-  startDate: !ruby/object:DateTime 2017-03-01 00:00:00.000000000 -05:00
-  endDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -05:00
-  applicationDeadline: !ruby/object:DateTime 2017-02-24 00:00:00.000000000 -05:00
-  longDescription: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
-
-    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
-  faculty:
   - sys:
-      id: 6DNzfgavEkkqqIskcGKO6s
-    firstName: Andrew
-    lastName: Young
-    title: Associate Director of Research at the GovLab
+      id: 5gfjFvZYdiAgkgaY0muu80
+    firstName: Dinorah
+    lastName: Cantú-Pedraza
+    title: The GovLab Academy Coordinator
     affiliation: The GovLab
-    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
-      his Master’s degree in the Media, Culture and Communication department of NYU’s
-      Steinhardt School of Culture, Education and Human Development, with a focus
-      on Technology and Society. In addition to open governance, his research interests
-      include privacy, Internet activism, values in design and the ethical implications
-      of the use of new technologies in politics. His Master’s thesis explored the
-      largely unexamined use of data-tracking technologies on congressional campaign
-      websites to inform microtargeting efforts, and won the department’s Outstanding
-      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
-      Stefaan Verhulst at the Markle Foundation, where his research centered on the
-      use of technology to bolster economic security. Prior to his graduate work at
-      NYU, Andrew attended Pennsylvania State University, where he studied English
-      and Communications. He also spent two semesters at Goldsmiths College, University
-      of London. He can be found on Twitter at @AndrewYoungNYC.
-    email: andrew@thegovlab.org
-    website: http://thegovlab.org/andrew-young/
-    twitter: http://twitter.com/AndrewYoungNYC
-    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
+      at helping government and social innovators take innovative projects from idea
+      to implementation. Under her direction, the Academy has worked with over five
+      hundred innovators from more than 30 countries online and off over the last
+      two years. Thousands more have watched its skill-building videos. She has put
+      together over 12 Coaching Programs, the Academy’s signature mentoring and peer
+      to peer learning initiative, where over 95% of whose participants complete the
+      program. The Academy is a project of the Governance Lab, based at New York University.
+      GovLab focuses on the use of technology to improve how we govern. Dinorah has
+      also designed the GovLab’s Crowdsorcerer expert system, a software tool to deliver
+      customized case studies to government leaders about open innovation. Working
+      together with lawyers and education experts from NYU, she also designed an expert
+      system to help universities determine the legal requirements for offering online
+      education. She also runs the GovLab’s Demos for Democracy video series where
+      she interviews leading technologists about new platforms to advance the public
+      interest. A lawyer by training, Dinorah founded and directed the Human Rights
+      Center of the Facultad Libre de Derecho de Monterrey prior to coming to New
+      York in 2012. She holds an MPA in Public and Nonprofit Management and Policy
+      at NYU Robert F. Wagner School of Public Service and is passionate about the
+      value of civic technology for strengthening human rights. She is bilingual in
+      English and Spanish and tweets at @dinorah_cantu.
+    email: dinorah@thegovlab.org
+    website: http://thegovlab.org/about/team/
+    twitter: https://twitter.com/dinorah_cantu
+    linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
+    gitHub: https://github.com/dino-at-thegovlab
     facultyImage:
-      title: andrew-young
+      title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 1l7V2iMx1aqoA4WmIcuCQk
   programName: Tech Innovation in Procurement
@@ -706,3 +703,78 @@ coachingProgram:
       title: julian-carver
       description: 
       url: "//images.contentful.com/gvpfsi7zggwe/zim4h1qde8WWoqcgiu4gy/e1055537b0e3a943735315b9388ba01f/julian-carver.jpg"
+- sys:
+    id: 3IUYZaK9SgISgEaEaG6mA6
+  programName: Sample course
+  startDate: !ruby/object:DateTime 2017-03-01 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -05:00
+  applicationDeadline: !ruby/object:DateTime 2017-02-24 00:00:00.000000000 -05:00
+  longDescription: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
+
+    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
+  faculty:
+  - sys:
+      id: 6DNzfgavEkkqqIskcGKO6s
+    firstName: Andrew
+    lastName: Young
+    title: Associate Director of Research at the GovLab
+    affiliation: The GovLab
+    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
+      his Master’s degree in the Media, Culture and Communication department of NYU’s
+      Steinhardt School of Culture, Education and Human Development, with a focus
+      on Technology and Society. In addition to open governance, his research interests
+      include privacy, Internet activism, values in design and the ethical implications
+      of the use of new technologies in politics. His Master’s thesis explored the
+      largely unexamined use of data-tracking technologies on congressional campaign
+      websites to inform microtargeting efforts, and won the department’s Outstanding
+      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
+      Stefaan Verhulst at the Markle Foundation, where his research centered on the
+      use of technology to bolster economic security. Prior to his graduate work at
+      NYU, Andrew attended Pennsylvania State University, where he studied English
+      and Communications. He also spent two semesters at Goldsmiths College, University
+      of London. He can be found on Twitter at @AndrewYoungNYC.
+    email: andrew@thegovlab.org
+    website: http://thegovlab.org/andrew-young/
+    twitter: http://twitter.com/AndrewYoungNYC
+    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    facultyImage:
+      title: andrew-young
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
+  - sys:
+      id: 5gfjFvZYdiAgkgaY0muu80
+    firstName: Dinorah
+    lastName: Cantú-Pedraza
+    title: The GovLab Academy Coordinator
+    affiliation: The GovLab
+    longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
+      at helping government and social innovators take innovative projects from idea
+      to implementation. Under her direction, the Academy has worked with over five
+      hundred innovators from more than 30 countries online and off over the last
+      two years. Thousands more have watched its skill-building videos. She has put
+      together over 12 Coaching Programs, the Academy’s signature mentoring and peer
+      to peer learning initiative, where over 95% of whose participants complete the
+      program. The Academy is a project of the Governance Lab, based at New York University.
+      GovLab focuses on the use of technology to improve how we govern. Dinorah has
+      also designed the GovLab’s Crowdsorcerer expert system, a software tool to deliver
+      customized case studies to government leaders about open innovation. Working
+      together with lawyers and education experts from NYU, she also designed an expert
+      system to help universities determine the legal requirements for offering online
+      education. She also runs the GovLab’s Demos for Democracy video series where
+      she interviews leading technologists about new platforms to advance the public
+      interest. A lawyer by training, Dinorah founded and directed the Human Rights
+      Center of the Facultad Libre de Derecho de Monterrey prior to coming to New
+      York in 2012. She holds an MPA in Public and Nonprofit Management and Policy
+      at NYU Robert F. Wagner School of Public Service and is passionate about the
+      value of civic technology for strengthening human rights. She is bilingual in
+      English and Spanish and tweets at @dinorah_cantu.
+    email: dinorah@thegovlab.org
+    website: http://thegovlab.org/about/team/
+    twitter: https://twitter.com/dinorah_cantu
+    linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
+    gitHub: https://github.com/dino-at-thegovlab
+    facultyImage:
+      title: dinorah-cantu-pedraza
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
