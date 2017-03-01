@@ -34,7 +34,35 @@
   }
 }
 
-.slide {
-  h4 { margin-bottom: 0; }
-  min-height: 515px;
+.slider {
+  .slide {
+    padding-top: 20vh !important;
+      @include breakpoint($small-only) {
+        h1 { font-size: 2rem; }
+        height: 80vh;
+        @media only screen {    
+          padding-top: 10vh !important;
+          h1 { font-size: 1.8rem;}
+          h5 { font-size: 1.2rem;}
+          p { font-size: 1rem;}
+      }
+    }
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3)
+      and (orientation: landscape) { 
+        padding-top: 10vh !important;
+        h1 { font-size: 2rem;}
+        height: 90vh;
+    }
+    h1 { font-size: 3.5rem; }
+    h4 { margin-bottom: 0; }
+    height: 70vh;
+  }
 }
+
+
+
+

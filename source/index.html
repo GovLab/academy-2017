@@ -4,15 +4,17 @@ custom_body: homepage
 ---
 
 <section class="top-section highlights highlight--purple">
-  <div class="row expanded collapse medium-unstack">
+  <div class="row expanded collapse small-unstack">
     <div class="large-8 medium-12 small-12 columns">
       <div class="slider">
-        {% assign carousel_data = site.data.contentful.spaces.cases.carousel %}
+        {% assign carousel_data = site.data.contentful.spaces.carousels.carousel %}
         {% for carousel in carousel_data %}
         <div class="slide" style="background-image: url({{carousel.slideImage.url }})">
-          <a class="slide__title" href="{{carousel.destinationUrl}}"><h1>{{carousel.slideTitle}}</h1></a>
-          <h5 class="slide__subtitle">{{carousel.slideSubtitle}}</h5>
-          <p class="slide__description">{{carousel.slideDescription}}</p>
+          <div class="slide__text-container">
+            <a class="slide__title" href="{{carousel.destinationUrl}}"><h1>{{carousel.slideTitle}}</h1></a>
+            <h5 class="slide__subtitle">{{carousel.slideSubtitle}}</h5>
+            <p class="slide__description">{{carousel.slideDescription}}</p>
+          </div>
         </div>
         {% endfor %}
       </div>
