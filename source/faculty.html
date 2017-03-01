@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign faculty = site.data.contentful.spaces.faculty.faculty %}
+{% assign faculty = site.data.contentful.spaces.faculty.faculty | sort: "lastName" %}
 
 <div class="faculty-page">
   <div class="top-section top-section--orange">
@@ -26,7 +26,7 @@ layout: default
       {% for person in faculty %}
       <div class="large-4 column faculty__list-item">
         <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify | replace: 'ú', 'u'  }}.html">
-          <div class="faculty__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify | replace: 'í', 'i' }}-{{ person.lastName | slugify | replace: 'ú', 'u'}}.jpg);"></div>
+          <div class="faculty__picture" style="background-image: url({{person.facultyImage.url}});"></div>
         </a>
         <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify | replace: 'ú', 'u' }}.html">
           <p class="faculty__name">{{ person.firstName }} {{ person.lastName }}</p>

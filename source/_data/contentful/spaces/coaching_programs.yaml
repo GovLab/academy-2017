@@ -1,6 +1,72 @@
 ---
 coachingProgram:
 - sys:
+    id: 4r3SLPQKRakKQG6ui8WciW
+  programName: The Alliance4Youth Challenge 2016
+  startDate: !ruby/object:DateTime 2016-10-13 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2016-09-28 00:00:00.000000000 -05:00
+  shortDescription: Coaching program designed by Citizen Cyberlab, The GovLab , Nestlé
+    and the Alliance4YOUTH partners, to help the participants of the “Alliance4Youth
+    Challenge 2016” prepare to pitch their ideas of “The most attractive company in
+    2020.
+  longDescription: "At an historic UN summit in September 2015, world leaders formally
+    committed to the set of 17 “sustainable development goals” that form the heart
+    of the UN’s ambitious 2030 Agenda. The 8th of these goals calls for the promotion
+    of inclusive and sustainable economic development, full and productive employment,
+    and decent work for all. Everyone understands that achieving these noble outcomes
+    will, inevitably, require meaningful changes in public policy. But it will also
+    require deep changes in what private sector institutions do and, every bit as
+    important, in the ways they organize themselves to do it.\n\nWhen individuals
+    at work feel unheard, unseen, and undervalued, their daily experience on the job
+    alienates instead of engages. When they feel unable to make real contributions
+    because the levers for doing so lie well out of reach, fat paychecks flowing to
+    the accounts of distant barons offer neither satisfaction nor incentive, but only
+    fuel for discontent and anger. This has always been true. For the millennials
+    now and soon to be in the workforce, the truth goes deeper still. Their expectations
+    are higher, their skills greater, and their patience lower than those of the generations
+    before them. They are poised to contribute and have much to contribute. If their
+    work offers them no effective means to do so, they will be frustrated and all
+    of society will be the poorer – and the more fragile.\n\nIn practice, this means
+    that corporate MANAGERS will need to find new and compelling ways in which to
+    tap, harness, and leverage the knowledge, skills, energy, and commitment of theIR
+    millennial COLLEAGUES. Companies, positions, and work assignments must do more
+    than just organize and support them. They must energize and engage them. Indeed,
+    every plausible road to SDG 8 passes through the gate of engagement. \n\nAccordingly,
+    Citizen Cyberlab, The GovLab , Nestlé and the Alliance4YOUTH partners are sponsoring
+    a challenge for up to 80 students from across Swiss universities. Teams of no
+    more than 5 or 6 from across universities will each choose a sector within which
+    to focus and, then, devise an integrated plan for how a company operating in that
+    sector can best use available tools, diagnostic frameworks, information and social
+    technologies, and managerial approaches to engage and energize their people.\n\nEvery
+    week for 5 weeks, beginning October 2016, all teams will have access to a 2 hour,
+    on-line expert coaching session, which is designed to support them in framing
+    the challenge as they think best, managing team process and dynamics, becoming
+    familiar with relevant information and social technologies, and putting together
+    and rehearsing their final “pitch” – a 10 minute-per-team presentation, followed
+    by 5 minutes of Q&A – for delivery on 23 November at Nestle in Geneva to a judging
+    panel including A4Y members and a UN representative. Prizes will be given for
+    the best overall pitch and the best presentation."
+  courseFormat: 1 faculty-led session every week for 2 hours with presentations from
+    representatives of partner organizations and feedback from the coaches for each
+    team’s presentation on the topic of the week leading up to one “final” pitch at
+    Nestle in Geneva to a judging panel including A4Y members and a UN representative.
+  faculty:
+  - sys:
+      id: 52NJACTaNO2QQgM2owqCIm
+    firstName: Karin
+    lastName: Christiansen
+    title: Chair of Open Knowledge International, Founder and Board Member of Publish
+      What You Fund
+    longBio: Karin is an experienced CEO and board member including in the transparency,
+      open data, co-operative and not for profit sectors. She has extensive facilitation
+      and chairing experience and  She is the chair of Open Knowledge International
+      and founder and now a board member of Publish What You Fund - the global campaign
+      for the transparency of aid.  She has a background in aid and development, but
+      most recently moved into professional politics as the General Secretary of the
+      Co-operative Party in the UK. She studied Politics, Philosophy and Economics
+      as an undergraduate, and has Masters degrees in Development Economics and in
+      Social and Political Thought
+- sys:
     id: ckudj4ouze604m2eWe2Au
   programName: Coaching Program for Data Driven Criminal Justice Projects - Fall 2016
   startDate: !ruby/object:DateTime 2016-09-19 00:00:00.000000000 -05:00
@@ -94,6 +160,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/beth-simone-noveck/
     twitter: https://twitter.com/bethnoveck
     linkedIn: https://www.linkedin.com/pub/beth-noveck/40/9a8/a46
+    facultyImage:
+      title: beth-simone-noveck
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/vZdtkl22762QQiWSsQkea/26c08114f807b31970dd828b28a817f0/beth-simone-noveck.jpg"
   - sys:
       id: 5kS5wQk33qWKoA4e4AEwiG
     firstName: Stefaan
@@ -147,6 +217,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/stefaan-verhulst/
     twitter: https://twitter.com/sverhulst
     linkedIn: https://www.linkedin.com/pub/stefaan-verhulst/0/334/85a
+    facultyImage:
+      title: stefaan-verhulst
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6RojjcYhck8Kq2GqWKG8gu/c125d0bb55023f3c02995f39eb2ca75c/stefaan-verhulst.jpg"
 - sys:
     id: 54GlwlXABy68MQw6yoWQq4
   programName: Sample course II
@@ -182,6 +256,49 @@ coachingProgram:
     website: http://thegovlab.org/andrew-young/
     twitter: http://twitter.com/AndrewYoungNYC
     linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    facultyImage:
+      title: andrew-young
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
+- sys:
+    id: 3IUYZaK9SgISgEaEaG6mA6
+  programName: Sample course
+  startDate: !ruby/object:DateTime 2017-03-01 00:00:00.000000000 -05:00
+  endDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -05:00
+  applicationDeadline: !ruby/object:DateTime 2017-02-24 00:00:00.000000000 -05:00
+  longDescription: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
+
+    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
+  faculty:
+  - sys:
+      id: 6DNzfgavEkkqqIskcGKO6s
+    firstName: Andrew
+    lastName: Young
+    title: Associate Director of Research at the GovLab
+    affiliation: The GovLab
+    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
+      his Master’s degree in the Media, Culture and Communication department of NYU’s
+      Steinhardt School of Culture, Education and Human Development, with a focus
+      on Technology and Society. In addition to open governance, his research interests
+      include privacy, Internet activism, values in design and the ethical implications
+      of the use of new technologies in politics. His Master’s thesis explored the
+      largely unexamined use of data-tracking technologies on congressional campaign
+      websites to inform microtargeting efforts, and won the department’s Outstanding
+      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
+      Stefaan Verhulst at the Markle Foundation, where his research centered on the
+      use of technology to bolster economic security. Prior to his graduate work at
+      NYU, Andrew attended Pennsylvania State University, where he studied English
+      and Communications. He also spent two semesters at Goldsmiths College, University
+      of London. He can be found on Twitter at @AndrewYoungNYC.
+    email: andrew@thegovlab.org
+    website: http://thegovlab.org/andrew-young/
+    twitter: http://twitter.com/AndrewYoungNYC
+    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    facultyImage:
+      title: andrew-young
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
 - sys:
     id: 1l7V2iMx1aqoA4WmIcuCQk
   programName: Tech Innovation in Procurement
@@ -364,6 +481,10 @@ coachingProgram:
     email: alan@thegovlab.org
     website: http://thegovlab.org/about/team/alan-kantrow/
     linkedIn: https://www.linkedin.com/pub/alan-kantrow/11/345/4a0
+    facultyImage:
+      title: alan-kantrow
+      description: Alan Kantrow
+      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
   - sys:
       id: J1oe5ZIAACqeumUYAuM2q
     firstName: Ana
@@ -383,6 +504,10 @@ coachingProgram:
     email: ana@thegovlab.org
     twitter: https://twitter.com/anitatovarf
     linkedIn: https://www.linkedin.com/in/ana-tovar-7602a8b2/en
+    facultyImage:
+      title: ana-tovar
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/2vvDBqXho40QYqqYuac8SE/5233b0499609ab30a89baa451cf315fc/ana-tovar.jpg"
   - sys:
       id: n4HlUiwcKcyWeKYEQWSiE
     firstName: Beth Simone
@@ -423,6 +548,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/beth-simone-noveck/
     twitter: https://twitter.com/bethnoveck
     linkedIn: https://www.linkedin.com/pub/beth-noveck/40/9a8/a46
+    facultyImage:
+      title: beth-simone-noveck
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/vZdtkl22762QQiWSsQkea/26c08114f807b31970dd828b28a817f0/beth-simone-noveck.jpg"
   - sys:
       id: 5kS5wQk33qWKoA4e4AEwiG
     firstName: Stefaan
@@ -476,6 +605,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/stefaan-verhulst/
     twitter: https://twitter.com/sverhulst
     linkedIn: https://www.linkedin.com/pub/stefaan-verhulst/0/334/85a
+    facultyImage:
+      title: stefaan-verhulst
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6RojjcYhck8Kq2GqWKG8gu/c125d0bb55023f3c02995f39eb2ca75c/stefaan-verhulst.jpg"
 - sys:
     id: 4Brd70bb1Siw48W6c6MC8C
   programName: Innovations in Automatic Benefits for Citizens
@@ -519,6 +652,10 @@ coachingProgram:
     twitter: https://twitter.com/kallos
     linkedIn: https://www.linkedin.com/in/kallos
     gitHub: https://github.com/kallosforcouncil
+    facultyImage:
+      title: benjamin-kallos
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/46LT94LxmoIi0Og0oI6E2i/568b607f884146d3726465b0e8b9b024/benjamin-kallos.jpg"
 - sys:
     id: 4gMlubSC7YcUSOqO6cY0sU
   programName: Innovations in Tech-Enabled Disaster Management
@@ -565,104 +702,7 @@ coachingProgram:
     email: julian.carver@nzcapstrat.com
     twitter: https://twitter.com/serenare
     linkedIn: https://www.linkedin.com/in/juliancarver
-- sys:
-    id: 3IUYZaK9SgISgEaEaG6mA6
-  programName: Sample course
-  startDate: !ruby/object:DateTime 2017-03-01 00:00:00.000000000 -05:00
-  endDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -05:00
-  applicationDeadline: !ruby/object:DateTime 2017-02-24 00:00:00.000000000 -05:00
-  longDescription: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis eros vel tempus consequat. Curabitur sem lacus, rutrum ac fermentum vitae, faucibus semper leo. Sed lacinia pulvinar velit. Nunc ac convallis nisi. Fusce lobortis in sapien sed gravida. Praesent cursus, lacus fringilla bibendum sagittis, odio velit volutpat diam, vel maximus augue arcu ac urna. Maecenas commodo purus ac viverra convallis. Integer eget imperdiet lacus. Maecenas porttitor nunc eu efficitur fermentum. Vestibulum blandit hendrerit mauris a dignissim. Aenean ac placerat erat. Fusce sagittis eu lacus sit amet tincidunt. Morbi vitae massa nec ex venenatis fermentum. Phasellus cursus sagittis ante. Ut ipsum justo, tincidunt at turpis id, placerat gravida metus.
-
-    Etiam tempus aliquet odio, sed blandit neque posuere non. In hac habitasse platea dictumst. Maecenas pellentesque pellentesque iaculis. Vivamus ut consectetur lectus, ac eleifend ligula. Suspendisse accumsan at risus sed luctus. Sed eu ultrices ante. Ut dapibus dignissim ipsum, id accumsan eros ullamcorper et. Ut fermentum tellus quis mi fringilla ultrices. Nunc est lorem, finibus a ex at, pharetra bibendum velit.
-  faculty:
-  - sys:
-      id: 6DNzfgavEkkqqIskcGKO6s
-    firstName: Andrew
-    lastName: Young
-    title: Associate Director of Research at the GovLab
-    affiliation: The GovLab
-    longBio: Andrew Young is the GovLab’s Associate Director of Research. He earned
-      his Master’s degree in the Media, Culture and Communication department of NYU’s
-      Steinhardt School of Culture, Education and Human Development, with a focus
-      on Technology and Society. In addition to open governance, his research interests
-      include privacy, Internet activism, values in design and the ethical implications
-      of the use of new technologies in politics. His Master’s thesis explored the
-      largely unexamined use of data-tracking technologies on congressional campaign
-      websites to inform microtargeting efforts, and won the department’s Outstanding
-      Thesis Award. Before arriving at the GovLab, Andrew worked with Chief of Research
-      Stefaan Verhulst at the Markle Foundation, where his research centered on the
-      use of technology to bolster economic security. Prior to his graduate work at
-      NYU, Andrew attended Pennsylvania State University, where he studied English
-      and Communications. He also spent two semesters at Goldsmiths College, University
-      of London. He can be found on Twitter at @AndrewYoungNYC.
-    email: andrew@thegovlab.org
-    website: http://thegovlab.org/andrew-young/
-    twitter: http://twitter.com/AndrewYoungNYC
-    linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
-- sys:
-    id: 4r3SLPQKRakKQG6ui8WciW
-  programName: The Alliance4Youth Challenge 2016
-  startDate: !ruby/object:DateTime 2016-10-13 00:00:00.000000000 -05:00
-  endDate: !ruby/object:DateTime 2016-09-28 00:00:00.000000000 -05:00
-  shortDescription: Coaching program designed by Citizen Cyberlab, The GovLab , Nestlé
-    and the Alliance4YOUTH partners, to help the participants of the “Alliance4Youth
-    Challenge 2016” prepare to pitch their ideas of “The most attractive company in
-    2020.
-  longDescription: "At an historic UN summit in September 2015, world leaders formally
-    committed to the set of 17 “sustainable development goals” that form the heart
-    of the UN’s ambitious 2030 Agenda. The 8th of these goals calls for the promotion
-    of inclusive and sustainable economic development, full and productive employment,
-    and decent work for all. Everyone understands that achieving these noble outcomes
-    will, inevitably, require meaningful changes in public policy. But it will also
-    require deep changes in what private sector institutions do and, every bit as
-    important, in the ways they organize themselves to do it.\n\nWhen individuals
-    at work feel unheard, unseen, and undervalued, their daily experience on the job
-    alienates instead of engages. When they feel unable to make real contributions
-    because the levers for doing so lie well out of reach, fat paychecks flowing to
-    the accounts of distant barons offer neither satisfaction nor incentive, but only
-    fuel for discontent and anger. This has always been true. For the millennials
-    now and soon to be in the workforce, the truth goes deeper still. Their expectations
-    are higher, their skills greater, and their patience lower than those of the generations
-    before them. They are poised to contribute and have much to contribute. If their
-    work offers them no effective means to do so, they will be frustrated and all
-    of society will be the poorer – and the more fragile.\n\nIn practice, this means
-    that corporate MANAGERS will need to find new and compelling ways in which to
-    tap, harness, and leverage the knowledge, skills, energy, and commitment of theIR
-    millennial COLLEAGUES. Companies, positions, and work assignments must do more
-    than just organize and support them. They must energize and engage them. Indeed,
-    every plausible road to SDG 8 passes through the gate of engagement. \n\nAccordingly,
-    Citizen Cyberlab, The GovLab , Nestlé and the Alliance4YOUTH partners are sponsoring
-    a challenge for up to 80 students from across Swiss universities. Teams of no
-    more than 5 or 6 from across universities will each choose a sector within which
-    to focus and, then, devise an integrated plan for how a company operating in that
-    sector can best use available tools, diagnostic frameworks, information and social
-    technologies, and managerial approaches to engage and energize their people.\n\nEvery
-    week for 5 weeks, beginning October 2016, all teams will have access to a 2 hour,
-    on-line expert coaching session, which is designed to support them in framing
-    the challenge as they think best, managing team process and dynamics, becoming
-    familiar with relevant information and social technologies, and putting together
-    and rehearsing their final “pitch” – a 10 minute-per-team presentation, followed
-    by 5 minutes of Q&A – for delivery on 23 November at Nestle in Geneva to a judging
-    panel including A4Y members and a UN representative. Prizes will be given for
-    the best overall pitch and the best presentation."
-  courseFormat: 1 faculty-led session every week for 2 hours with presentations from
-    representatives of partner organizations and feedback from the coaches for each
-    team’s presentation on the topic of the week leading up to one “final” pitch at
-    Nestle in Geneva to a judging panel including A4Y members and a UN representative.
-  faculty:
-  - sys:
-      id: 52NJACTaNO2QQgM2owqCIm
-    firstName: Karin
-    lastName: Christiansen
-    title: Chair of Open Knowledge International, Founder and Board Member of Publish
-      What You Fund
-    longBio: Karin is an experienced CEO and board member including in the transparency,
-      open data, co-operative and not for profit sectors. She has extensive facilitation
-      and chairing experience and  She is the chair of Open Knowledge International
-      and founder and now a board member of Publish What You Fund - the global campaign
-      for the transparency of aid.  She has a background in aid and development, but
-      most recently moved into professional politics as the General Secretary of the
-      Co-operative Party in the UK. She studied Politics, Philosophy and Economics
-      as an undergraduate, and has Masters degrees in Development Economics and in
-      Social and Political Thought
+    facultyImage:
+      title: julian-carver
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/zim4h1qde8WWoqcgiu4gy/e1055537b0e3a943735315b9388ba01f/julian-carver.jpg"

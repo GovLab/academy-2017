@@ -51,7 +51,7 @@ layout: default
               <p class="course-item__application">STARTS THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team row column">
                 {% for person in course.faculty %}
-                  <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                  <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url({{person.facultyImage.url}});">
                     <p>{{ person.firstName }} {{ person.lastName }}</p>
                   </a>
                 {% endfor %}
@@ -99,7 +99,7 @@ layout: default
               <div class="course-item__faculty-team">
                 {% for person in course.faculty %}
                     <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank">
-                      <div class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                      <div class="course-item__faculty column large-3 end" style="background-image: url({{person.facultyImage.url}});">
                         <p>{{ person.firstName }} {{ person.lastName }}</p>
                       </div>
                     </a>

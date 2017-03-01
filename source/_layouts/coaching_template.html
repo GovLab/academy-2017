@@ -68,7 +68,7 @@ layout: default
     <div class="row expanded collapse align-center">
       {% for person in page.faculty %}
         <a href="{{site.url}}{{site.baseurl}}/faculty/{{person.lastName | slugify }}.html" target="_blank" class="large-3 column faculty-card {% if person.is_govlab %}faculty-card--govlab {% endif%}">
-          <div class="faculty-card__picture" style="background-image: url({{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify}}.jpg);"></div>
+          <div class="faculty-card__picture" style="background-image: url({{person.facultyImage.url}});"></div>
           <h1 class="faculty-card__name ">{{ person.firstName }} {{ person.lastName }}</h1>
           <p class="faculty-card__description">{{ person.title }}</p>
         </a>
