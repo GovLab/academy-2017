@@ -21,6 +21,10 @@ faculty:
   email: jos@thegovlab.org
   twitter: https://twitter.com/jos_berens
   linkedIn: https://www.linkedin.com/pub/jos-berens/70/a2b/223
+  facultyImage:
+    title: jos-berens
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/13O8VY9W52KMW64qiGEEq2/72eb62785a1b04f340e52dd1c3bfd423/jos-berens.jpg"
 - sys:
     id: 5gSD74RzVSgSa2uC6wGScS
   firstName: Brian
@@ -43,6 +47,10 @@ faculty:
   twitter: https://twitter.com/brianbehlendorf
   linkedIn: https://www.linkedin.com/in/brianbehlendorf
   gitHub: https://github.com/brianbehlendorf
+  facultyImage:
+    title: brian-behlendorf
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/3qjaiUVqk0GWucaqooGy4y/4b8b259e3a54a8d2b2c6c6b84c2ebbbe/brian-behlendorf.jpg"
 - sys:
     id: 52NJACTaNO2QQgM2owqCIm
   firstName: Karin
@@ -70,6 +78,10 @@ faculty:
   email: acc578@nyu.edu
   twitter: https://twitter.com/iraqrecoded
   linkedIn: https://www.linkedin.com/pub/alexandra-clare/43/582/819
+  facultyImage:
+    title: alexandra-clare
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5548166f821144496f342eb86eed1f66/alexandra-clare.jpg"
 - sys:
     id: 4Qfo2nOXK0yAK0wYyy4q84
   firstName: Geoff
@@ -91,6 +103,10 @@ faculty:
   website: http://www.nesta.org.uk/users/geoff-mulgan
   twitter: https://twitter.com/geoffmulgan
   linkedIn: http://uk.linkedin.com/pub/geoff-mulgan/63/92/546
+  facultyImage:
+    title: geoff-mulgan
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/2gSPgvPT6QUqkEQIEGCyqm/ffc583e232ede0b100d89b4fe74ff1b4/geoff-mulgan.jpg"
 - sys:
     id: 76jQmCfNmweoqWUoQIIYiy
   firstName: Benjamin
@@ -114,6 +130,10 @@ faculty:
   twitter: https://twitter.com/kallos
   linkedIn: https://www.linkedin.com/in/kallos
   gitHub: https://github.com/kallosforcouncil
+  facultyImage:
+    title: benjamin-kallos
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/46LT94LxmoIi0Og0oI6E2i/568b607f884146d3726465b0e8b9b024/benjamin-kallos.jpg"
 - sys:
     id: 1an2paUAwwukcKuGO8Coew
   firstName: Tiago
@@ -139,6 +159,10 @@ faculty:
   website: http://democracyspot.net
   twitter: https://twitter.com/participatory
   linkedIn: https://www.linkedin.com/in/tcpeixoto
+  facultyImage:
+    title: tiago-peixoto
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/7b3bWWUMzmykmiuOy4IcmK/6364a2b6599c77e6c2541ecb28596fa5/tiago-peixoto.jpg"
 - sys:
     id: 7hGouXC4fuEeO8o6SAISI4
   firstName: Miriam
@@ -154,6 +178,10 @@ faculty:
     Association, NARA, and the US Department of Justice. She is a member of the Bars
     of the District of Columbia and North Carolina.
   website: http://www.archives.gov/press/press-releases/2009/nr09-93.html
+  facultyImage:
+    title: miriam-nisbet
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/4w6lgWOqsoEkSWmq0K8cKk/d8dffd8921f422a313a16ab3e4622eea/miriam-nisbet.jpg"
 - sys:
     id: 2qZW4xsqSgWMuys6w8Ki4w
   firstName: Hollie
@@ -180,6 +208,10 @@ faculty:
   email: hrgilman@gmail.com
   website: http://scholar.harvard.edu/hrgilman/home
   twitter: https://twitter.com/hrgilman
+  facultyImage:
+    title: hollie-russon-gilman
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/7u6DcwtfawMM8gQWqCKacI/2922aabdac987d43b2165f9105c4109f/hollie-russon-gilman.jpg"
 - sys:
     id: n4HlUiwcKcyWeKYEQWSiE
   firstName: Beth Simone
@@ -219,6 +251,10 @@ faculty:
   website: http://thegovlab.org/about/team/beth-simone-noveck/
   twitter: https://twitter.com/bethnoveck
   linkedIn: https://www.linkedin.com/pub/beth-noveck/40/9a8/a46
+  facultyImage:
+    title: beth-simone-noveck
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/vZdtkl22762QQiWSsQkea/26c08114f807b31970dd828b28a817f0/beth-simone-noveck.jpg"
 - sys:
     id: 6Ip5C7EfGoGy2AKAaA6qI0
   firstName: Alan
@@ -244,6 +280,10 @@ faculty:
   email: alan@thegovlab.org
   website: http://thegovlab.org/about/team/alan-kantrow/
   linkedIn: https://www.linkedin.com/pub/alan-kantrow/11/345/4a0
+  facultyImage:
+    title: alan-kantrow
+    description: Alan Kantrow
+    url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
 - sys:
     id: 6DNzfgavEkkqqIskcGKO6s
   firstName: Andrew
@@ -268,6 +308,10 @@ faculty:
   website: http://thegovlab.org/andrew-young/
   twitter: http://twitter.com/AndrewYoungNYC
   linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+  facultyImage:
+    title: andrew-young
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
 - sys:
     id: 1lA9oSyatOy8wWUIM2SAkA
   firstName: Arnaud
@@ -294,6 +338,10 @@ faculty:
   twitter: https://twitter.com/sahuguet
   linkedIn: https://www.linkedin.com/in/sahuguet
   gitHub: https://github.com/sahuguet
+  facultyImage:
+    title: arnaud-sahuguet
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/48rqkGSTUQwgG4wwcQ6coO/15b9dac9c67b929741d294d667a52057/arnaud-sahuguet.jpg"
 - sys:
     id: 5gfjFvZYdiAgkgaY0muu80
   firstName: Dinorah
@@ -325,6 +373,10 @@ faculty:
   twitter: https://twitter.com/dinorah_cantu
   linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
   gitHub: https://github.com/dino-at-thegovlab
+  facultyImage:
+    title: dinorah-cantu-pedraza
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 5kS5wQk33qWKoA4e4AEwiG
   firstName: Stefaan
@@ -377,6 +429,10 @@ faculty:
   website: http://thegovlab.org/about/team/stefaan-verhulst/
   twitter: https://twitter.com/sverhulst
   linkedIn: https://www.linkedin.com/pub/stefaan-verhulst/0/334/85a
+  facultyImage:
+    title: stefaan-verhulst
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/6RojjcYhck8Kq2GqWKG8gu/c125d0bb55023f3c02995f39eb2ca75c/stefaan-verhulst.jpg"
 - sys:
     id: 3OrVaJWUdGqKOeSOmEIkyY
   firstName: Francois
@@ -410,6 +466,10 @@ faculty:
   email: francois.grey@cern.ch
   website: http://www.citizencyberscience.net/about-the-team/
   twitter: https://twitter.com/francoisgrey
+  facultyImage:
+    title: francois-grey
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/5DAjZUN8zus8gmwwsqWwOa/f5792113aba57442894b0e1f1532c0de/francois-grey.jpg"
 - sys:
     id: 6gfUomlYC4QQq6QIOceKqW
   firstName: Clay
@@ -435,6 +495,10 @@ faculty:
   website: http://www.dobt.co/
   twitter: https://twitter.com/cjoh
   linkedIn: https://www.linkedin.com/in/claydc
+  facultyImage:
+    title: clay-johnson
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/7chS2pU9rOCAWm80MO2sUi/9d72e15192946b6678540abefa3e0f6a/clay-johnson.jpg"
 - sys:
     id: 4VUV824TYkG0S8qqCwi6SS
   firstName: Joeri
@@ -454,6 +518,10 @@ faculty:
   website: http://www.marsdd.com/bio/joeri-van-den-steenhoven/
   twitter: https://twitter.com/joerivds
   linkedIn: https://www.linkedin.com/in/joerivandensteenhoven
+  facultyImage:
+    title: joeri-van-den-steenhoven
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/4Rcjmox8xWsA6Q4EQw0KeE/82430edd2c4caf36cd1cb6cb357315da/joeri-van-den-steenhoven.jpg"
 - sys:
     id: nYPHeMVMpU8qaSUuMkwKE
   firstName: Karim
@@ -470,6 +538,10 @@ faculty:
   website: http://en.wikipedia.org/wiki/Karim_R._Lakhani
   twitter: https://twitter.com/klakhani
   linkedIn: https://www.linkedin.com/pub/karim-lakhani/0/40/938
+  facultyImage:
+    title: karim-lakhani
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/5sncZbgrKwWE2mOUkkke0i/0b6f080845a7f0d8b9cf1e8db17d58cf/karim-lakhani.jpg"
 - sys:
     id: 39NgtCQES4QUWe2yyc880a
   firstName: Gavin
@@ -481,6 +553,10 @@ faculty:
     He is an expert on illicit financial flows, and helped lead global efforts to end the abuse of anonymous shell companies for money laundering and financial crime, including working with the British government's recent presidency of the G8 and the Open Government Partnership. He has a Doctorate from the University of Reading and has worked with Chatham House in London and the United National Environmental Programme in the past on analysing and investigating global environmental crime.
   email: haymangavin@gmail.com
   twitter: https://twitter.com/gavinhayman_gw
+  facultyImage:
+    title: gavin-hayman
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/20aU61SkPGCw6AcAsMkyC/806294fd712a8bb3d3a196f88caf66a8/gavin-hayman.jpg"
 - sys:
     id: 1H0CMTHvEcsCUgmiyeI0Is
   firstName: Amen Ra
@@ -503,6 +579,10 @@ faculty:
   email: AMashariki@cityhall.nyc.gov
   twitter: https://twitter.com/amashariki
   linkedIn: https://www.linkedin.com/pub/amen-ra-mashariki/5/288/145
+  facultyImage:
+    title: amen-ra-mashariki
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/2D0RTkT7YIOQ68mWmi6ikU/59c73ee787dc2855cd24f592a5e86bfe/amen-ra-mashariki.jpg"
 - sys:
     id: 5x6EMlJNW8cO8qSQSiiUgK
   firstName: Liz
@@ -522,6 +602,10 @@ faculty:
   twitter: https://twitter.com/lizbarry
   linkedIn: https://www.linkedin.com/in/elizabethbarry
   gitHub: https://github.com/ebarry
+  facultyImage:
+    title: liz-barry
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/3uWgwFPrIIOUCKmCmesiMQ/4a589a1bb3ebeed8ee4818f1106dd954/liz-barry.jpg"
 - sys:
     id: 3OblSnyffy6WcQ4E2Ck0Oo
   firstName: Puneet
@@ -538,6 +622,10 @@ faculty:
   website: http://punkish.org/
   twitter: https://twitter.com/punkish
   gitHub: https://github.com/punkish
+  facultyImage:
+    title: puneet-kishor
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/1GMKhDNmEM0i82yiYEwKgc/f936d4f72e5ef2638e93ce460c8aa979/puneet-kishor.jpg"
 - sys:
     id: 6o4mPD58aWK6YS8q8GukyY
   firstName: Daren C.
@@ -559,6 +647,10 @@ faculty:
   email: brabham@usc.edu
   website: https://dbrabham.wordpress.com/
   twitter: https://www.linkedin.com/in/darenbrabham
+  facultyImage:
+    title: daren-brabham
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/5kq1p7ceg8AaAEGIuUUy8q/948303272679aedb5dcc4863f6a76bf1/daren-brabham.jpg"
 - sys:
     id: 1zapWeT8k8iwOu0gM2mQ0m
   firstName: Henry
@@ -582,6 +674,10 @@ faculty:
   website: http://www.92y.org/Uptown/Bio/Timms,-Henry.aspx
   twitter: https://twitter.com/htimms
   linkedIn: https://www.linkedin.com/pub/henry-timms/62/60b/525
+  facultyImage:
+    title: henry-timms
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/48B2OLNoE0OoaKMmoKwGgC/93a63088a624f70971bf1bdce0a36968/henry-timms.jpg"
 - sys:
     id: 6eIh9c6RFYmwSwsYCiMiUW
   firstName: Julian
@@ -602,6 +698,10 @@ faculty:
   email: julian.carver@nzcapstrat.com
   twitter: https://twitter.com/serenare
   linkedIn: https://www.linkedin.com/in/juliancarver
+  facultyImage:
+    title: julian-carver
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/zim4h1qde8WWoqcgiu4gy/e1055537b0e3a943735315b9388ba01f/julian-carver.jpg"
 - sys:
     id: 1GNls55iM0sSAuwY646MUW
   firstName: María
@@ -628,6 +728,10 @@ faculty:
   website: http://thegovlab.org/author/maria-hermosilla/
   twitter: https://twitter.com/mphermosilla
   linkedIn: https://www.linkedin.com/in/mphermosilla
+  facultyImage:
+    title: maria-hermosilla
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/2NZfQ4mvN6qq4qSYUkIaCC/9c7fd972483885a6a435f1d78df5e91b/maria-hermosilla.jpg"
 - sys:
     id: J1oe5ZIAACqeumUYAuM2q
   firstName: Ana
@@ -647,6 +751,10 @@ faculty:
   email: ana@thegovlab.org
   twitter: https://twitter.com/anitatovarf
   linkedIn: https://www.linkedin.com/in/ana-tovar-7602a8b2/en
+  facultyImage:
+    title: ana-tovar
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/2vvDBqXho40QYqqYuac8SE/5233b0499609ab30a89baa451cf315fc/ana-tovar.jpg"
 - sys:
     id: 19NzSNrZxiSSw8aCE4YKmo
   firstName: Uthman
@@ -911,6 +1019,10 @@ workshop:
     email: alan@thegovlab.org
     website: http://thegovlab.org/about/team/alan-kantrow/
     linkedIn: https://www.linkedin.com/pub/alan-kantrow/11/345/4a0
+    facultyImage:
+      title: alan-kantrow
+      description: Alan Kantrow
+      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
   startDate: !ruby/object:DateTime 2015-02-05 06:00:00.000000000 -05:00
   endDate: !ruby/object:DateTime 2015-02-06 09:00:00.000000000 -05:00
   partner:
@@ -1914,6 +2026,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/beth-simone-noveck/
     twitter: https://twitter.com/bethnoveck
     linkedIn: https://www.linkedin.com/pub/beth-noveck/40/9a8/a46
+    facultyImage:
+      title: beth-simone-noveck
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/vZdtkl22762QQiWSsQkea/26c08114f807b31970dd828b28a817f0/beth-simone-noveck.jpg"
   - sys:
       id: 5kS5wQk33qWKoA4e4AEwiG
     firstName: Stefaan
@@ -1967,6 +2083,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/stefaan-verhulst/
     twitter: https://twitter.com/sverhulst
     linkedIn: https://www.linkedin.com/pub/stefaan-verhulst/0/334/85a
+    facultyImage:
+      title: stefaan-verhulst
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6RojjcYhck8Kq2GqWKG8gu/c125d0bb55023f3c02995f39eb2ca75c/stefaan-verhulst.jpg"
 - sys:
     id: 4Brd70bb1Siw48W6c6MC8C
   programName: Innovations in Automatic Benefits for Citizens
@@ -2010,6 +2130,10 @@ coachingProgram:
     twitter: https://twitter.com/kallos
     linkedIn: https://www.linkedin.com/in/kallos
     gitHub: https://github.com/kallosforcouncil
+    facultyImage:
+      title: benjamin-kallos
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/46LT94LxmoIi0Og0oI6E2i/568b607f884146d3726465b0e8b9b024/benjamin-kallos.jpg"
 - sys:
     id: 4gMlubSC7YcUSOqO6cY0sU
   programName: Innovations in Tech-Enabled Disaster Management
@@ -2056,6 +2180,10 @@ coachingProgram:
     email: julian.carver@nzcapstrat.com
     twitter: https://twitter.com/serenare
     linkedIn: https://www.linkedin.com/in/juliancarver
+    facultyImage:
+      title: julian-carver
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/zim4h1qde8WWoqcgiu4gy/e1055537b0e3a943735315b9388ba01f/julian-carver.jpg"
 - sys:
     id: 2i6T1LDXMs0y2eogEi8IK8
   programName: Coaching Program for Data Driven Criminal Justice Projects
@@ -2112,6 +2240,10 @@ coachingProgram:
     email: alan@thegovlab.org
     website: http://thegovlab.org/about/team/alan-kantrow/
     linkedIn: https://www.linkedin.com/pub/alan-kantrow/11/345/4a0
+    facultyImage:
+      title: alan-kantrow
+      description: Alan Kantrow
+      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
   - sys:
       id: J1oe5ZIAACqeumUYAuM2q
     firstName: Ana
@@ -2131,6 +2263,10 @@ coachingProgram:
     email: ana@thegovlab.org
     twitter: https://twitter.com/anitatovarf
     linkedIn: https://www.linkedin.com/in/ana-tovar-7602a8b2/en
+    facultyImage:
+      title: ana-tovar
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/2vvDBqXho40QYqqYuac8SE/5233b0499609ab30a89baa451cf315fc/ana-tovar.jpg"
   - sys:
       id: n4HlUiwcKcyWeKYEQWSiE
     firstName: Beth Simone
@@ -2171,6 +2307,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/beth-simone-noveck/
     twitter: https://twitter.com/bethnoveck
     linkedIn: https://www.linkedin.com/pub/beth-noveck/40/9a8/a46
+    facultyImage:
+      title: beth-simone-noveck
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/vZdtkl22762QQiWSsQkea/26c08114f807b31970dd828b28a817f0/beth-simone-noveck.jpg"
   - sys:
       id: 5kS5wQk33qWKoA4e4AEwiG
     firstName: Stefaan
@@ -2224,6 +2364,10 @@ coachingProgram:
     website: http://thegovlab.org/about/team/stefaan-verhulst/
     twitter: https://twitter.com/sverhulst
     linkedIn: https://www.linkedin.com/pub/stefaan-verhulst/0/334/85a
+    facultyImage:
+      title: stefaan-verhulst
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6RojjcYhck8Kq2GqWKG8gu/c125d0bb55023f3c02995f39eb2ca75c/stefaan-verhulst.jpg"
 - sys:
     id: 1l7V2iMx1aqoA4WmIcuCQk
   programName: Tech Innovation in Procurement
@@ -2385,6 +2529,46 @@ coachingProgram:
     website: http://thegovlab.org/andrew-young/
     twitter: http://twitter.com/AndrewYoungNYC
     linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    facultyImage:
+      title: andrew-young
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
+  - sys:
+      id: 5gfjFvZYdiAgkgaY0muu80
+    firstName: Dinorah
+    lastName: Cantú-Pedraza
+    title: The GovLab Academy Coordinator
+    affiliation: The GovLab
+    longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
+      at helping government and social innovators take innovative projects from idea
+      to implementation. Under her direction, the Academy has worked with over five
+      hundred innovators from more than 30 countries online and off over the last
+      two years. Thousands more have watched its skill-building videos. She has put
+      together over 12 Coaching Programs, the Academy’s signature mentoring and peer
+      to peer learning initiative, where over 95% of whose participants complete the
+      program. The Academy is a project of the Governance Lab, based at New York University.
+      GovLab focuses on the use of technology to improve how we govern. Dinorah has
+      also designed the GovLab’s Crowdsorcerer expert system, a software tool to deliver
+      customized case studies to government leaders about open innovation. Working
+      together with lawyers and education experts from NYU, she also designed an expert
+      system to help universities determine the legal requirements for offering online
+      education. She also runs the GovLab’s Demos for Democracy video series where
+      she interviews leading technologists about new platforms to advance the public
+      interest. A lawyer by training, Dinorah founded and directed the Human Rights
+      Center of the Facultad Libre de Derecho de Monterrey prior to coming to New
+      York in 2012. She holds an MPA in Public and Nonprofit Management and Policy
+      at NYU Robert F. Wagner School of Public Service and is passionate about the
+      value of civic technology for strengthening human rights. She is bilingual in
+      English and Spanish and tweets at @dinorah_cantu.
+    email: dinorah@thegovlab.org
+    website: http://thegovlab.org/about/team/
+    twitter: https://twitter.com/dinorah_cantu
+    linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
+    gitHub: https://github.com/dino-at-thegovlab
+    facultyImage:
+      title: dinorah-cantu-pedraza
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 54GlwlXABy68MQw6yoWQq4
   programName: Sample course II
@@ -2420,6 +2604,46 @@ coachingProgram:
     website: http://thegovlab.org/andrew-young/
     twitter: http://twitter.com/AndrewYoungNYC
     linkedIn: https://www.linkedin.com/pub/andrew-young/59/2a8/4a4
+    facultyImage:
+      title: andrew-young
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4p9UEkTBHaw2CiM8W2IeG4/53d71f8565911e2e565381e81687d7b9/andrew-young.jpg"
+  - sys:
+      id: 5gfjFvZYdiAgkgaY0muu80
+    firstName: Dinorah
+    lastName: Cantú-Pedraza
+    title: The GovLab Academy Coordinator
+    affiliation: The GovLab
+    longBio: Dinorah Cantu coordinates the GovLab Academy, an online institute aimed
+      at helping government and social innovators take innovative projects from idea
+      to implementation. Under her direction, the Academy has worked with over five
+      hundred innovators from more than 30 countries online and off over the last
+      two years. Thousands more have watched its skill-building videos. She has put
+      together over 12 Coaching Programs, the Academy’s signature mentoring and peer
+      to peer learning initiative, where over 95% of whose participants complete the
+      program. The Academy is a project of the Governance Lab, based at New York University.
+      GovLab focuses on the use of technology to improve how we govern. Dinorah has
+      also designed the GovLab’s Crowdsorcerer expert system, a software tool to deliver
+      customized case studies to government leaders about open innovation. Working
+      together with lawyers and education experts from NYU, she also designed an expert
+      system to help universities determine the legal requirements for offering online
+      education. She also runs the GovLab’s Demos for Democracy video series where
+      she interviews leading technologists about new platforms to advance the public
+      interest. A lawyer by training, Dinorah founded and directed the Human Rights
+      Center of the Facultad Libre de Derecho de Monterrey prior to coming to New
+      York in 2012. She holds an MPA in Public and Nonprofit Management and Policy
+      at NYU Robert F. Wagner School of Public Service and is passionate about the
+      value of civic technology for strengthening human rights. She is bilingual in
+      English and Spanish and tweets at @dinorah_cantu.
+    email: dinorah@thegovlab.org
+    website: http://thegovlab.org/about/team/
+    twitter: https://twitter.com/dinorah_cantu
+    linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
+    gitHub: https://github.com/dino-at-thegovlab
+    facultyImage:
+      title: dinorah-cantu-pedraza
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
 syllabusClass:
 - sys:
     id: 5fOzllL7gWu6iyCua6GwGM
@@ -2660,6 +2884,10 @@ syllabus:
     twitter: https://twitter.com/brianbehlendorf
     linkedIn: https://www.linkedin.com/in/brianbehlendorf
     gitHub: https://github.com/brianbehlendorf
+    facultyImage:
+      title: brian-behlendorf
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/3qjaiUVqk0GWucaqooGy4y/4b8b259e3a54a8d2b2c6c6b84c2ebbbe/brian-behlendorf.jpg"
   - sys:
       id: 5gfjFvZYdiAgkgaY0muu80
     firstName: Dinorah
@@ -2692,6 +2920,10 @@ syllabus:
     twitter: https://twitter.com/dinorah_cantu
     linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
     gitHub: https://github.com/dino-at-thegovlab
+    facultyImage:
+      title: dinorah-cantu-pedraza
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
   - sys:
       id: t7GAsnfeU0QGAsemoewSu
     firstName: Alexandra
@@ -2704,6 +2936,10 @@ syllabus:
     email: acc578@nyu.edu
     twitter: https://twitter.com/iraqrecoded
     linkedIn: https://www.linkedin.com/pub/alexandra-clare/43/582/819
+    facultyImage:
+      title: alexandra-clare
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5548166f821144496f342eb86eed1f66/alexandra-clare.jpg"
   - sys:
       id: 39NgtCQES4QUWe2yyc880a
     firstName: Gavin
@@ -2715,6 +2951,10 @@ syllabus:
       He is an expert on illicit financial flows, and helped lead global efforts to end the abuse of anonymous shell companies for money laundering and financial crime, including working with the British government's recent presidency of the G8 and the Open Government Partnership. He has a Doctorate from the University of Reading and has worked with Chatham House in London and the United National Environmental Programme in the past on analysing and investigating global environmental crime.
     email: haymangavin@gmail.com
     twitter: https://twitter.com/gavinhayman_gw
+    facultyImage:
+      title: gavin-hayman
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/20aU61SkPGCw6AcAsMkyC/806294fd712a8bb3d3a196f88caf66a8/gavin-hayman.jpg"
   startDate: !ruby/object:DateTime 2016-04-15 00:00:00.000000000 -05:00
   endDate: !ruby/object:DateTime 2017-05-01 00:00:00.000000000 -05:00
   description: 'More and more organizations are turning to crowds for help in solving

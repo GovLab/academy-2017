@@ -173,6 +173,10 @@ workshop:
     email: alan@thegovlab.org
     website: http://thegovlab.org/about/team/alan-kantrow/
     linkedIn: https://www.linkedin.com/pub/alan-kantrow/11/345/4a0
+    facultyImage:
+      title: alan-kantrow
+      description: Alan Kantrow
+      url: "//images.contentful.com/gvpfsi7zggwe/5yt4v0BAcM2kYeQ20a4kUg/3547d7e4448513b0543ea922d0ec4d3c/alan-kantrow.jpg"
   startDate: !ruby/object:DateTime 2015-02-05 06:00:00.000000000 -05:00
   endDate: !ruby/object:DateTime 2015-02-06 09:00:00.000000000 -05:00
   partner:

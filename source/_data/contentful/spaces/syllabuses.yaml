@@ -26,6 +26,10 @@ syllabus:
     twitter: https://twitter.com/brianbehlendorf
     linkedIn: https://www.linkedin.com/in/brianbehlendorf
     gitHub: https://github.com/brianbehlendorf
+    facultyImage:
+      title: brian-behlendorf
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/3qjaiUVqk0GWucaqooGy4y/4b8b259e3a54a8d2b2c6c6b84c2ebbbe/brian-behlendorf.jpg"
   - sys:
       id: 5gfjFvZYdiAgkgaY0muu80
     firstName: Dinorah
@@ -58,6 +62,10 @@ syllabus:
     twitter: https://twitter.com/dinorah_cantu
     linkedIn: https://www.linkedin.com/pub/dinorah-cantu/35/568/56a
     gitHub: https://github.com/dino-at-thegovlab
+    facultyImage:
+      title: dinorah-cantu-pedraza
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
   - sys:
       id: t7GAsnfeU0QGAsemoewSu
     firstName: Alexandra
@@ -70,6 +78,10 @@ syllabus:
     email: acc578@nyu.edu
     twitter: https://twitter.com/iraqrecoded
     linkedIn: https://www.linkedin.com/pub/alexandra-clare/43/582/819
+    facultyImage:
+      title: alexandra-clare
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/207eivvPOYQEEqGK8YWGSC/5548166f821144496f342eb86eed1f66/alexandra-clare.jpg"
   - sys:
       id: 39NgtCQES4QUWe2yyc880a
     firstName: Gavin
@@ -81,6 +93,10 @@ syllabus:
       He is an expert on illicit financial flows, and helped lead global efforts to end the abuse of anonymous shell companies for money laundering and financial crime, including working with the British government's recent presidency of the G8 and the Open Government Partnership. He has a Doctorate from the University of Reading and has worked with Chatham House in London and the United National Environmental Programme in the past on analysing and investigating global environmental crime.
     email: haymangavin@gmail.com
     twitter: https://twitter.com/gavinhayman_gw
+    facultyImage:
+      title: gavin-hayman
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/20aU61SkPGCw6AcAsMkyC/806294fd712a8bb3d3a196f88caf66a8/gavin-hayman.jpg"
   startDate: !ruby/object:DateTime 2016-04-15 00:00:00.000000000 -05:00
   endDate: !ruby/object:DateTime 2017-05-01 00:00:00.000000000 -05:00
   description: 'More and more organizations are turning to crowds for help in solving

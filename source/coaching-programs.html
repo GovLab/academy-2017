@@ -51,7 +51,7 @@ layout: default
               <p class="course-item__application">STARTS THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team row column">
                 {% for person in course.faculty %}
-                  <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                  <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify | replace_diacritics }}.html" target="_blank" class="course-item__faculty column large-3 end" style="background-image: url({{person.facultyImage.url}});">
                     <p>{{ person.firstName }} {{ person.lastName }}</p>
                   </a>
                 {% endfor %}
@@ -88,7 +88,7 @@ layout: default
   </div>
   <ul class="course-list course-list--past-courses">
 
-    {% assign pastCoachingPrograms = coachingPrograms | find_past_data: 'endDate'  | sort: "endDate" | reverse %}
+    {% assign pastCoachingPrograms = coachingPrograms | find_past_data: 'applicationDeadline'  | sort: "endDate" | reverse %}
 
     {% for course in pastCoachingPrograms %}
         <li class="course-item">
@@ -98,8 +98,8 @@ layout: default
               <p class="course-item__application">STARTED THE WEEK OF: {{ course.startDate | date: "%B %-d, %Y" }}</p>
               <div class="course-item__faculty-team">
                 {% for person in course.faculty %}
-                    <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify }}.html" target="_blank">
-                      <div class="course-item__faculty column large-3 end" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ person.firstName | slugify }}-{{ person.lastName | slugify }}.jpg');">
+                    <a href="{{site.url}}{{site.baseurl}}/faculty/{{ person.lastName | slugify | replace_diacritics }}.html" target="_blank">
+                      <div class="course-item__faculty column large-3 end" style="background-image: url({{person.facultyImage.url}});">
                         <p>{{ person.firstName }} {{ person.lastName }}</p>
                       </div>
                     </a>
