@@ -79,6 +79,22 @@
   .slide h4 {
     margin-bottom: 0; }
 
+.top-bar--orange {
+  background-color: #ee5b43; }
+.top-bar .menu-item {
+  border-bottom: none;
+  padding-bottom: 0; }
+  .top-bar .menu-item--sub {
+    font-size: .9rem;
+    border-bottom: none;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .top-bar .menu-item--sub--last {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.footer--sections a {
+  text-align: left; }
+
 .course-detail.m-clinics .top-section, .course-detail.m-clinics .faculty-header, .course-detail.m-clinics .course-header, .course-list--clinics .top-section, .course-list--clinics .faculty-header, .course-list--clinics .course-header {
   background-color: #efce7c; }
 .course-detail--coaching .top-section, .course-detail--coaching .faculty-header, .course-detail--coaching .course-header, .course-list--coaching .top-section, .course-list--coaching .faculty-header, .course-list--coaching .course-header {
@@ -96,6 +112,8 @@
     transition: color 0.2s ease-out; }
 .top-section--project h1, .top-section--project h2, .top-section--project h3, .top-section--project h4, .top-section--project h5 {
   padding: 0 20px; }
+.top-section--orange {
+  background-color: #ee5b43; }
 
 .faculty-header {
   text-align: center; }
@@ -167,10 +185,49 @@
 .project--slider__description {
   text-align: center; }
 
+.regions h4 {
+  text-align: center;
+  font-weight: 200; }
+.regions__map #region-map path {
+  fill: black;
+  fill-opacity: .1; }
+.regions--worldwide #region-map path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--north-america #north-america path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--latin-america #latin-america path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--east-asia #east-asia path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--south-asia #south-asia path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--sub-saharan-africa #sub-saharan-africa path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--north-africa #north-africa path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+.regions--europe #europe path {
+  fill: #ee5b43;
+  fill-opacity: 1; }
+
 .highlights {
   padding: 0; }
   .highlights .slide {
     padding: 140px 0; }
+    .highlights .slide__title {
+      margin-bottom: 0; }
+    .highlights .slide__subtitle {
+      margin-top: 10px; }
+    .highlights .slide__description {
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center; }
 
 .small-banner {
   display: flex;
@@ -179,7 +236,7 @@
     flex: 1;
     display: block; }
   .small-banner--canvas {
-    background-color: orange; }
+    background-color: #ee5b43; }
   .small-banner--noi {
     background-color: blue; }
 
@@ -246,6 +303,27 @@
     background-color: #f9b26f; }
   .upcoming-courses__item--workshop .button {
     background-color: #366473; }
+
+.team-bullets {
+  background-color: #ee5b43;
+  color: white; }
+  .team-bullets h6 {
+    font-weight: bold;
+    margin-bottom: 0; }
+  .team-bullets ul {
+    padding-bottom: 50px;
+    list-style: none; }
+    .team-bullets ul li {
+      font-size: 1.1rem; }
+    .team-bullets ul li:before {
+      width: 0;
+      height: 0;
+      border-left: 6px solid #f49889;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      content: "";
+      float: left;
+      margin: 8px 0 0 -20px; }
 
 .course-header {
   padding-bottom: 0;
@@ -353,24 +431,38 @@
     .course-item__faculty:hover p {
       bottom: 0; }
   .course-item .faculty-container {
-    width: 200px; }
-    .course-item .faculty-container .faculty-image {
-      height: 80px;
-      width: 80px;
-      margin: 15px;
-      margin-bottom: 0;
-      margin-left: 0;
-      border-radius: 50%;
-      position: relative;
-      background-size: cover;
-      background-position: center;
-      display: inline-block; }
-    .course-item .faculty-container .faculty-name p {
-      padding: 0;
-      margin: 0; }
+    position: relative; }
+  .course-item .faculty-image {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    overflow: hidden; }
+    @media (max-width: 40em) {
+      .course-item .faculty-image {
+        right: 45px; } }
+    .course-item .faculty-image p {
+      position: absolute;
+      bottom: -80px;
+      padding: 10px;
+      margin: 0;
+      font-size: .8rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      width: 100%;
+      text-align: center;
+      transition: all .4s ease; }
+    .course-item .faculty-image:hover p {
+      bottom: 0; }
 
 .faculty-page a:hover, .faculty-page a:visited, .faculty-page a:link, .faculty-page a:active {
   text-decoration: none; }
+.faculty-page .button i {
+  line-height: 19px; }
 
 .faculty__list-item {
   text-align: center;
@@ -389,11 +481,11 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 0;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #ee5b43;
   text-decoration: none; }
   .faculty__name:hover {
     text-decoration: none;
-    border-bottom: 2px solid orange; }
+    border-bottom: 2px solid #ee5b43; }
 .faculty__job {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6); }
@@ -526,3 +618,62 @@
   color: white; }
 .library-page .search--fixed, .library-page .js-active {
   z-index: 1; }
+
+.about-page .noi-section {
+  background-color: #008ab3;
+  color: white; }
+  .about-page .noi-section .noi .slick-slide {
+    background-color: transparent; }
+  .about-page .noi-section .noi .slick-arrow:after {
+    color: #e6e6e6; }
+  .about-page .noi-section .noi .slick-arrow:before {
+    color: #e6e6e6; }
+  .about-page .noi-section .noi .image-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden; }
+
+.progress span:nth-child(1):before {
+  content: "Ideation";
+  right: 90%; }
+
+.progress span:nth-child(2):before {
+  content: "Prototyping";
+  right: 70%; }
+
+.progress span:nth-child(3):before {
+  content: "Private Beta";
+  right: 45%; }
+
+.progress span:nth-child(4):before {
+  content: "Public Beta";
+  right: 20%; }
+
+.progress span:nth-child(5):before {
+  content: "Launched";
+  right: 0; }
+
+.progress--ideation .ideation:before {
+  color: white;
+  font-weight: bold;
+  display: block; }
+
+.progress--prototyping .prototyping:before {
+  color: white;
+  font-weight: bold;
+  display: block; }
+
+.progress--private-beta .private-beta:before {
+  color: white;
+  font-weight: bold;
+  display: block; }
+
+.progress--public-beta .public-beta:before {
+  color: white;
+  font-weight: bold;
+  display: block; }
+
+.progress--launched .launched:before {
+  color: white;
+  font-weight: bold;
+  display: block; }
