@@ -62,7 +62,7 @@
   &--workshop:hover { background-color: darken($workshop-color, 8); }
 }
 
-.homepage {
+// .homepage {
   .page-section--sequence {
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@
     :first-child,
     :last-child { margin: 0; }
   }
-}
+// }
 
 
 
