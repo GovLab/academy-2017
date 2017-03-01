@@ -31,8 +31,13 @@
     display: block;
   }
 
-  &--canvas { background-color: $orange; }
-  &--noi { background-color: $blue; }
+
+  &--canvas { 
+    background-color: $orange; 
+  }
+  &--noi { 
+    background-color: $blue; 
+  }
 }
 
 .main-categories {
