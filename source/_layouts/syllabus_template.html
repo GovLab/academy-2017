@@ -33,7 +33,7 @@ layout: default
         <div class="row expanded collapse">
           <div class="syllabus__faculty-list">
             {% for faculty in page.faculty %}
-            <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
+            <div class="syllabus__faculty" style="background-image: url({{faculty.facultyImage.url}});">
 
               <a href="{{site.url}}{{site.baseurl}}/faculty/{{ faculty.lastName | slugify | replace: 'ú', 'u' }}.html" target="_blank" class="syllabus__faculty"></a>
               <p>{{faculty.firstName}} {{faculty.lastName}}</p>
