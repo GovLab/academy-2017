@@ -117,6 +117,8 @@ syllabus:
   - sys:
       id: 5fOzllL7gWu6iyCua6GwGM
     classTitle: Describing the Project
+    shortDescription: 'During this session we want to talk about what people are doing
+      and why. Get people to refine their problem and project descriptions further. '
     classNumber: 1
     classWeek: 1
     classDescription: |-
@@ -134,6 +136,8 @@ syllabus:
   - sys:
       id: 2DlzQLVOByc208MociAIUM
     classTitle: Engaging with People and Data
+    shortDescription: During this session we want to talk about how you are getting
+      smarter about who your users are and their needs.
     classNumber: 2
     classWeek: 2
     classDescription: |
@@ -152,6 +156,9 @@ syllabus:
   - sys:
       id: 59nkpvti0MYOg8cEGwCY6O
     classTitle: Measuring Impact
+    shortDescription: During this session the goal is to talk metrics, metrics, metrics
+      and exchange ideas for how to assess impact. We will also discuss how to evolve
+      the project.
     classNumber: 3
     classWeek: 3
     classDescription: |+
@@ -166,6 +173,8 @@ syllabus:
   - sys:
       id: 2L31ia4bbieoqIMcoeMSQy
     classTitle: Persuading the Audience
+    shortDescription: Exchange decks and 1-page memos and do your pitch! We will bring
+      in guests to give feedback on presentations so be prepared.
     classNumber: 4
     classWeek: 4
     classDescription: |

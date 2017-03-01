@@ -33,7 +33,7 @@ layout: default
         <div class="row expanded collapse">
           <div class="syllabus__faculty-list">
             {% for faculty in page.faculty %}
-            <div class="syllabus__faculty" style="background-image: url('{{site.url}}{{site.baseurl}}/images/faculty/{{ faculty.firstName | slugify }}-{{ faculty.lastName | slugify | replace: 'ú', 'u'}}.jpg');">
+            <div class="syllabus__faculty" style="background-image: url({{faculty.facultyImage.url}});">
 
               <a href="{{site.url}}{{site.baseurl}}/faculty/{{ faculty.lastName | slugify | replace: 'ú', 'u' }}.html" target="_blank" class="syllabus__faculty"></a>
               <p>{{faculty.firstName}} {{faculty.lastName}}</p>
@@ -86,7 +86,7 @@ layout: default
                 <h2 class="result-item__name">{{class.classTitle}}</h2>
                 <!-- Short Description -->
                 <div class="result-item__short-description">
-                  <p>{{class.classDescription | strip_html | truncatewords: 25 | markdownify}}</p>
+                  <p>{{class.shortDescription}}</p>
                 </div>
 
                 <div class="result-item--event__date fancy-date">
