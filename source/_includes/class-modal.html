@@ -3,7 +3,7 @@
   <header class="modal__header modal--top-section">
 
     <i class="modal__close material-icons js-close-modal">close</i>
-    <h1 class="modal__title">{{class.classTitle}}</h1>
+    <h1  class="modal__title">{{class.classTitle}}</h1>
     <!-- <h2 class="modal__authors">Authors</h2> -->
     <p class="modal__publication"><span>Class week</span> {{class.classWeek}}</p>
 
@@ -18,7 +18,10 @@
   <div class="modal__content">
     <!-- Short Description -->
     <div class="result-item__short-description">
-      <p>{{class.classDescription | markdownify }}</p>
+      <p class="">{{class.classDescription | markdownify }}</p>
+    </div>
+    <div class="pdf-class-desc" style="display:none; font-size:12px;">
+      <p class="">{{class.classDescription | markdownify }}</p>
     </div>
 
     <div class="result-item__short-description">
