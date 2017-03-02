@@ -8,15 +8,18 @@ layout: default
   <div class="top-section top-section--orange">
     <div class="row">
       <div class="column">
-        <h1 id="pdf-title" class="syllabus__title">{{page.syllabusTitle}}</h1>
+        <h1 class="syllabus__title">{{page.syllabusTitle}}</h1>
+        <h6 id="pdf-title" class="syllabus__title" style="display:none">{{page.syllabusTitle}}</h6>
       </div>
     </div>
     <div class="row align-right expanded">
       <div class="column small-12 large-4">
         <div class="syllabus__date-container">
           {% if page.startDate or page.endDate  %}
-            <h6 id="pdf-start" class="syllabus__date">Starts: {{page.startDate | date: "%B %d, %Y"}}</h6>
-            <h6 id="pdf-end" class="syllabus__date">Ends: {{page.endDate | date: "%B %d, %Y"}}</h6>
+            <h6 class="syllabus__date">Starts: {{page.startDate | date: "%B %d, %Y"}}</h6>
+            <p style="display:none" id="pdf-start">Starts: {{page.startDate | date: "%B %d, %Y"}}</p>
+            <h6 class="syllabus__date">Ends: {{page.endDate | date: "%B %d, %Y"}}</h6>
+            <p style="display:none" id="pdf-end" >Ends: {{page.endDate | date: "%B %d, %Y"}}</p>
           {% endif %}
         </div>
       </div>
@@ -27,7 +30,8 @@ layout: default
     <div class="row medium-uncollapse expanded">
       <div class="column medium-6 large-10 small-12 columns">
         <h4 class="syllabus__description-text">Description</h4>
-        <p id="pdf-desc" class="syllabus__description">{{page.description}}</p>
+        <p class="syllabus__description">{{page.description}}</p>
+        <p id="pdf-desc" class="syllabus__description" style="display:none; font-size:12px;">{{page.description}}</p>
         <div class="button download-button">
           Download Syllabus as PDF
         </div>
@@ -87,7 +91,8 @@ layout: default
             {% for class in page.syllabusClasses %}
             <div class="result-item">
               <div class="js-open-modal">
-                <h2 id=""class="result-item__name pdf-class-title">{{class.classTitle}}</h2>
+                <h2 class="result-item__name">{{class.classTitle}}</h2>
+                  <p style="display:none; font-size:16px;" class="pdf-class-title">{{class.classTitle}}</p>
                 <!-- Short Description -->
                 <div class="result-item__short-description">
                   <p>{{class.shortDescription}}</p>
@@ -98,7 +103,7 @@ layout: default
                     <span class="fancy-date__weekday">Class</span>
                     <span class="fancy-date__month">Week</span>
                   </div>
-                  <span class="fancy-date__day">{{class.classWeek}}</span>
+                  <span class="fancy-date__day pdf-class-week">{{class.classWeek}}</span>
                 </div>
 
               </div>

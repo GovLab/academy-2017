@@ -2,36 +2,27 @@ $(document).ready(function() {
   $(".download-button").click(function() {
     var doc = new jsPDF();
 
-    doc.fromHTML($('#pdf-title').get(0), 10, 10, {'width': 180});
-    doc.fromHTML($('#pdf-start').get(0), 10, 55);
-    doc.fromHTML($('#pdf-end').get(0), 10, 62);
+    doc.fromHTML($('#pdf-title').get(0), 10, 5);
+    doc.fromHTML($('#pdf-start').get(0), 10, 22);
+    doc.fromHTML($('#pdf-end').get(0), 10, 28);
 
-    doc.text("Description", 10, 85);
-    doc.fromHTML($('#pdf-desc').get(0), 10, 81, {'width': 180});
+    // doc.text("DESCRIPTION", 10, 55);
+    doc.fromHTML($('#pdf-desc').get(0), 10, 36, {'width': 180});
 
-    doc.text("Classes", 10, 196);
-    // $('.pdf-class-title').forEach(function(e) {
-    //   doc.fromHTML($('#pdf-class-title').get(0), 10, 200, {'width': 180});
-    //   // doc.fromHTML(
-    // })
-
-    // var classes = [];
-
+    // doc.text("CLASSES", 10, 110);
     var classes = document.getElementsByClassName('pdf-class-title');
-    var classWeek = document.getElementsByClassName('pdf-class-week');
-    var classDate = document.getElementsByClassName('pdf-class-date');
+    // var classWeek = document.getElementsByClassName('pdf-class-week');
+    var classDesc = document.getElementsByClassName('pdf-class-desc');
 
-    var classHeight = 200;
+    var classHeight = 85;
+    var weekDesc = 95;
 
     for (var i = 0, len = classes.length; i < len; i++) {
       doc.fromHTML(classes[i], 10, classHeight, {'width': 180});
-      
-      classHeight += 20;
+      doc.fromHTML(classDesc[i], 10, weekDesc, {'width': 180});
+      classHeight += 80;
+      weekDesc += 80;
     }
-
-
-
-    // doc.text("Resources", 10, 10);
 
     doc.save('syllabus.pdf')
   })
