@@ -74,8 +74,26 @@
     .page-section--sequence:nth-of-type(odd):after {
       border-top-color: #f1f1f1; }
 
+/* ----------- Extra Small mobile devices ----------- */
 /* ----------- Smaller mobile devices ----------- */
 /* ----------- Larger mobile devices ----------- */
+/* ----------- Mobile Fixes ----------- */
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* ----------- Homepage slider fixes----------- */
+  .highlights {
+    padding: 0; }
+    .highlights .slide {
+      min-height: 80vh; }
+      .highlights .slide__title h1 {
+        font-size: 2rem !important; }
+      .highlights .slide__subtitle {
+        font-size: 1rem; }
+      .highlights .slide__description {
+        padding: 0 !important; } }
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* ----------- Homepage slider fixes----------- */
+  .highlights .slide {
+    padding-top: 1rem !important; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   /* ----------- Homepage slider fixes----------- */
   .highlights {
