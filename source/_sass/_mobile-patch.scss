@@ -1,3 +1,31 @@
+/* ----------- Extra Small mobile devices ----------- */
+@mixin mobile-xs-portrait-landscape {
+  @media only screen 
+    and (max-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+}
+
+
+@mixin mobile-xs-portrait-only {
+  @media only screen 
+    and (max-device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      @content
+    }
+}
+
+@mixin mobile-xs-landscape-only {
+  @media only screen 
+    and (max-device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      @content
+    }
+}
+
 /* ----------- Smaller mobile devices ----------- */
 
 @mixin mobile-sm-portrait-landscape {
@@ -59,6 +87,39 @@
     }
 }
 
+ /* ----------- Mobile Fixes ----------- */
+
+ @include mobile-xs-portrait-landscape {
+   /* ----------- Homepage slider fixes----------- */
+   .highlights {
+     padding: 0;
+     .slide {
+       min-height: 80vh;
+       &__title {
+         h1 {font-size: 2rem !important;}
+       }
+       &__subtitle {
+         font-size: 1rem;
+       }
+       &__description {
+         padding: 0 !important;
+       }
+     }
+   }
+ }
+
+
+ @include mobile-xs-landscape-only {
+   /* ----------- Homepage slider fixes----------- */
+   .highlights {
+     .slide {
+      padding-top: 1rem !important;
+     }
+   }
+ }
+
+
+
 @include mobile-sm-portrait-landscape {
   /* ----------- Homepage slider fixes----------- */
   .highlights {
@@ -100,9 +161,5 @@
   }
   /* ----------- ----------- */
 }
-
-
-
-
 
 
