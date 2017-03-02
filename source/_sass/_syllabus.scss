@@ -72,6 +72,8 @@
   &__description-text {
     padding-left: 150px;
     padding-top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
     @include breakpoint($small-only) {
       padding: 0;
     }
