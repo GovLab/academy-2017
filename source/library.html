@@ -63,7 +63,11 @@ custom_js: library.js
           </div>
         </div>
 
-        <div class="row large-unstack expanded align-right ">
+        <div class="columns">
+          <button class="button button--icon-only show-filters" type="button" name="button"><i class="material-icons">add</i></button>
+        </div>
+
+        <div class="row large-unstack expanded align-right dropdown-container">
 
           <div class="columns resource-type">
             <div class="select">
@@ -112,8 +116,8 @@ custom_js: library.js
 
       </div>
         <div class="columns">
-          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="button button--icon-only sort" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
           <button class="button button--icon-only clear_filters" type="button" name="button">Clear Filters <i class="material-icons">close</i></button>
+          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="button button--icon-only sort" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
         </div>
       </div>
     </div>

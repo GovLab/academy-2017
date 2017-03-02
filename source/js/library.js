@@ -109,5 +109,10 @@ $(document).ready(function() {
     })
   }); // End Metadata click handlers
 
+  $('body').on('click', '.show-filters', function() {
+    $(this).find('.material-icons').text() == "add" ? $(this).find('.material-icons').text("remove") : $(this).find('.material-icons').text("add");
+    $(this).toggleClass("active");
+    $('.dropdown-container').toggleClass("active");
+  })
 
 });
