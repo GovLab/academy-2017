@@ -74,36 +74,38 @@
     .page-section--sequence:nth-of-type(odd):after {
       border-top-color: #f1f1f1; }
 
-.slider .slide {
-  padding-top: 20vh !important;
-  /* Landscape */
-  height: 70vh; }
-  @media (max-width: 40em) {
-    .slider .slide {
-      height: 80vh; }
-      .slider .slide h1 {
-        font-size: 2rem; } }
-  @media only screen and (max-width: 40em) {
-    .slider .slide {
-      padding-top: 10vh !important; }
-      .slider .slide h1 {
-        font-size: 1.8rem; }
-      .slider .slide h5 {
-        font-size: 1.2rem; }
-      .slider .slide p {
-        font-size: 1rem; } }
+/* ----------- Smaller mobile devices ----------- */
+/* ----------- Larger mobile devices ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* ----------- Homepage slider fixes----------- */
+  .highlights {
+    padding: 0; }
+    .highlights .slide {
+      min-height: 80vh;
+      padding: 10vh 0; }
+      .highlights .slide__title h1 {
+        font-size: 2rem !important; }
+      .highlights .slide__subtitle {
+        font-size: 1rem; }
+      .highlights .slide__description {
+        padding: 0 10px; }
 
-  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-    .slider .slide {
-      padding-top: 10vh !important;
-      height: 90vh; }
-      .slider .slide h1 {
-        font-size: 2rem; } }
-  .slider .slide h1 {
-    font-size: 3.5rem; }
-  .slider .slide h4 {
-    margin-bottom: 0; }
+  /* ----------- ----------- */ }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* ----------- Homepage slider fixes----------- */
+  .highlights {
+    padding: 0; }
+    .highlights .slide {
+      min-height: 80vh;
+      padding: 10vh 0; }
+      .highlights .slide__title h1 {
+        font-size: 2rem !important; }
+      .highlights .slide__subtitle {
+        font-size: 1rem; }
+      .highlights .slide__description {
+        padding: 0 10px; }
 
+  /* ----------- ----------- */ }
 .top-bar--orange {
   background-color: #ee5b43; }
 .top-bar .menu-item {
@@ -244,7 +246,8 @@
 .highlights {
   padding: 0; }
   .highlights .slide {
-    padding: 140px 0; }
+    height: 70vh;
+    padding: 15vh 0; }
     .highlights .slide__title {
       margin-bottom: 0; }
     .highlights .slide__subtitle {
