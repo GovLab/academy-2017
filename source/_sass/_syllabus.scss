@@ -66,6 +66,7 @@
     }
     @include breakpoint($small-only) {
       padding: 0;
+
     }
   }
 
@@ -76,6 +77,8 @@
     margin-top: 0;
     @include breakpoint($small-only) {
       padding: 0;
+      margin-top: 20px;
+      font-size: 1.5rem;
     }
   }
 
@@ -129,5 +132,13 @@
 
   #events .result-item .fancy-date__day {
     color: $main-color;
+  }
+
+  .download-button {
+    margin-left: 150px;
+    margin-bottom:20px;
+    @include breakpoint($small-only) {
+      margin: 30px;
+    }
   }
 }
