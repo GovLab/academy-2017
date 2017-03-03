@@ -7,6 +7,28 @@
 
 // dropdown filters
   .dropdown-wrapper {
+    .show-filters {
+      display: none;
+      &.active {
+        &:before {
+          content: "Hide filters"
+        }
+      }
+      @include breakpoint($small-only) {
+        display: block;
+        &:before {
+          content: "Show filters "
+        }
+      }
+    }
+    .dropdown-container { 
+      @include breakpoint($small-only) {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
     width: 90%;
     margin: 0 auto;
     position: relative;
@@ -30,7 +52,7 @@
 
   .filter-panel {
     .select,
-    .button { margin: 12px 0; }
+    .button { margin: 6px 0; }
     .button--icon-only { padding: 13px; }
   }
 // end dropdown filters
