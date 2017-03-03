@@ -93,7 +93,7 @@ layout: default
             <div class="result-item">
               <div class="js-open-modal">
                 <h2 class="result-item__name">{{class.classTitle}}</h2>
-                  <p style="display:none; font-size:16px; font-weight:bold;" class="pdf-class-title">Week {{class.classWeek}}: {{class.classTitle}}</p>
+                  <p style="display:none; font-size:16px; font-weight:bold;" class="pdf-class-title">Week {{class.classWeek}}, Class {{class.classNumber}}: {{class.classTitle}}</p>
                 <!-- Short Description -->
                 <div class="result-item__short-description">
                   <p>{{class.shortDescription}}</p>
@@ -101,12 +101,14 @@ layout: default
 
                 <div class="result-item--event__date fancy-date">
                   <div class="fancy-date__stack">
-                    <span class="fancy-date__weekday">Class</span>
                     <span class="fancy-date__month">Week</span>
                   </div>
                   <span class="fancy-date__day pdf-class-week">{{class.classWeek}}</span>
+                  <div class="fancy-date__stack">
+                    <span class="fancy-date__weekday">Class</span>
+                  </div>
+                  <span class="fancy-date__day pdf-class-week">{{class.classNumber}}</span>
                 </div>
-
               </div>
             {% include class-modal.html %}
             </div>
@@ -213,3 +215,6 @@ layout: default
     </div>
   </div>
 </div>
+
+<img id="gov-logo" src="../images/pdf-header.png" alt="" style="display:none;">
+<img id="gov-footer" src="../images/pdf-footer.png" alt="" style="display:none;">
