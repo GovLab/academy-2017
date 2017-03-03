@@ -40,7 +40,13 @@
       select {
         width: 110%;
         @include cross-browser-select;
+        @include browser(Firefox) {
+          &:-moz-focusring {
+            width: 100%;
+          }
+        }
         @include browser(Windows) {
+          width: 100%;
           &::-ms-expand {
             display: none;
           }
