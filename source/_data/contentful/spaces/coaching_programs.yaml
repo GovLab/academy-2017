@@ -66,6 +66,10 @@ coachingProgram:
       Co-operative Party in the UK. She studied Politics, Philosophy and Economics
       as an undergraduate, and has Masters degrees in Development Economics and in
       Social and Political Thought
+    facultyImage:
+      title: karin-christiansen
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/1ZcZ7NmT6g2ss0mEQsE0iw/22e737dcb4bf7af23699030fbccb7a35/karin-christiansen.jpg"
 - sys:
     id: ckudj4ouze604m2eWe2Au
   programName: Coaching Program for Data Driven Criminal Justice Projects - Fall 2016
@@ -295,7 +299,7 @@ coachingProgram:
     facultyImage:
       title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 1l7V2iMx1aqoA4WmIcuCQk
   programName: Tech Innovation in Procurement
@@ -361,6 +365,10 @@ coachingProgram:
       papers and articles.\n\nSascha is an Ashoka Fellow in recognition of his work
       as a social innovator and a selected member of the Clinton Global Initiative
       and on the Advisory Board of the UN Global Compact Cities Programme. "
+    facultyImage:
+      title: sascha-haselmayer
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/13SdeN0SL8AMGaqSccmkeO/b3a436e0fd24836ea58bdb584bb4408f/sascha-haselmayer.jpg"
   - sys:
       id: 19NzSNrZxiSSw8aCE4YKmo
     firstName: Uthman
@@ -376,6 +384,10 @@ coachingProgram:
       Before joining Citymart, Uthman worked at Bennett Midland, a management consulting firm in New York City, which worked exclusively with the civic and public sectors, where he provided project management and technical assistance support to 19 city governments around the world funded by Bloomberg Philanthropies to deliver bold solutions to complex municipal challenges using the Innovation Delivery approach.
 
       Uthman also managed Results for America’s Local Moneyball for Government Fellowship, providing project management support to 12 senior local government officials in the United States implementing data and evidence-based tools in their cities. He graduated from Dartmouth College in 2011 with a degree in Government and Sociology.
+    facultyImage:
+      title: uthman-olagoke
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4dHSTxCRNeWiog4C6uOqOA/8038eafe2cd9fc54c8aa23d6494474cc/uthman-olagoke.jpg"
   - sys:
       id: 41jcliotLG4IAAcaMOiQwy
     firstName: Claus
@@ -391,6 +403,10 @@ coachingProgram:
       Currently, Claus is working closely with the City of Eindhoven to develop the city’s problem solving methodology and new approaches to procurement for their social services department. Claus also delivers capacity building workshops to entrepreneurs as well as to city leadership to strengthen the city government’s problem-solving and innovation capacity as well as give them new ways to engage their local vendor community.
 
       Before Citymart, Claus worked with the European Commission’s Smart City Unit (DG Connect) and the New Cities Foundation to help city governments spearhead innovation. He holds an MSc in Urbanisation from the London School of Economics and a BSc in Politics and International Relations from the University of Manchester.
+    facultyImage:
+      title: claus-mullie
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/57PrLJLQkMoEkcmMSkmqGs/6ebb6e0c85d80ada6830afbbe22dad55/claus-mullie.jpg"
   - sys:
       id: 3wl1z9JkX6iAOq2qQCeaWu
     firstName: Philippa
@@ -407,6 +423,10 @@ coachingProgram:
       A native Londoner, fluent in Spanish and Catalan, she is an experienced translator, linguistic corrector and university-level English teacher.
 
       Philippa holds a Masters in Leadership in Sustainability from London-based Forum for the Future and an undergraduate degree in English Literature and Classical Literature and Civilization from the University of Birmingham, UK.
+    facultyImage:
+      title: philippa-parry
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/3p2VCGbw6cc08KcucESsCg/ec27e1d01a426c73bec37ef11f53041f/philippa-parry.jpg"
   - sys:
       id: 6DnfIkrlD2uEYI0iYKi0uE
     firstName: Nina
@@ -422,6 +442,10 @@ coachingProgram:
       In 2010, Nina was awarded an Urban and Social Policy Program Fellowships at Columbia University, where she designed and began to implement a program improvement plan. During her tenure, student enrollment in the program doubled, nine new urban policy courses were developed, the Urban and Social Policy speaker series was launched and two additional faculty lines were added.
 
       Nina holds a Bachelor of Arts Degree in Cultural Anthropology from the University of Virginia and a Masters Degree in Urban Policy from Columbia University.
+    facultyImage:
+      title: nina-robbins
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/42zmcO8t5KOqisQwSMg0m0/be737f3c1513d740e132ca2d1fd877b9/nina-robbins.jpg"
 - sys:
     id: 2i6T1LDXMs0y2eogEi8IK8
   programName: Coaching Program for Data Driven Criminal Justice Projects
@@ -777,4 +801,4 @@ coachingProgram:
     facultyImage:
       title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"

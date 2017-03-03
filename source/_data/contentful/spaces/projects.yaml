@@ -25,7 +25,7 @@ project:
   twitter: "@trekmedics"
   facebook: https://www.facebook.com/Trek-Medics-International-114525621925/
   email: info@trekmedics.org
-  team: "- Jason Friesen, Founder/Executive Director, http://trekmedics.org/who-we-are/bios/"
+  team: "- Jason Friesen, Founder/Executive Director, [http://trekmedics.org/who-we-are/bios/](http://trekmedics.org/who-we-are/bios/)"
   partners: |-
     - Google.org, USAID
     - Cardinal Health Foundation
@@ -89,9 +89,9 @@ project:
   twitter: "@datosgobmx"
   email: fergandaragil@gmail.com
   team: |-
-    - Rodolfo Wilhelmy, https://twitter.com/rodowi
-    - Eduardo Clark, https://twitter.com/eduardoclark
-    - Maria Fernanda Gándara, https://twitter.com/fer_gandara
+    - Rodolfo Wilhelmy, [https://twitter.com/rodowi](https://twitter.com/rodowi)
+    - Eduardo Clark, [https://twitter.com/eduardoclark](https://twitter.com/eduardoclark)
+    - Maria Fernanda Gándara, [https://twitter.com/fer_gandara](https://twitter.com/fer_gandara)
   partners: |-
     - Secretaría de Hacienda y Crédito Público
     - Secretaría de Gobernación
@@ -225,10 +225,10 @@ project:
   website: http://www.noulab.org
   twitter: "@NuLAB"
   team: |-
-    - Jake Wildman-Sisk, NouLAB Manager, http://www.noulab.org/jake-wildman-sisk"
-    - Nick Scott, New Brunswick Social Policy Research Network Executive Director, http://www.policyresearchnetwork.ca/staff/
-    - Karina LeBlanc, Pond-Deshpande Centre Executive Director, http://www.noulab.org/karina-leblanc
-    - Bill MacKenzie, New Brunswick Social Policy Research Network Director of Strategic Partnerships, http://www.policyresearchnetwork.ca/staff/
+    - Jake Wildman-Sisk, NouLAB Manager, [http://www.noulab.org/jake-wildman-sisk](http://www.noulab.org/jake-wildman-sisk)
+    - Nick Scott, New Brunswick Social Policy Research Network Executive Director, [http://www.policyresearchnetwork.ca/staff/](http://www.policyresearchnetwork.ca/staff/)
+    - Karina LeBlanc, Pond-Deshpande Centre Executive Director, [http://www.noulab.org/karina-leblanc](http://www.noulab.org/karina-leblanc)
+    - Bill MacKenzie, New Brunswick Social Policy Research Network Director of Strategic Partnerships, [http://www.policyresearchnetwork.ca/staff/](http://www.policyresearchnetwork.ca/staff/)
   partners: |-
     - The Pond-Deshpande Centre
     - The NB Social Policy Research Network
@@ -271,13 +271,14 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://nyc.councilmatic.org/
+  website: "[http://nyc.councilmatic.org/](http://nyc.councilmatic.org/)"
   twitter: "@nyccouncilmatic"
   facebook: www.facebook.com/nyccouncilmatic
   email: davidd@ppolitics.org
-  team: "- David Moore, Program Manager, Participatory Politics Fdn., www.participatorypolitics.org/
-    \n- DataMade Technical Leads, http://datamade.us/ \n- Asher Novek, HeartGov SMS
-    Outreach, http://www.heartgov.com"
+  team: |-
+    - David Moore, Program Manager, Participatory Politics Fdn., [http://participatorypolitics.org/](http://participatorypolitics.org/)
+    - DataMade Technical Leads, [http://datamade.us/ ](http://datamade.us/)
+    - Asher Novek, HeartGov SMS Outreach, [http://www.heartgov.com](http://www.heartgov.com)
   background: The Participatory Politics Foundation (PPF) is a 510(c)3 non-profit
     with a mission to increase civic engagement. Since 2006, PPF has built free, libre
     and open-source technology for open government and public accountability. In 2007,
@@ -351,8 +352,8 @@ project:
   twitter: "@nycprepared"
   email: info@nycprepared.org
   team: |-
-    - Devin Balkind, Organizer, http://www.twitter.com/devinbalkind
-    - Marie Irvine, Organizer, http://www.twitter.com/disasterdane
+    - Devin Balkind, Organizer, [http://www.twitter.com/devinbalkind](http://www.twitter.com/devinbalkind)
+    - Marie Irvine, Organizer, [http://www.twitter.com/disasterdane](http://www.twitter.com/disasterdane)
   partners: |-
     - Occupy Sandy Spokescouncil
     - Staten Island Long Term Recovery Group
@@ -402,7 +403,7 @@ project:
   regoin:
   - Worldwide
   email: hola@presupuestoabierto.org
-  team: "- Manuel Aristaran, MSc Candidate MIT Media Lab, http://jazzido.com"
+  team: "- Manuel Aristaran, MSc Candidate MIT Media Lab, [http://jazzido.com](http://jazzido.com)"
   partners: |-
     - Gobierno de Bahía Blanca
     - MIT Media Lab
@@ -447,7 +448,7 @@ project:
   - Europe and Central Asia
   city: Madrid
   country: Spain
-  website: https://technologicalalgora.wordpress.com
+  website: "[https://technologicalalgora.wordpress.com](https://technologicalalgora.wordpress.com)"
   email: victoria_alsina@hks.harvard.edu
   team: |-
     - Victòria Alsina, Project Leader"
@@ -507,7 +508,7 @@ project:
   regoin:
   - North America
   country: Canada
-  website: http://www.ldln.co/
+  website: "[http://www.ldln.co/](http://www.ldln.co/)"
   twitter: "@LandlinePH"
   facebook: https://www.facebook.com/ldln.co
   email: info@ldln.co
@@ -566,16 +567,16 @@ project:
   regoin:
   - North America
   country: United States
-  website: https://www.muckrock.com/
+  website: "[https://www.muckrock.com/](https://www.muckrock.com/)"
   twitter: "@muckrock"
   facebook: https://www.facebook.com/muckrock
   email: info@muckrock.com
   team: |-
-    - Michael Morisy, Co-Founder, http://www.twitter.com/morisy
-    - Mitchell Kotler, Co-Founder, http://j.mp/1NT0MEIJ
-    - Patrick Brown, Editor, https://twitter.com/resentfultweet
-    - Beryl Lipton, Reporter, http://www.twitter.com/_blip_
-    - Allan Lasser, Developer, http://www.twitter.com/allanlasser
+    - Michael Morisy, Co-Founder, [http://www.twitter.com/morisy](http://www.twitter.com/morisy)
+    - Mitchell Kotler, Co-Founder, [http://j.mp/1NT0MEIJ](http://j.mp/1NT0MEIJ)
+    - Patrick Brown, Editor, [https://twitter.com/resentfultweet](https://twitter.com/resentfultweet)
+    - Beryl Lipton, Reporter, [http://www.twitter.com/_blip_](http://www.twitter.com/_blip_)
+    - Allan Lasser, Developer, [http://www.twitter.com/allanlasser](http://www.twitter.com/allanlasser)
   background: MuckRock is the web's best way to file, track, and share public records
     and Freedom of Information Act requests. The site has helped file over 19,000
     requests, helping release over 800,000 pages of government records on subjects
@@ -618,12 +619,12 @@ project:
   - Humanitarian Innovation
   regoin:
   - Latin America and the Caribbean
-  website: www.agendapropia.co/PERIODISMOABIERTO/en/
+  website: "[https://agendapropia.co/PERIODISMOABIERTO/en/](https://agendapropia.co/PERIODISMOABIERTO/en/)"
   twitter: "@PeriodismoAbier"
   email: ofabro@ofabro.com
   team: |-
-    - Edilma Prada Cespedes, Journalism Expert, http://twitter.com/edilmaprada
-    - Fabro Steibel, Open Government Expert, http://ofabro.com
+    - Edilma Prada Cespedes, Journalism Expert, [http://twitter.com/edilmaprada](http://twitter.com/edilmaprada)
+    - Fabro Steibel, Open Government Expert, [http://ofabro.com](http://ofabro.com)
   partners: |-
     - Publica
     - the Creative Industries master programme at ESPM University, in Rio
@@ -660,11 +661,11 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://policyatlas.org/wiki/Main_Page
+  website: "[http://policyatlas.org/wiki/Main_Page](http://policyatlas.org/wiki/Main_Page)"
   twitter: "@policyatlas"
   email: policyatlas_exec@googlegroups.com
   team: |-
-    - Kevin Hansen, http://www.kevinmhansen.com/about/
+    - Kevin Hansen, [http://www.kevinmhansen.com/about/](http://www.kevinmhansen.com/about/)
     - Matt Lisiecki, http://linkedin.com/in/malisiecki
     - Neil Reilly, http://reilly.nyc
   partners: |-
@@ -721,9 +722,9 @@ project:
   country: United States
   email: pittsburgh@codeforamerica.org
   team: |-
-    - Ben Smithgall, Developer, http://www.codeforamerica.org/people/ben-smithgall/
-    - Shelly Ni, Designer, http://www.codeforamerica.org/people/shelly-ni/
-    - Patrick Hammons, Project Manager, http://www.codeforamerica.org/people/patrick-hammons/
+    - Ben Smithgall, Developer, [http://www.codeforamerica.org/people/ben-smithgall/](http://www.codeforamerica.org/people/ben-smithgall/)
+    - Shelly Ni, Designer, [http://www.codeforamerica.org/people/shelly-ni/](http://www.codeforamerica.org/people/shelly-ni/)
+    - Patrick Hammons, Project Manager, [http://www.codeforamerica.org/people/patrick-hammons/](http://www.codeforamerica.org/people/patrick-hammons/)
   partners: |-
     - Richard King Mellon Foundation
     - City of Pittsburgh
@@ -759,7 +760,7 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://commune.io
+  website: "[http://commune.io](http://commune.io)"
   twitter: "@icommune"
   email: team@commune.io
   team: |-
