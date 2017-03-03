@@ -27,6 +27,12 @@ $(document).ready(function() {
         doc.addPage();
         doc.addImage($('#gov-logo').get(0), 65, 10, 80, 10);
         doc.addImage($('#gov-footer').get(0), 12, 275, 180, 15);
+      } else if (classHeight >= 230 || weekDesc >= 230) {
+        classHeight = -60;
+        weekDesc = -50;
+        doc.addPage();
+        doc.addImage($('#gov-logo').get(0), 65, 10, 80, 10);
+        doc.addImage($('#gov-footer').get(0), 12, 275, 180, 15);
       }
       classHeight += 80;
       weekDesc += 80;
