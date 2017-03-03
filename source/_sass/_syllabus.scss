@@ -36,7 +36,11 @@
     display: inline-block;
     overflow: hidden;
     @include breakpoint($small-only) {
-      right: 45px;
+      right: 30px;
+      margin: 10px;
+    }
+    @include breakpoint($medium) {
+      right: 0;
     }
 
     p {

@@ -28,7 +28,7 @@ layout: default
 
   <div class="syllabus__section">
     <div class="row medium-uncollapse expanded">
-      <div class="column medium-6 large-10 small-12 columns">
+      <div class="column medium-10 large-10 small-12 columns">
         <h4 class="syllabus__description-text">Description</h4>
         <p class="syllabus__description">{{page.description}}</p>
         <p id="pdf-desc" class="syllabus__description" style="display:none; font-size:12px;">{{page.description}}</p>
@@ -93,7 +93,7 @@ layout: default
             <div class="result-item">
               <div class="js-open-modal">
                 <h2 class="result-item__name">{{class.classTitle}}</h2>
-                  <p style="display:none; font-size:16px; font-weight:bold;" class="pdf-class-title">Week {{class.classWeek}}, Class {{class.classNumber}}: {{class.classTitle}}</p>
+                  <p style="display:none; font-size:16px; font-weight:bold;" class="pdf-class-title">Class {{class.classNumber}}, Week {{class.classWeek}}: {{class.classTitle}}</p>
                 <!-- Short Description -->
                 <div class="result-item__short-description">
                   <p>{{class.shortDescription}}</p>
@@ -101,13 +101,13 @@ layout: default
 
                 <div class="result-item--event__date fancy-date">
                   <div class="fancy-date__stack">
-                    <span class="fancy-date__month">Week</span>
-                  </div>
-                  <span class="fancy-date__day pdf-class-week">{{class.classWeek}}</span>
-                  <div class="fancy-date__stack">
-                    <span class="fancy-date__weekday">Class</span>
+                    <span class="fancy-date__month">Class</span>
                   </div>
                   <span class="fancy-date__day pdf-class-week">{{class.classNumber}}</span>
+                  <div class="fancy-date__stack">
+                    <span class="fancy-date__weekday">Week</span>
+                  </div>
+                  <span class="fancy-date__day pdf-class-week">{{class.classWeek}}</span>
                 </div>
               </div>
             {% include class-modal.html %}
