@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $(".download-button").click(function() {
     var doc = new jsPDF();
-    // window.print()
 
     doc.fromHTML($('#pdf-title').get(0), 10, 5);
     doc.fromHTML($('#pdf-start').get(0), 10, 21);
