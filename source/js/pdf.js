@@ -3,7 +3,7 @@ $(document).ready(function() {
     var doc = new jsPDF();
 
     doc.addImage($('#gov-logo').get(0), 65, 10, 80, 10);
-    doc.addImage($('#gov-footer').get(0), 12, 275, 180, 15);
+    doc.addImage($('#gov-footer').get(0), 7, 275, 195, 18);
 
     doc.fromHTML($('#pdf-title').get(0), 10, 13);
     doc.fromHTML($('#pdf-start').get(0), 10, 29);
@@ -26,13 +26,13 @@ $(document).ready(function() {
         weekDesc = -50;
         doc.addPage();
         doc.addImage($('#gov-logo').get(0), 65, 10, 80, 10);
-        doc.addImage($('#gov-footer').get(0), 12, 275, 180, 15);
+        doc.addImage($('#gov-footer').get(0), 7, 275, 195, 18);
       } else if (classHeight >= 230 || weekDesc >= 230) {
         classHeight = -60;
         weekDesc = -50;
         doc.addPage();
         doc.addImage($('#gov-logo').get(0), 65, 10, 80, 10);
-        doc.addImage($('#gov-footer').get(0), 12, 275, 180, 15);
+        doc.addImage($('#gov-footer').get(0), 7, 275, 195, 18);
       }
       classHeight += 80;
       weekDesc += 80;
