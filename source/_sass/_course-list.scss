@@ -77,7 +77,8 @@
     display: inline-block;
     overflow: hidden;
     @include breakpoint($small-only) {
-      right: 45px;
+      right: -5px;
+      padding: 5px;
     }
     p {
       position: absolute;
@@ -94,5 +95,18 @@
     &:hover p {
       bottom: 0;
     }
+  }
+
+  .button--workshops {
+    @include breakpoint($small-only) {
+      margin: 5px;
+      text-align: center;
+    }
+  }
+
+  .e-course-description {
+    // @include breakpoint($small-only) {
+      margin-top: 0;
+    //
   }
 }
