@@ -68,3 +68,33 @@
   &::-moz-placeholder { @content }
   &:-ms-input-placeholder { @content }
 }
+
+// crossbrowser styles
+@mixin browser($browsers: Mozilla) {
+  @each $browser in $browsers {
+    html[data-browser*="#{$browser}"] & {
+      @content;
+    }
+  }
+}
+
+
+@mixin cross-browser-select {
+  &::before { display: none;}
+  appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_black_24px.svg");
+  background-repeat: no-repeat;
+  background-position: 94% center;
+  @include breakpoint($medium) {
+    background-position: 90% center;
+  }
+  @include breakpoint($small-only) {
+    background-position: 85% center;
+  }
+  option { color: black; background-color: white;}
+}

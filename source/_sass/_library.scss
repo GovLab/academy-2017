@@ -36,9 +36,15 @@
     .select {
       margin-bottom: 25px;
       margin-right: 10px;
-
+      &::before { display: none;}
       select {
         width: 110%;
+        @include cross-browser-select;
+        @include browser(Windows) {
+          &::-ms-expand {
+            display: none;
+          }
+        }
       }
     }
 
