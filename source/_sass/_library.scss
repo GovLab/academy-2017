@@ -36,9 +36,21 @@
     .select {
       margin-bottom: 25px;
       margin-right: 10px;
-
+      &::before { display: none;}
       select {
         width: 110%;
+        @include cross-browser-select;
+        @include browser(Firefox) {
+          &:-moz-focusring {
+            width: 100%;
+          }
+        }
+        @include browser(Windows) {
+          width: 100%;
+          &::-ms-expand {
+            display: none;
+          }
+        }
       }
     }
 
