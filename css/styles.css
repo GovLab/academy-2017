@@ -518,6 +518,12 @@ shadow {
 
 .faculty-page a:hover, .faculty-page a:visited, .faculty-page a:link, .faculty-page a:active {
   text-decoration: none; }
+@media (max-width: 40em) {
+  .faculty-page .button {
+    padding: 5% 2%; } }
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .faculty-page .button {
+    font-size: 12px; } }
 .faculty-page .button i {
   line-height: 19px; }
 
@@ -625,7 +631,9 @@ shadow {
       padding: 0; } }
 .syllabus__description-text {
   padding-left: 150px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 0;
+  margin-top: 0; }
   @media (max-width: 40em) {
     .syllabus__description-text {
       padding: 0; } }
@@ -664,6 +672,20 @@ shadow {
   width: 90%;
   margin: 0 auto;
   position: relative; }
+  .library-page .dropdown-wrapper .show-filters {
+    display: none; }
+    .library-page .dropdown-wrapper .show-filters.active:before {
+      content: "Hide filters"; }
+    @media (max-width: 40em) {
+      .library-page .dropdown-wrapper .show-filters {
+        display: block; }
+        .library-page .dropdown-wrapper .show-filters:before {
+          content: "Show filters "; } }
+  @media (max-width: 40em) {
+    .library-page .dropdown-wrapper .dropdown-container {
+      display: none; }
+      .library-page .dropdown-wrapper .dropdown-container.active {
+        display: block; } }
   .library-page .dropdown-wrapper .select {
     margin-bottom: 25px;
     margin-right: 10px; }
@@ -674,7 +696,7 @@ shadow {
       width: 100%; } }
 .library-page .filter-panel .select,
 .library-page .filter-panel .button {
-  margin: 12px 0; }
+  margin: 6px 0; }
 .library-page .filter-panel .button--icon-only {
   padding: 13px; }
 .library-page .search input[type='text']::-webkit-input-placeholder {

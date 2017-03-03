@@ -15,8 +15,11 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+
 
 <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+
 </head>
 
 <body class="">
@@ -93,7 +96,11 @@
           </div>
         </div>
 
-        <div class="row large-unstack expanded align-right ">
+        <div class="columns">
+          <button class="button button--icon-only show-filters" type="button" name="button"><i class="material-icons">add</i></button>
+        </div>
+
+        <div class="row large-unstack expanded align-right dropdown-container">
 
           <div class="columns resource-type">
             <div class="select">
@@ -166,8 +173,8 @@
 
       </div>
         <div class="columns">
-          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="button button--icon-only sort" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
           <button class="button button--icon-only clear_filters" type="button" name="button">Clear Filters <i class="material-icons">close</i></button>
+          <button data-sort="result-item__publicationDate" id="pubdate-sort" class="button button--icon-only sort" type="button" name="button">Sort by Date <i class="material-icons">keyboard_arrow_down</i></button>
         </div>
       </div>
     </div>
@@ -922,6 +929,8 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 <script src="https://govlab.github.io/academy-2017/js/library.js"></script>
 
 
+<script src="https://govlab.github.io/academy-2017/js/pdf.js"></script>
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -936,5 +945,6 @@ ga('send', 'pageview');
         $(document).foundation();
     });
 </script>
+
 </body>
 </html>
