@@ -66,6 +66,10 @@ faculty:
     Co-operative Party in the UK. She studied Politics, Philosophy and Economics as
     an undergraduate, and has Masters degrees in Development Economics and in Social
     and Political Thought
+  facultyImage:
+    title: karin-christiansen
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/1ZcZ7NmT6g2ss0mEQsE0iw/22e737dcb4bf7af23699030fbccb7a35/karin-christiansen.jpg"
 - sys:
     id: t7GAsnfeU0QGAsemoewSu
   firstName: Alexandra
@@ -376,7 +380,7 @@ faculty:
   facultyImage:
     title: dinorah-cantu-pedraza
     description: 
-    url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+    url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 5kS5wQk33qWKoA4e4AEwiG
   firstName: Stefaan
@@ -770,6 +774,10 @@ faculty:
     Before joining Citymart, Uthman worked at Bennett Midland, a management consulting firm in New York City, which worked exclusively with the civic and public sectors, where he provided project management and technical assistance support to 19 city governments around the world funded by Bloomberg Philanthropies to deliver bold solutions to complex municipal challenges using the Innovation Delivery approach.
 
     Uthman also managed Results for America’s Local Moneyball for Government Fellowship, providing project management support to 12 senior local government officials in the United States implementing data and evidence-based tools in their cities. He graduated from Dartmouth College in 2011 with a degree in Government and Sociology.
+  facultyImage:
+    title: uthman-olagoke
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/4dHSTxCRNeWiog4C6uOqOA/8038eafe2cd9fc54c8aa23d6494474cc/uthman-olagoke.jpg"
 - sys:
     id: 41jcliotLG4IAAcaMOiQwy
   firstName: Claus
@@ -785,6 +793,10 @@ faculty:
     Currently, Claus is working closely with the City of Eindhoven to develop the city’s problem solving methodology and new approaches to procurement for their social services department. Claus also delivers capacity building workshops to entrepreneurs as well as to city leadership to strengthen the city government’s problem-solving and innovation capacity as well as give them new ways to engage their local vendor community.
 
     Before Citymart, Claus worked with the European Commission’s Smart City Unit (DG Connect) and the New Cities Foundation to help city governments spearhead innovation. He holds an MSc in Urbanisation from the London School of Economics and a BSc in Politics and International Relations from the University of Manchester.
+  facultyImage:
+    title: claus-mullie
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/57PrLJLQkMoEkcmMSkmqGs/6ebb6e0c85d80ada6830afbbe22dad55/claus-mullie.jpg"
 - sys:
     id: 4KlleCGndeUg2WmcukAwKS
   firstName: Sascha
@@ -814,6 +826,10 @@ faculty:
     Fellow in recognition of his work as a social innovator and a selected member
     of the Clinton Global Initiative and on the Advisory Board of the UN Global Compact
     Cities Programme. "
+  facultyImage:
+    title: sascha-haselmayer
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/13SdeN0SL8AMGaqSccmkeO/b3a436e0fd24836ea58bdb584bb4408f/sascha-haselmayer.jpg"
 - sys:
     id: 3wl1z9JkX6iAOq2qQCeaWu
   firstName: Philippa
@@ -830,6 +846,10 @@ faculty:
     A native Londoner, fluent in Spanish and Catalan, she is an experienced translator, linguistic corrector and university-level English teacher.
 
     Philippa holds a Masters in Leadership in Sustainability from London-based Forum for the Future and an undergraduate degree in English Literature and Classical Literature and Civilization from the University of Birmingham, UK.
+  facultyImage:
+    title: philippa-parry
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/3p2VCGbw6cc08KcucESsCg/ec27e1d01a426c73bec37ef11f53041f/philippa-parry.jpg"
 - sys:
     id: 6DnfIkrlD2uEYI0iYKi0uE
   firstName: Nina
@@ -845,6 +865,10 @@ faculty:
     In 2010, Nina was awarded an Urban and Social Policy Program Fellowships at Columbia University, where she designed and began to implement a program improvement plan. During her tenure, student enrollment in the program doubled, nine new urban policy courses were developed, the Urban and Social Policy speaker series was launched and two additional faculty lines were added.
 
     Nina holds a Bachelor of Arts Degree in Cultural Anthropology from the University of Virginia and a Masters Degree in Urban Policy from Columbia University.
+  facultyImage:
+    title: nina-robbins
+    description: 
+    url: "//images.contentful.com/gvpfsi7zggwe/42zmcO8t5KOqisQwSMg0m0/be737f3c1513d740e132ca2d1fd877b9/nina-robbins.jpg"
 workshop:
 - sys:
     id: UWNm9WO6Qu4C6CMOkyq2M
@@ -1064,7 +1088,7 @@ project:
   twitter: "@trekmedics"
   facebook: https://www.facebook.com/Trek-Medics-International-114525621925/
   email: info@trekmedics.org
-  team: "- Jason Friesen, Founder/Executive Director, http://trekmedics.org/who-we-are/bios/"
+  team: "- Jason Friesen, Founder/Executive Director, [http://trekmedics.org/who-we-are/bios/](http://trekmedics.org/who-we-are/bios/)"
   partners: |-
     - Google.org, USAID
     - Cardinal Health Foundation
@@ -1128,9 +1152,9 @@ project:
   twitter: "@datosgobmx"
   email: fergandaragil@gmail.com
   team: |-
-    - Rodolfo Wilhelmy, https://twitter.com/rodowi
-    - Eduardo Clark, https://twitter.com/eduardoclark
-    - Maria Fernanda Gándara, https://twitter.com/fer_gandara
+    - Rodolfo Wilhelmy, [https://twitter.com/rodowi](https://twitter.com/rodowi)
+    - Eduardo Clark, [https://twitter.com/eduardoclark](https://twitter.com/eduardoclark)
+    - Maria Fernanda Gándara, [https://twitter.com/fer_gandara](https://twitter.com/fer_gandara)
   partners: |-
     - Secretaría de Hacienda y Crédito Público
     - Secretaría de Gobernación
@@ -1264,10 +1288,10 @@ project:
   website: http://www.noulab.org
   twitter: "@NuLAB"
   team: |-
-    - Jake Wildman-Sisk, NouLAB Manager, http://www.noulab.org/jake-wildman-sisk"
-    - Nick Scott, New Brunswick Social Policy Research Network Executive Director, http://www.policyresearchnetwork.ca/staff/
-    - Karina LeBlanc, Pond-Deshpande Centre Executive Director, http://www.noulab.org/karina-leblanc
-    - Bill MacKenzie, New Brunswick Social Policy Research Network Director of Strategic Partnerships, http://www.policyresearchnetwork.ca/staff/
+    - Jake Wildman-Sisk, NouLAB Manager, [http://www.noulab.org/jake-wildman-sisk](http://www.noulab.org/jake-wildman-sisk)
+    - Nick Scott, New Brunswick Social Policy Research Network Executive Director, [http://www.policyresearchnetwork.ca/staff/](http://www.policyresearchnetwork.ca/staff/)
+    - Karina LeBlanc, Pond-Deshpande Centre Executive Director, [http://www.noulab.org/karina-leblanc](http://www.noulab.org/karina-leblanc)
+    - Bill MacKenzie, New Brunswick Social Policy Research Network Director of Strategic Partnerships, [http://www.policyresearchnetwork.ca/staff/](http://www.policyresearchnetwork.ca/staff/)
   partners: |-
     - The Pond-Deshpande Centre
     - The NB Social Policy Research Network
@@ -1310,13 +1334,14 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://nyc.councilmatic.org/
+  website: "[http://nyc.councilmatic.org/](http://nyc.councilmatic.org/)"
   twitter: "@nyccouncilmatic"
   facebook: www.facebook.com/nyccouncilmatic
   email: davidd@ppolitics.org
-  team: "- David Moore, Program Manager, Participatory Politics Fdn., www.participatorypolitics.org/
-    \n- DataMade Technical Leads, http://datamade.us/ \n- Asher Novek, HeartGov SMS
-    Outreach, http://www.heartgov.com"
+  team: |-
+    - David Moore, Program Manager, Participatory Politics Fdn., [http://participatorypolitics.org/](http://participatorypolitics.org/)
+    - DataMade Technical Leads, [http://datamade.us/ ](http://datamade.us/)
+    - Asher Novek, HeartGov SMS Outreach, [http://www.heartgov.com](http://www.heartgov.com)
   background: The Participatory Politics Foundation (PPF) is a 510(c)3 non-profit
     with a mission to increase civic engagement. Since 2006, PPF has built free, libre
     and open-source technology for open government and public accountability. In 2007,
@@ -1390,8 +1415,8 @@ project:
   twitter: "@nycprepared"
   email: info@nycprepared.org
   team: |-
-    - Devin Balkind, Organizer, http://www.twitter.com/devinbalkind
-    - Marie Irvine, Organizer, http://www.twitter.com/disasterdane
+    - Devin Balkind, Organizer, [http://www.twitter.com/devinbalkind](http://www.twitter.com/devinbalkind)
+    - Marie Irvine, Organizer, [http://www.twitter.com/disasterdane](http://www.twitter.com/disasterdane)
   partners: |-
     - Occupy Sandy Spokescouncil
     - Staten Island Long Term Recovery Group
@@ -1441,7 +1466,7 @@ project:
   regoin:
   - Worldwide
   email: hola@presupuestoabierto.org
-  team: "- Manuel Aristaran, MSc Candidate MIT Media Lab, http://jazzido.com"
+  team: "- Manuel Aristaran, MSc Candidate MIT Media Lab, [http://jazzido.com](http://jazzido.com)"
   partners: |-
     - Gobierno de Bahía Blanca
     - MIT Media Lab
@@ -1486,7 +1511,7 @@ project:
   - Europe and Central Asia
   city: Madrid
   country: Spain
-  website: https://technologicalalgora.wordpress.com
+  website: "[https://technologicalalgora.wordpress.com](https://technologicalalgora.wordpress.com)"
   email: victoria_alsina@hks.harvard.edu
   team: |-
     - Victòria Alsina, Project Leader"
@@ -1546,7 +1571,7 @@ project:
   regoin:
   - North America
   country: Canada
-  website: http://www.ldln.co/
+  website: "[http://www.ldln.co/](http://www.ldln.co/)"
   twitter: "@LandlinePH"
   facebook: https://www.facebook.com/ldln.co
   email: info@ldln.co
@@ -1605,16 +1630,16 @@ project:
   regoin:
   - North America
   country: United States
-  website: https://www.muckrock.com/
+  website: "[https://www.muckrock.com/](https://www.muckrock.com/)"
   twitter: "@muckrock"
   facebook: https://www.facebook.com/muckrock
   email: info@muckrock.com
   team: |-
-    - Michael Morisy, Co-Founder, http://www.twitter.com/morisy
-    - Mitchell Kotler, Co-Founder, http://j.mp/1NT0MEIJ
-    - Patrick Brown, Editor, https://twitter.com/resentfultweet
-    - Beryl Lipton, Reporter, http://www.twitter.com/_blip_
-    - Allan Lasser, Developer, http://www.twitter.com/allanlasser
+    - Michael Morisy, Co-Founder, [http://www.twitter.com/morisy](http://www.twitter.com/morisy)
+    - Mitchell Kotler, Co-Founder, [http://j.mp/1NT0MEIJ](http://j.mp/1NT0MEIJ)
+    - Patrick Brown, Editor, [https://twitter.com/resentfultweet](https://twitter.com/resentfultweet)
+    - Beryl Lipton, Reporter, [http://www.twitter.com/_blip_](http://www.twitter.com/_blip_)
+    - Allan Lasser, Developer, [http://www.twitter.com/allanlasser](http://www.twitter.com/allanlasser)
   background: MuckRock is the web's best way to file, track, and share public records
     and Freedom of Information Act requests. The site has helped file over 19,000
     requests, helping release over 800,000 pages of government records on subjects
@@ -1657,12 +1682,12 @@ project:
   - Humanitarian Innovation
   regoin:
   - Latin America and the Caribbean
-  website: www.agendapropia.co/PERIODISMOABIERTO/en/
+  website: "[https://agendapropia.co/PERIODISMOABIERTO/en/](https://agendapropia.co/PERIODISMOABIERTO/en/)"
   twitter: "@PeriodismoAbier"
   email: ofabro@ofabro.com
   team: |-
-    - Edilma Prada Cespedes, Journalism Expert, http://twitter.com/edilmaprada
-    - Fabro Steibel, Open Government Expert, http://ofabro.com
+    - Edilma Prada Cespedes, Journalism Expert, [http://twitter.com/edilmaprada](http://twitter.com/edilmaprada)
+    - Fabro Steibel, Open Government Expert, [http://ofabro.com](http://ofabro.com)
   partners: |-
     - Publica
     - the Creative Industries master programme at ESPM University, in Rio
@@ -1699,11 +1724,11 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://policyatlas.org/wiki/Main_Page
+  website: "[http://policyatlas.org/wiki/Main_Page](http://policyatlas.org/wiki/Main_Page)"
   twitter: "@policyatlas"
   email: policyatlas_exec@googlegroups.com
   team: |-
-    - Kevin Hansen, http://www.kevinmhansen.com/about/
+    - Kevin Hansen, [http://www.kevinmhansen.com/about/](http://www.kevinmhansen.com/about/)
     - Matt Lisiecki, http://linkedin.com/in/malisiecki
     - Neil Reilly, http://reilly.nyc
   partners: |-
@@ -1760,9 +1785,9 @@ project:
   country: United States
   email: pittsburgh@codeforamerica.org
   team: |-
-    - Ben Smithgall, Developer, http://www.codeforamerica.org/people/ben-smithgall/
-    - Shelly Ni, Designer, http://www.codeforamerica.org/people/shelly-ni/
-    - Patrick Hammons, Project Manager, http://www.codeforamerica.org/people/patrick-hammons/
+    - Ben Smithgall, Developer, [http://www.codeforamerica.org/people/ben-smithgall/](http://www.codeforamerica.org/people/ben-smithgall/)
+    - Shelly Ni, Designer, [http://www.codeforamerica.org/people/shelly-ni/](http://www.codeforamerica.org/people/shelly-ni/)
+    - Patrick Hammons, Project Manager, [http://www.codeforamerica.org/people/patrick-hammons/](http://www.codeforamerica.org/people/patrick-hammons/)
   partners: |-
     - Richard King Mellon Foundation
     - City of Pittsburgh
@@ -1798,7 +1823,7 @@ project:
   - North America
   city: New York City
   country: United States
-  website: http://commune.io
+  website: "[http://commune.io](http://commune.io)"
   twitter: "@icommune"
   email: team@commune.io
   team: |-
@@ -1932,6 +1957,10 @@ coachingProgram:
       Co-operative Party in the UK. She studied Politics, Philosophy and Economics
       as an undergraduate, and has Masters degrees in Development Economics and in
       Social and Political Thought
+    facultyImage:
+      title: karin-christiansen
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/1ZcZ7NmT6g2ss0mEQsE0iw/22e737dcb4bf7af23699030fbccb7a35/karin-christiansen.jpg"
 - sys:
     id: ckudj4ouze604m2eWe2Au
   programName: Coaching Program for Data Driven Criminal Justice Projects - Fall 2016
@@ -2433,6 +2462,10 @@ coachingProgram:
       papers and articles.\n\nSascha is an Ashoka Fellow in recognition of his work
       as a social innovator and a selected member of the Clinton Global Initiative
       and on the Advisory Board of the UN Global Compact Cities Programme. "
+    facultyImage:
+      title: sascha-haselmayer
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/13SdeN0SL8AMGaqSccmkeO/b3a436e0fd24836ea58bdb584bb4408f/sascha-haselmayer.jpg"
   - sys:
       id: 19NzSNrZxiSSw8aCE4YKmo
     firstName: Uthman
@@ -2448,6 +2481,10 @@ coachingProgram:
       Before joining Citymart, Uthman worked at Bennett Midland, a management consulting firm in New York City, which worked exclusively with the civic and public sectors, where he provided project management and technical assistance support to 19 city governments around the world funded by Bloomberg Philanthropies to deliver bold solutions to complex municipal challenges using the Innovation Delivery approach.
 
       Uthman also managed Results for America’s Local Moneyball for Government Fellowship, providing project management support to 12 senior local government officials in the United States implementing data and evidence-based tools in their cities. He graduated from Dartmouth College in 2011 with a degree in Government and Sociology.
+    facultyImage:
+      title: uthman-olagoke
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/4dHSTxCRNeWiog4C6uOqOA/8038eafe2cd9fc54c8aa23d6494474cc/uthman-olagoke.jpg"
   - sys:
       id: 41jcliotLG4IAAcaMOiQwy
     firstName: Claus
@@ -2463,6 +2500,10 @@ coachingProgram:
       Currently, Claus is working closely with the City of Eindhoven to develop the city’s problem solving methodology and new approaches to procurement for their social services department. Claus also delivers capacity building workshops to entrepreneurs as well as to city leadership to strengthen the city government’s problem-solving and innovation capacity as well as give them new ways to engage their local vendor community.
 
       Before Citymart, Claus worked with the European Commission’s Smart City Unit (DG Connect) and the New Cities Foundation to help city governments spearhead innovation. He holds an MSc in Urbanisation from the London School of Economics and a BSc in Politics and International Relations from the University of Manchester.
+    facultyImage:
+      title: claus-mullie
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/57PrLJLQkMoEkcmMSkmqGs/6ebb6e0c85d80ada6830afbbe22dad55/claus-mullie.jpg"
   - sys:
       id: 3wl1z9JkX6iAOq2qQCeaWu
     firstName: Philippa
@@ -2479,6 +2520,10 @@ coachingProgram:
       A native Londoner, fluent in Spanish and Catalan, she is an experienced translator, linguistic corrector and university-level English teacher.
 
       Philippa holds a Masters in Leadership in Sustainability from London-based Forum for the Future and an undergraduate degree in English Literature and Classical Literature and Civilization from the University of Birmingham, UK.
+    facultyImage:
+      title: philippa-parry
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/3p2VCGbw6cc08KcucESsCg/ec27e1d01a426c73bec37ef11f53041f/philippa-parry.jpg"
   - sys:
       id: 6DnfIkrlD2uEYI0iYKi0uE
     firstName: Nina
@@ -2494,6 +2539,10 @@ coachingProgram:
       In 2010, Nina was awarded an Urban and Social Policy Program Fellowships at Columbia University, where she designed and began to implement a program improvement plan. During her tenure, student enrollment in the program doubled, nine new urban policy courses were developed, the Urban and Social Policy speaker series was launched and two additional faculty lines were added.
 
       Nina holds a Bachelor of Arts Degree in Cultural Anthropology from the University of Virginia and a Masters Degree in Urban Policy from Columbia University.
+    facultyImage:
+      title: nina-robbins
+      description: 
+      url: "//images.contentful.com/gvpfsi7zggwe/42zmcO8t5KOqisQwSMg0m0/be737f3c1513d740e132ca2d1fd877b9/nina-robbins.jpg"
 - sys:
     id: 3IUYZaK9SgISgEaEaG6mA6
   programName: Sample course
@@ -2568,7 +2617,7 @@ coachingProgram:
     facultyImage:
       title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"
 - sys:
     id: 54GlwlXABy68MQw6yoWQq4
   programName: Sample course II
@@ -2643,7 +2692,7 @@ coachingProgram:
     facultyImage:
       title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"
 syllabusClass:
 - sys:
     id: 5fOzllL7gWu6iyCua6GwGM
@@ -2932,7 +2981,7 @@ syllabus:
     facultyImage:
       title: dinorah-cantu-pedraza
       description: 
-      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/3f584e3ec599a0b4e90ad0f002e093c7/dinorah-cantu-pedraza.jpg"
+      url: "//images.contentful.com/gvpfsi7zggwe/6vQYf3IQiA4qkUYKM6q8EQ/f1e968663e59fac91027cb3de707bf27/dinorah-cantu-pedraza.jpg"
   - sys:
       id: t7GAsnfeU0QGAsemoewSu
     firstName: Alexandra

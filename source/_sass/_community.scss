@@ -21,6 +21,10 @@
         overflow: hidden;
       }
     }
+    .slider .slick-arrow {
+      @include breakpoint($small-only) {
+        top: 20%;
+      }
+    }
   }
-
 }

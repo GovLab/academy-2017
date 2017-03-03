@@ -48,10 +48,10 @@ layout: default
               <div class="large-6 column">
                 <p class="e-course-description">{{ workshop.shortDescription }}</p>
                 {% if workshop.website %}
-                  <a class="button" href="{{workshop.website}}">Course Page</a>
+                  <a class="button button--workshops" href="{{workshop.website}}">Course Page</a>
                 {% endif %}
                 {% if workshop.workshopPdf %}
-                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                  <a class="button button--workshops" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
                 {% endif %}
                 {% if workshop.faculty %}
                   {% for member in workshop.faculty %}
@@ -90,13 +90,13 @@ layout: default
               <div class="large-6 column">
                 <p class="e-course-description">{{ workshop.shortDescription }}</p>
                 {% if workshop.website %}
-                  <a class="button" href="{{workshop.website}}">Course Page</a>
+                  <a class="button button--workshops" href="{{workshop.website}}">Course Page</a>
                 {% endif %}
                 {% if workshop.workshopPdf %}
-                  <a class="button" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
+                  <a class="button button--workshops" href="{{ workshop.workshopPdf.url }}">Course Syllabus</a>
                 {% endif %}
                 {% if workshop.location %}
-                  <a class="button" href="https://goo.gl/maps/dZ5BZ">LOCATION</a>
+                  <a class="button button--workshops" href="https://goo.gl/maps/dZ5BZ">LOCATION</a>
                 {% endif %}
               </div>
             </div>
