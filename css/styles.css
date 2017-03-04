@@ -141,7 +141,7 @@
   text-align: left; }
 
 .course-detail.m-clinics .top-section, .course-detail.m-clinics .faculty-header, .course-detail.m-clinics .course-header, .course-list--clinics .top-section, .course-list--clinics .faculty-header, .course-list--clinics .course-header {
-  background-color: #efce7c; }
+  background-color: #ebc058; }
 .course-detail--coaching .top-section, .course-detail--coaching .faculty-header, .course-detail--coaching .course-header, .course-list--coaching .top-section, .course-list--coaching .faculty-header, .course-list--coaching .course-header {
   background-color: #22a69b; }
 .course-detail.m-masters .top-section, .course-detail.m-masters .faculty-header, .course-detail.m-masters .course-header, .course-list--masters .top-section, .course-list--masters .faculty-header, .course-list--masters .course-header {
@@ -305,7 +305,7 @@
     text-decoration: none;
     cursor: pointer; }
 .main-categories--clinics {
-  background-color: #efce7c; }
+  background-color: #ebc058; }
 .main-categories--coaching {
   background-color: #22a69b; }
 .main-categories--masters {
@@ -313,7 +313,7 @@
 .main-categories--workshop {
   background-color: #366473; }
 .main-categories--clinics:hover {
-  background-color: #ebc058; }
+  background-color: #e7b234; }
 .main-categories--coaching:hover {
   background-color: #1b847b; }
 .main-categories--masters:hover {
@@ -329,7 +329,7 @@
 .page-section__content {
   padding: 30px; }
   .page-section__content--clinics {
-    background-color: rgba(239, 206, 124, 0.8); }
+    background-color: rgba(235, 192, 88, 0.8); }
   .page-section__content--coaching {
     background-color: rgba(34, 166, 155, 0.8); }
   .page-section__content--masters {
@@ -350,7 +350,7 @@
   .upcoming-courses__item:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05); }
   .upcoming-courses__item--clinics .button {
-    background-color: #efce7c; }
+    background-color: #ebc058; }
   .upcoming-courses__item--coaching .button {
     background-color: #22a69b; }
   .upcoming-courses__item--masters .button {
@@ -501,7 +501,8 @@ shadow {
     overflow: hidden; }
     @media (max-width: 40em) {
       .course-item .faculty-image {
-        right: 45px; } }
+        right: -5px;
+        padding: 5px; } }
     .course-item .faculty-image p {
       position: absolute;
       bottom: -80px;
@@ -515,6 +516,12 @@ shadow {
       transition: all .4s ease; }
     .course-item .faculty-image:hover p {
       bottom: 0; }
+  @media (max-width: 40em) {
+    .course-item .button--workshops {
+      margin: 5px;
+      text-align: center; } }
+  .course-item .e-course-description {
+    margin-top: 0; }
 
 .faculty-page a:hover, .faculty-page a:visited, .faculty-page a:link, .faculty-page a:active {
   text-decoration: none; }
@@ -604,7 +611,11 @@ shadow {
   overflow: hidden; }
   @media (max-width: 40em) {
     .syllabus__faculty {
-      right: 45px; } }
+      right: 30px;
+      margin: 10px; } }
+  @media (min-width: 40.063em) and (max-width: 64em) {
+    .syllabus__faculty {
+      right: 0; } }
   .syllabus__faculty p {
     position: absolute;
     bottom: -80px;
@@ -672,7 +683,7 @@ shadow {
   margin-bottom: 20px; }
   @media (max-width: 40em) {
     .syllabus .download-button {
-      margin: 30px; } }
+      margin: 25px; } }
 
 .library-page .resources-section .result-item__taxonomy__key {
   width: 85px; }
@@ -697,8 +708,36 @@ shadow {
   .library-page .dropdown-wrapper .select {
     margin-bottom: 25px;
     margin-right: 10px; }
+    .library-page .dropdown-wrapper .select::before {
+      display: none; }
     .library-page .dropdown-wrapper .select select {
-      width: 110%; }
+      width: 110%;
+      appearance: none;
+      -o-appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_black_24px.svg");
+      background-repeat: no-repeat;
+      background-position: 94% center; }
+      .library-page .dropdown-wrapper .select select::before {
+        display: none; }
+      @media (min-width: 40.063em) and (max-width: 64em) {
+        .library-page .dropdown-wrapper .select select {
+          background-position: 90% center; } }
+      @media (max-width: 40em) {
+        .library-page .dropdown-wrapper .select select {
+          background-position: 85% center; } }
+      .library-page .dropdown-wrapper .select select option {
+        color: black;
+        background-color: white; }
+      html[data-browser*="Firefox"] .library-page .dropdown-wrapper .select select:-moz-focusring {
+        width: 100%; }
+      html[data-browser*="Windows"] .library-page .dropdown-wrapper .select select {
+        width: 100%; }
+        html[data-browser*="Windows"] .library-page .dropdown-wrapper .select select::-ms-expand {
+          display: none; }
   @media (max-width: 40em) {
     .library-page .dropdown-wrapper .button--icon-only {
       width: 100%; } }
@@ -731,6 +770,9 @@ shadow {
     width: 100%;
     max-height: 500px;
     overflow: hidden; }
+  @media (max-width: 40em) {
+    .about-page .noi-section .slider .slick-arrow {
+      top: 20%; } }
 
 .progress span:nth-child(1):before {
   content: "Ideation";

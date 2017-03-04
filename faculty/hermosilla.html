@@ -214,6 +214,8 @@ ga('send', 'pageview');
 <script type="text/javascript">
     $(function() {
         $(document).foundation();
+        // detect user browsers
+        document.documentElement.setAttribute("data-browser", navigator.userAgent);
     });
 </script>
 

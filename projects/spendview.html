@@ -133,7 +133,7 @@
       <div>
         <h4>Team</h4>
         <ul>
-  <li>Manuel Aristaran, MSc Candidate MIT Media Lab, http://jazzido.com</li>
+  <li>Manuel Aristaran, MSc Candidate MIT Media Lab, <a href="http://jazzido.com">http://jazzido.com</a></li>
 </ul>
 
       </div>
@@ -946,6 +946,8 @@ ga('send', 'pageview');
 <script type="text/javascript">
     $(function() {
         $(document).foundation();
+        // detect user browsers
+        document.documentElement.setAttribute("data-browser", navigator.userAgent);
     });
 </script>
 

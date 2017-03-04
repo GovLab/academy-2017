@@ -141,7 +141,7 @@
       <div>
         <h4>Team</h4>
         <ul>
-  <li>Jason Friesen, Founder/Executive Director, http://trekmedics.org/who-we-are/bios/</li>
+  <li>Jason Friesen, Founder/Executive Director, <a href="http://trekmedics.org/who-we-are/bios/">http://trekmedics.org/who-we-are/bios/</a></li>
 </ul>
 
       </div>
@@ -998,6 +998,8 @@ ga('send', 'pageview');
 <script type="text/javascript">
     $(function() {
         $(document).foundation();
+        // detect user browsers
+        document.documentElement.setAttribute("data-browser", navigator.userAgent);
     });
 </script>
 

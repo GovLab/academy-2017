@@ -67,7 +67,7 @@
     <a href="mailto:policyatlas_exec@googlegroups.com" target="_blank" class=""><i class="fa fa-envelope"></i></a>
     
     
-    <a href="http://policyatlas.org/wiki/Main_Page" target="_blank" class=""><i class="fa fa-globe"></i></a>
+    <a href="[http://policyatlas.org/wiki/Main_Page](http://policyatlas.org/wiki/Main_Page)" target="_blank" class=""><i class="fa fa-globe"></i></a>
     
   </div>
   <div class="row">
@@ -137,7 +137,7 @@
       <div>
         <h4>Team</h4>
         <ul>
-  <li>Kevin Hansen, http://www.kevinmhansen.com/about/</li>
+  <li>Kevin Hansen, <a href="http://www.kevinmhansen.com/about/">http://www.kevinmhansen.com/about/</a></li>
   <li>Matt Lisiecki, http://linkedin.com/in/malisiecki</li>
   <li>Neil Reilly, http://reilly.nyc</li>
 </ul>
@@ -956,6 +956,8 @@ ga('send', 'pageview');
 <script type="text/javascript">
     $(function() {
         $(document).foundation();
+        // detect user browsers
+        document.documentElement.setAttribute("data-browser", navigator.userAgent);
     });
 </script>
 

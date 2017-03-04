@@ -46,7 +46,15 @@ $(document).ready(function() {
 
     // FILTER WITH DROPDOWNS
     resourceList.filter(function(item) {
-      if (item.values()["resource-type"] !== null && item.values()["resource-type"].includes(searchQueries["resource-type"]) && item.values()["resource-category"] !== null && item.values()["resource-category"].includes(searchQueries["resource-category"]) && item.values()["resource-objective"] !== null && item.values()["resource-objective"].includes(searchQueries["resource-objective"]) && item.values()["resource-methodology"] !== null && item.values()["resource-methodology"].includes(searchQueries["resource-methodology"]))  {
+      if (item.values()["resource-type"] !== null 
+        && (item.values()["resource-type"].indexOf(searchQueries["resource-type"]) != -1)
+        && item.values()["resource-category"] !== null 
+        && (item.values()["resource-category"].indexOf(searchQueries["resource-category"]) != -1)
+        && item.values()["resource-objective"] !== null 
+        && (item.values()["resource-objective"].indexOf(searchQueries["resource-objective"]) != -1)
+        && item.values()["resource-methodology"] !== null 
+        && (item.values()["resource-methodology"].indexOf(searchQueries["resource-methodology"])!= -1)
+        )  {
         return true;
       } else {
         return false;
@@ -101,7 +109,7 @@ $(document).ready(function() {
     metaDropdownTarget.prop("selectedIndex",metaDropdownTargetId)
 
     resourceList.filter(function(item){
-      if (item.values()[metaFilterTarget] !== null && item.values()[metaFilterTarget].includes(metaFilterValue)) {
+      if (item.values()[metaFilterTarget] !== null && (item.values()[metaFilterTarget].indexOf(metaFilterValue) != -1)) {
         return true;
       } else {
         return false;
